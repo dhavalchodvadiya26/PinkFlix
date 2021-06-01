@@ -1,0 +1,75 @@
+
+                                                       
+                                                   
+
+    
+
+           
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="match_parent" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+            <include
+                android:id="@+id/toolbar_main"
+                layout="@layout/row_home_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <FrameLayout
+                android:id="@+id/Container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_navigation"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:itemIconTint="@drawable/nav_item_color_state"
+                app:itemTextColor="@drawable/nav_item_color_state"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/navigation" />
+
+        </RelativeLayout>
+
+<!--        <com.google.android.material.navigation.NavigationView-->
+<!--            android:id="@+id/navigation_view"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:background="@color/black"-->
+<!--            android:backgroundTint="@color/black"-->
+<!--            android:visibility="gone"-->
+<!--            tools:targetApi="lollipop">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <include-->
+<!--                    android:id="@+id/nav_header"-->
+<!--                    layout="@layout/left_nav_header" />-->
+
+<!--                <include-->
+<!--                    android:id="@+id/partial_menu"-->
+<!--                    layout="@layout/partial_nav_menu" />-->
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.navigation.NavigationView>-->
+         

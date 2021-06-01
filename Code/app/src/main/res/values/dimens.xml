@@ -1,0 +1,34 @@
+<resources>
+    <dimen name="btnRadius">5dp</dimen>
+    <dimen name="item_space_new">5dp</dimen>
+    <dimen name="item_space">8dp</dimen>
+    <dimen name="borderRadius">10dp</dimen>
+    <!--spaces-->
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_15">15dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+
+    <!-- ICON -->
+    <dimen name="pdlg_icon_size">52.8dp</dimen>
+    <dimen name="pdlg_border_size">4.4dp</dimen>
+
+    <!-- DIALOG -->
+    <dimen name="pdlg_corner_radius">8.8dp</dimen>
+
+    <!-- TEXTS -->
+    <dimen name="pdlg_tv_title">19.8sp</dimen>
+    <dimen name="pdlg_tv_message">17.6sp</dimen>
+
+    <!-- BUTTON -->
+    <dimen name="pdlg_button_stroke">2.2dp</dimen>
+
+    <!-- SPACING -->
+    <dimen name="pdlg_space_1.0x">13.2dp</dimen>
+</resources>

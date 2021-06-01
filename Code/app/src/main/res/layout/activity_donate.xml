@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".DonateActivity">
+
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/row_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <requestFocus />
+    <EditText
+        android:id="@+id/ed_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:focusable="true"
+        android:hint="@string/amount"
+        android:inputType="number"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="14sp" />
+
+
+<Button
+style="?android:attr/buttonBarButtonStyle"
+android:background="@drawable/white_btn"
+android:id="@+id/btn_payment"
+android:layout_height="wrap_content"
+android:layout_marginEnd="16dp"
+android:layout_marginStart="16dp"
+android:layout_marginTop="16dp"
+android:layout_width="match_parent"
+android:text="@string/submit"
+android:textColor="@color/highlight"
+android:textSize="14sp"
+android:textStyle="bold"
+fontPath="fonts/customSemiBold.otf"
+tools:ignore="MissingPrefix" />
+
+    </LinearLayout>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel" />
+        <device id="pixel_4_xl" />
+        <device id="pixel_3" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd6a0b9e-0ef1-40a7-a456-78a8fdeab805" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[0adaa8507d29]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\win\OneDrive\Desktop\OTT Docs\CINE_PRIME\Documents\cineprime.jks" />
+    <option name="KEY_ALIAS" value="cineprime" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1sIxwp6UJqtyIuDRVl2ntG0ptKn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ApkExportedModule" value="Code.app" />
+    <property name="ExportApk.ApkPath" value="C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime-09-05-21\Code\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewC:/Users/win/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.1.0/9865019bbd2d95e41dede3d8ebf964aa93f97766/appcompat-1.1.0-sources.jar!/androidx/appcompat/widget/Toolbar.java_SELECTED" value="Toolbar" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="multi-representation-previewC:/Users/win/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.1.0/9865019bbd2d95e41dede3d8ebf964aa93f97766/appcompat-1.1.0-sources.jar!/androidx/appcompat/widget/Toolbar.java_selected" value="Custom views" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\res\raw" />
+      <recent name="C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\res\drawable" />
+      <recent name="C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app" />
+      <recent name="C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime-09-05-21\Code\app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Code.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd6a0b9e-0ef1-40a7-a456-78a8fdeab805" name="Default Changelist" comment="" />
+      <created>1620574145784</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620574145784</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Commit(15-05-2021)">
+      <created>1621051785600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621051785600</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit(20-05-2021)">
+      <created>1621529819607</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621529819607</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit(22-05-2021)">
+      <created>1621668278892</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621668278893</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit(22-05-2021)">
+      <created>1621686243534</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621686243534</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit(24-05-2021)">
+      <created>1621834416611</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621834416611</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Final Commit(24-05-2021)">
+      <created>1621859601112</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621859601112</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Final Commit(25-05-2021)">
+      <created>1621936627297</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1621936627297</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Final Commit(28-05-2021)">
+      <created>1622218553807</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622218553809</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Commit(15-05-2021)" />
+    <MESSAGE value="Commit(20-05-2021)" />
+    <MESSAGE value="Commit(22-05-2021)" />
+    <MESSAGE value="Commit(24-05-2021)" />
+    <MESSAGE value="Final Commit(24-05-2021)" />
+    <MESSAGE value="Final Commit(25-05-2021)" />
+    <MESSAGE value="Final Commit(28-05-2021)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Commit(28-05-2021)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="558" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1622436837035">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="558" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1622436837035" />
+    <state x="303" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1621236234129">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="303" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1621236234129" />
+    <state x="470" y="273" width="659" height="325" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1621258878173">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="470" y="273" width="659" height="325" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1621258878173" />
+    <state x="464" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622218069165">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="464" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1622218069165" />
+    <state x="377" y="175" key="AndroidCreateResourceDirectoryDialog" timestamp="1621919425808">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="377" y="175" key="AndroidCreateResourceDirectoryDialog/0.0.1600.860@0.0.1600.860" timestamp="1621919425808" />
+    <state x="377" y="175" key="AndroidCreateResourceFileDialog" timestamp="1621918314587">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="377" y="175" key="AndroidCreateResourceFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1621918314587" />
+    <state x="567" y="155" key="AndroidProcessChooserDialog" timestamp="1620723653713">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="567" y="155" key="AndroidProcessChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1620723653713" />
+    <state x="329" y="0" key="CommitChangelistDialog2" timestamp="1622218549573">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="329" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1622218549573" />
+    <state x="527" y="126" key="FileChooserDialogImpl" timestamp="1622447028019">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="527" y="126" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1622447028019" />
+    <state width="1543" height="500" key="GridCell.Tab.0.bottom" timestamp="1622009931430">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1543" height="500" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1622009931430" />
+    <state width="1543" height="500" key="GridCell.Tab.0.center" timestamp="1622009931428">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1543" height="500" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1622009931428" />
+    <state width="1543" height="500" key="GridCell.Tab.0.left" timestamp="1622009931428">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1543" height="500" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1622009931428" />
+    <state width="1543" height="500" key="GridCell.Tab.0.right" timestamp="1622009931429">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1543" height="500" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1622009931429" />
+    <state x="191" y="0" key="SettingsEditor" timestamp="1622522585594">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="191" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1622522585594" />
+    <state x="292" y="97" key="Vcs.Push.Dialog.v2" timestamp="1622218557006">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="292" y="97" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1622218557006" />
+    <state x="581" y="192" key="chooseDestDirectoryDialog" timestamp="1621488306253">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="581" y="192" key="chooseDestDirectoryDialog/0.0.1600.860@0.0.1600.860" timestamp="1621488306253" />
+    <state x="447" y="98" width="706" height="664" key="find.popup" timestamp="1622264918776">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="447" y="98" width="706" height="664" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1622264918776" />
+    <state x="372" y="191" key="run.anything.popup" timestamp="1621831830263">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="372" y="191" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1621831830263" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/WatchListContentFragment.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/WatchListContentFragment.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/WatchListContentFragment.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/WatchListContentFragment.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/fragment/WatchListContentFragment.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>804</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>806</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>796</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>794</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>791</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>789</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>787</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>779</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>777</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>774</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>772</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>770</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity.java</url>
+          <line>745</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>1671</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>499</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>503</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>506</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>512</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>515</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>521</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>528</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>531</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>537</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>540</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>546</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/TransactionListActivity.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/TransactionListActivity.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/TransactionListActivity.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/TransactionListActivity.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/TransactionListActivity.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>511</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/videostreamingapp/MovieDetailsActivity2.java</url>
+          <line>513</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

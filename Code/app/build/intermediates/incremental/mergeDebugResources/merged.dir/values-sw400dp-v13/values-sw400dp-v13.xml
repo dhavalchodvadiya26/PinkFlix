@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pdlg_border_size">4dp</dimen>
+    <dimen name="pdlg_button_stroke">2dp</dimen>
+    <dimen name="pdlg_corner_radius">8dp</dimen>
+    <dimen name="pdlg_icon_size">48dp</dimen>
+    <dimen name="pdlg_space_1.0x">12dp</dimen>
+    <dimen name="pdlg_tv_message">16sp</dimen>
+    <dimen name="pdlg_tv_title">18sp</dimen>
+</resources>

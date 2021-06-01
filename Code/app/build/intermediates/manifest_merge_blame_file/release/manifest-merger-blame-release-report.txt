@@ -1,0 +1,1276 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ott.cineprime"
+4    android:versionCode="5"
+5    android:versionName="5.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:6:5-79
+11-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:7:5-67
+12-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:8:5-76
+13-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:8:22-74
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:9:5-81
+14-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:10:5-79
+15-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+16-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:11:5-84
+16-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:11:22-82
+17
+18    <queries>
+18-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:293:5-295:15
+19        <package android:name="com.facebook.katana" />
+19-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:294:9-55
+19-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:294:18-52
+20    </queries>
+21
+22    <uses-permission android:name="android.permission.CAMERA" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+22-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:12:5-65
+22-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:12:22-62
+23    <permission
+23-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:7:5-9:47
+24        android:name="ott.cineprime.permission.C2D_MESSAGE"
+24-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:8:9-63
+25        android:protectionLevel="signature" />
+25-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:9:9-44
+26
+27    <uses-permission android:name="ott.cineprime.permission.C2D_MESSAGE" />
+27-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:11:5-79
+27-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:11:22-76
+28    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+28-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:17:5-82
+28-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:17:22-79
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:18:5-68
+29-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:18:22-65
+30    <!--
+31 Required so the device vibrates on receiving a push notification.
+32         Vibration settings of the device still apply.
+33    -->
+34    <uses-permission android:name="android.permission.VIBRATE" />
+34-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:23:5-66
+34-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:23:22-63
+35    <!--
+36 Use to restore notifications the user hasn't interacted with.
+37         They could be missed notifications if the user reboots their device if this isn't in place.
+38    -->
+39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+39-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:29:5-81
+39-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:29:22-78
+40    <!-- Samsung -->
+41    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+41-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:31:5-86
+41-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:31:22-83
+42    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+42-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:32:5-87
+42-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:32:22-84
+43    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+43-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:33:5-81
+43-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:33:22-78
+44    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+44-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:34:5-83
+44-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:34:22-80
+45    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+45-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:35:5-88
+45-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:35:22-85
+46    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+46-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:36:5-92
+46-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:36:22-89
+47    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+47-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:37:5-84
+47-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:37:22-81
+48    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+48-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:38:5-83
+48-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:38:22-80
+49    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+49-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:39:5-91
+49-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:39:22-88
+50    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+50-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:40:5-92
+50-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:40:22-89
+51    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+51-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:41:5-93
+51-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:41:22-90
+52    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+52-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:42:5-73
+52-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:42:22-70
+53    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+53-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:43:5-82
+53-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:43:22-79
+54    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+54-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:44:5-83
+54-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:44:22-80
+55    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+55-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:45:5-88
+55-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:45:22-85
+56    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+56-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:46:5-89
+56-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:46:22-86
+57    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+57-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:5-110
+57-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:22-107
+58
+59    <uses-feature
+59-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b916b7078a488da9644704320451d2c6\jetified-android-sdk-5.5.0\AndroidManifest.xml:12:5-14:36
+60        android:name="android.hardware.camera"
+60-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b916b7078a488da9644704320451d2c6\jetified-android-sdk-5.5.0\AndroidManifest.xml:13:9-47
+61        android:required="false" />
+61-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b916b7078a488da9644704320451d2c6\jetified-android-sdk-5.5.0\AndroidManifest.xml:14:9-33
+62    <uses-feature
+62-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b916b7078a488da9644704320451d2c6\jetified-android-sdk-5.5.0\AndroidManifest.xml:15:5-17:36
+63        android:name="android.hardware.camera.autofocus"
+63-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b916b7078a488da9644704320451d2c6\jetified-android-sdk-5.5.0\AndroidManifest.xml:16:9-57
+64        android:required="false" />
+64-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b916b7078a488da9644704320451d2c6\jetified-android-sdk-5.5.0\AndroidManifest.xml:17:9-33
+65
+66    <application
+66-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:14:5-292:19
+67        android:name="com.example.videostreamingapp.MyApplication"
+67-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:15:9-38
+68        android:allowBackup="true"
+68-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:16:9-35
+69        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+69-->[androidx.core:core:1.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\9b88d917b6557a10a8bfc9b829f378d0\core-1.1.0\AndroidManifest.xml:24:18-86
+70        android:hardwareAccelerated="true"
+70-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:17:9-43
+71        android:icon="@drawable/ic_v"
+71-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:18:9-38
+72        android:label="@string/app_name"
+72-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:19:9-41
+73        android:roundIcon="@drawable/ic_v"
+73-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:20:9-43
+74        android:supportsRtl="true"
+74-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:21:9-35
+75        android:theme="@style/AppTheme"
+75-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:22:9-40
+76        android:usesCleartextTraffic="true" >
+76-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:23:9-44
+77        <activity android:name="com.example.videostreamingapp.DonateActivity" />
+77-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:26:9-51
+77-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:26:19-49
+78        <activity android:name="com.example.videostreamingapp.SplashActivity" >
+78-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:27:9-32:20
+78-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:27:19-49
+79            <intent-filter>
+79-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:28:13-31:29
+80                <action android:name="android.intent.action.MAIN" />
+80-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:29:17-69
+80-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:29:25-66
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+82-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:30:17-77
+82-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:30:27-74
+83            </intent-filter>
+84        </activity>
+85        <activity
+85-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:33:9-37:55
+86            android:name="com.example.videostreamingapp.MainActivity"
+86-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:34:13-41
+87            android:screenOrientation="portrait"
+87-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:35:13-49
+88            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+88-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:36:13-80
+89            android:windowSoftInputMode="adjustPan" />
+89-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:37:13-52
+90        <activity
+90-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:38:9-42:57
+91            android:name="com.example.videostreamingapp.SignInActivity"
+91-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:39:13-43
+92            android:screenOrientation="portrait"
+92-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:40:13-49
+93            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+93-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:41:13-80
+94            android:windowSoftInputMode="adjustResize" />
+94-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:42:13-55
+95        <activity
+95-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:43:9-47:57
+96            android:name="com.example.videostreamingapp.SignUpActivity"
+96-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:44:13-43
+97            android:screenOrientation="portrait"
+97-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:46:13-49
+98            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+98-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:45:13-80
+99            android:windowSoftInputMode="adjustResize" />
+99-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:47:13-55
+100        <activity
+100-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:48:9-52:58
+101            android:name="com.example.videostreamingapp.ForgotPasswordActivity"
+101-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:49:13-51
+102            android:screenOrientation="portrait"
+102-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:51:13-49
+103            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+103-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:50:13-80
+104            android:windowSoftInputMode="adjustResize" />
+104-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:52:13-55
+105        <activity
+105-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:53:9-58:55
+106            android:name="com.example.videostreamingapp.MovieDetailsActivity"
+106-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:54:13-49
+107            android:configChanges="orientation|screenLayout|screenSize"
+107-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:55:13-72
+108            android:screenOrientation="portrait"
+108-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:56:13-49
+109            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+109-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:57:13-80
+110            android:windowSoftInputMode="adjustPan" />
+110-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:58:13-52
+111        <activity
+111-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:59:9-64:55
+112            android:name="com.example.videostreamingapp.OnlinePlayerActivity"
+112-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:60:13-49
+113            android:configChanges="orientation|screenLayout|screenSize"
+113-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:61:13-72
+114            android:screenOrientation="portrait"
+114-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:62:13-49
+115            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+115-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:63:13-80
+116            android:windowSoftInputMode="adjustPan" />
+116-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:64:13-52
+117        <activity
+117-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:65:9-71:20
+118            android:name="com.example.videostreamingapp.MovieDetailsActivity2"
+118-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:66:13-50
+119            android:configChanges="orientation|screenLayout|screenSize"
+119-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:67:13-72
+120            android:screenOrientation="portrait"
+120-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:68:13-49
+121            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+121-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:69:13-80
+122            android:windowSoftInputMode="adjustPan" >
+122-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:70:13-52
+123        </activity>
+124        <activity
+124-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:72:9-77:55
+125            android:name="com.example.videostreamingapp.OfflinePlayerActivity"
+125-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:73:13-50
+126            android:configChanges="orientation|screenLayout|screenSize"
+126-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:74:13-72
+127            android:screenOrientation="portrait"
+127-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:75:13-49
+128            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+128-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:76:13-80
+129            android:windowSoftInputMode="adjustPan" />
+129-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:77:13-52
+130        <activity
+130-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:78:9-83:55
+131            android:name="com.example.videostreamingapp.AboutActivity"
+131-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:79:13-42
+132            android:configChanges="orientation|screenLayout|screenSize"
+132-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:80:13-72
+133            android:screenOrientation="portrait"
+133-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:81:13-49
+134            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+134-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:82:13-80
+135            android:windowSoftInputMode="adjustPan" />
+135-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:83:13-52
+136        <activity
+136-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:84:9-89:55
+137            android:name="com.example.videostreamingapp.TechnicalIssueActivity"
+137-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:85:13-51
+138            android:configChanges="orientation|screenLayout|screenSize"
+138-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:86:13-72
+139            android:screenOrientation="portrait"
+139-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:87:13-49
+140            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+140-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:88:13-80
+141            android:windowSoftInputMode="adjustPan" />
+141-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:89:13-52
+142        <activity
+142-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:90:9-95:55
+143            android:name="com.example.videostreamingapp.ProductionActivity"
+143-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:91:13-47
+144            android:configChanges="orientation|screenLayout|screenSize"
+144-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:92:13-72
+145            android:screenOrientation="portrait"
+145-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:93:13-49
+146            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+146-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:94:13-80
+147            android:windowSoftInputMode="adjustPan" />
+147-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:95:13-52
+148        <activity
+148-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:96:9-101:55
+149            android:name="com.example.videostreamingapp.ChangePasswordActivity"
+149-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:97:13-51
+150            android:configChanges="orientation|screenLayout|screenSize"
+150-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:98:13-72
+151            android:screenOrientation="portrait"
+151-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:99:13-49
+152            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+152-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:100:13-80
+153            android:windowSoftInputMode="adjustPan" />
+153-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:101:13-52
+154        <activity
+154-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:102:9-107:55
+155            android:name="com.example.videostreamingapp.ArtistActivity"
+155-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:103:13-43
+156            android:configChanges="orientation|screenLayout|screenSize"
+156-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:104:13-72
+157            android:screenOrientation="portrait"
+157-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:105:13-49
+158            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+158-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:106:13-80
+159            android:windowSoftInputMode="adjustPan" />
+159-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:107:13-52
+160        <activity
+160-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:108:9-113:55
+161            android:name="com.example.videostreamingapp.TermsandConditionActivity"
+161-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:109:13-54
+162            android:configChanges="orientation|screenLayout|screenSize"
+162-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:110:13-72
+163            android:screenOrientation="portrait"
+163-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:111:13-49
+164            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+164-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:112:13-80
+165            android:windowSoftInputMode="adjustPan" />
+165-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:113:13-52
+166        <activity
+166-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:114:9-119:55
+167            android:name="com.example.videostreamingapp.RefundActivity"
+167-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:115:13-43
+168            android:configChanges="orientation|screenLayout|screenSize"
+168-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:116:13-72
+169            android:screenOrientation="portrait"
+169-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:117:13-49
+170            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+170-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:118:13-80
+171            android:windowSoftInputMode="adjustPan" />
+171-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:119:13-52
+172        <activity
+172-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:120:9-125:55
+173            android:name="com.example.videostreamingapp.PrivacyPolicyActivity"
+173-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:121:13-50
+174            android:configChanges="orientation|screenLayout|screenSize"
+174-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:122:13-72
+175            android:screenOrientation="portrait"
+175-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:123:13-49
+176            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+176-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:124:13-80
+177            android:windowSoftInputMode="adjustPan" />
+177-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:125:13-52
+178        <activity
+178-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:126:9-131:55
+179            android:name="com.example.videostreamingapp.TransactionListActivity"
+179-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:127:13-52
+180            android:configChanges="orientation|screenLayout|screenSize"
+180-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:128:13-72
+181            android:screenOrientation="portrait"
+181-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:129:13-49
+182            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+182-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:130:13-80
+183            android:windowSoftInputMode="adjustPan" />
+183-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:131:13-52
+184        <activity
+184-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:132:9-137:55
+185            android:name="com.example.videostreamingapp.SportDetailsActivity"
+185-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:133:13-49
+186            android:configChanges="orientation|screenLayout|screenSize"
+186-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:134:13-72
+187            android:screenOrientation="portrait"
+187-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:135:13-49
+188            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+188-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:136:13-80
+189            android:windowSoftInputMode="adjustPan" />
+189-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:137:13-52
+190        <activity
+190-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:138:9-143:55
+191            android:name="com.example.videostreamingapp.ShowDetailsActivity"
+191-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:139:13-48
+192            android:configChanges="orientation|screenLayout|screenSize"
+192-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:140:13-72
+193            android:screenOrientation="portrait"
+193-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:141:13-49
+194            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+194-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:142:13-80
+195            android:windowSoftInputMode="adjustPan" />
+195-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:143:13-52
+196        <activity
+196-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:144:9-149:55
+197            android:name="com.example.videostreamingapp.TVDetailsActivity"
+197-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:145:13-46
+198            android:configChanges="orientation|screenLayout|screenSize"
+198-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:146:13-72
+199            android:screenOrientation="portrait"
+199-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:148:13-49
+200            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+200-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:147:13-80
+201            android:windowSoftInputMode="adjustPan" />
+201-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:149:13-52
+202        <activity
+202-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:150:9-155:55
+203            android:name="com.example.videostreamingapp.PlanActivity"
+203-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:151:13-41
+204            android:configChanges="orientation|screenLayout|screenSize"
+204-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:152:13-72
+205            android:screenOrientation="portrait"
+205-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:154:13-49
+206            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+206-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:153:13-80
+207            android:windowSoftInputMode="adjustPan" />
+207-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:155:13-52
+208        <activity
+208-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:156:9-161:55
+209            android:name="com.example.videostreamingapp.SelectPlanActivity"
+209-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:157:13-47
+210            android:configChanges="orientation|screenLayout|screenSize"
+210-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:158:13-72
+211            android:screenOrientation="portrait"
+211-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:160:13-49
+212            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+212-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:159:13-80
+213            android:windowSoftInputMode="adjustPan" />
+213-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:161:13-52
+214        <activity
+214-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:162:9-167:55
+215            android:name="com.example.videostreamingapp.SearchHorizontalActivity"
+215-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:163:13-53
+216            android:configChanges="orientation|screenLayout|screenSize"
+216-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:164:13-72
+217            android:screenOrientation="portrait"
+217-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:166:13-49
+218            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+218-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:165:13-80
+219            android:windowSoftInputMode="adjustPan" />
+219-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:167:13-52
+220        <activity
+220-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:168:9-173:55
+221            android:name="com.example.videostreamingapp.DashboardActivity"
+221-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:169:13-46
+222            android:configChanges="orientation|screenLayout|screenSize"
+222-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:170:13-72
+223            android:screenOrientation="portrait"
+223-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:172:13-49
+224            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+224-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:171:13-80
+225            android:windowSoftInputMode="adjustPan" />
+225-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:173:13-52
+226        <activity
+226-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:174:9-178:55
+227            android:name="com.example.videostreamingapp.EditProfileActivity"
+227-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:175:13-48
+228            android:screenOrientation="portrait"
+228-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:176:13-49
+229            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+229-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:177:13-80
+230            android:windowSoftInputMode="adjustPan" />
+230-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:178:13-52
+231        <activity
+231-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:179:9-182:52
+232            android:name="com.example.videostreamingapp.PayPalActivity"
+232-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:180:13-43
+233            android:screenOrientation="portrait"
+233-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:182:13-49
+234            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+234-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:181:13-80
+235        <activity
+235-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:183:9-186:82
+236            android:name="com.example.videostreamingapp.RazorPayActivity"
+236-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:184:13-45
+237            android:screenOrientation="portrait"
+237-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:185:13-49
+238            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+238-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:186:13-80
+239        <activity
+239-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:187:9-190:52
+240            android:name="com.example.videostreamingapp.StripeActivity"
+240-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:188:13-43
+241            android:screenOrientation="portrait"
+241-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:190:13-49
+242            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+242-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:189:13-80
+243        <activity
+243-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:191:9-195:59
+244            android:name="com.example.videostreamingapp.EmbeddedPlayerActivity"
+244-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:192:13-51
+245            android:configChanges="orientation|screenSize"
+245-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:194:13-59
+246            android:screenOrientation="sensorLandscape"
+246-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:195:13-56
+247            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+247-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:193:13-80
+248        <activity
+248-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:196:9-200:52
+249            android:name="com.example.videostreamingapp.WatchListActivity"
+249-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:197:13-46
+250            android:configChanges="orientation|screenSize"
+250-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:198:13-59
+251            android:screenOrientation="portrait"
+251-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:200:13-49
+252            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+252-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:199:13-80
+253        <activity
+253-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:202:9-206:52
+254            android:name="com.example.videostreamingapp.UserProfileActivity"
+254-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:203:13-48
+255            android:configChanges="orientation|screenSize"
+255-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:204:13-59
+256            android:screenOrientation="portrait"
+256-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:206:13-49
+257            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+257-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:205:13-80
+258        <activity
+258-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:208:9-212:52
+259            android:name="com.example.videostreamingapp.SettingsActivity"
+259-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:209:13-45
+260            android:configChanges="orientation|screenSize"
+260-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:210:13-59
+261            android:screenOrientation="portrait"
+261-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:212:13-49
+262            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+262-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:211:13-80
+263        <activity
+263-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:213:9-217:52
+264            android:name="com.example.videostreamingapp.OTPVerificationActivity"
+264-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:214:13-52
+265            android:configChanges="orientation|screenSize"
+265-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:216:13-59
+266            android:screenOrientation="portrait"
+266-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:217:13-49
+267            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+267-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:215:13-80
+268        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+268-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:218:9-84
+268-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:218:19-81
+269        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+269-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:219:9-82
+269-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:219:19-79
+270        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+270-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:220:9-90
+270-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:220:19-87
+271        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+271-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:221:9-91
+271-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:221:19-88
+272        <activity
+272-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:222:9-224:66
+273            android:name="io.card.payment.CardIOActivity"
+273-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:223:13-58
+274            android:configChanges="keyboardHidden|orientation" />
+274-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:224:13-63
+275        <activity android:name="io.card.payment.DataEntryActivity" />
+275-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:225:9-70
+275-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:225:19-67
+276
+277        <meta-data
+277-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:227:9-229:69
+278            android:name="com.google.android.gms.version"
+278-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:228:13-58
+279            android:value="@integer/google_play_services_version" /> <!-- Activity required to show ad overlays. -->
+279-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:229:13-66
+280        <activity
+280-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:230:9-232:125
+281            android:name="com.google.android.gms.ads.AdActivity"
+281-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:231:13-65
+282            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+282-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:232:13-122
+283            android:exported="false"
+283-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\646bb7391549383e9b2c25d87bb5a702\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:32:13-37
+284            android:theme="@android:style/Theme.Translucent" />
+284-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\646bb7391549383e9b2c25d87bb5a702\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:33:13-61
+285
+286        <meta-data
+286-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:234:9-236:52
+287            android:name="com.google.android.gms.ads.APPLICATION_ID"
+287-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:235:13-69
+288            android:value="@string/admob_app_id" />
+288-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:236:13-49
+289        <meta-data
+289-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:237:9-239:39
+290            android:name="com.onesignal.NotificationOpened.DEFAULT"
+290-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:238:13-68
+291            android:value="DISABLE" />
+291-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:239:13-36
+292        <meta-data
+292-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:240:9-242:40
+293            android:name="com.onesignal.NotificationAccentColor.DEFAULT"
+293-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:241:13-73
+294            android:value="FFD81B60" />
+294-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:242:13-37
+295        <meta-data
+295-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:243:9-245:71
+296            android:name="com.google.firebase.messaging.default_notification_channel_id"
+296-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:244:13-89
+297            android:value="@string/default_notification_channel_id" />
+297-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:245:13-68
+298        <meta-data
+298-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:246:9-248:49
+299            android:name="com.google.firebase.messaging.default_notification_icon"
+299-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:247:13-83
+300            android:resource="@drawable/ic_v" />
+300-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:248:13-46
+301        <meta-data
+301-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:249:9-251:55
+302            android:name="com.facebook.sdk.ApplicationId"
+302-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:250:13-58
+303            android:value="@string/facebook_app_id" />
+303-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:251:13-52
+304        <meta-data
+304-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:252:9-254:68
+305            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+305-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:253:13-93
+306            android:value="com.example.util.CastOptionsProvider" />
+306-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:254:13-65
+307
+308        <activity
+308-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:257:9-260:48
+309            android:name="com.facebook.FacebookActivity"
+309-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:257:19-63
+310            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+310-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:258:13-114
+311            android:label="@string/app_name"
+311-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:260:13-45
+312            android:theme="@style/com_facebook_activity_theme" />
+312-->[com.facebook.android:facebook-common:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\496ac08c1ff6e03056cde3794097da52\jetified-facebook-common-5.11.0\AndroidManifest.xml:32:13-63
+313        <activity
+313-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:261:9-270:20
+314            android:name="com.facebook.CustomTabActivity"
+314-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:262:13-58
+315            android:exported="true" >
+315-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:263:13-36
+316            <intent-filter>
+316-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:264:13-269:29
+317                <action android:name="android.intent.action.VIEW" />
+317-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:265:17-69
+317-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:265:25-66
+318
+319                <category android:name="android.intent.category.DEFAULT" />
+319-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:266:17-76
+319-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:266:27-73
+320                <category android:name="android.intent.category.BROWSABLE" />
+320-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:267:17-78
+320-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:267:27-75
+321
+322                <data android:scheme="@string/fb_login_protocol_scheme" />
+322-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:268:17-75
+322-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:268:23-72
+323            </intent-filter>
+324        </activity>
+325
+326        <service
+326-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:272:9-279:19
+327            android:name="com.example.util.DemoDownloadService"
+327-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:272:18-69
+328            android:exported="false" >
+328-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:273:13-37
+329
+330            <!-- This is needed for Scheduler -->
+331            <intent-filter>
+331-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:275:13-278:29
+332                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART" />
+332-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:276:17-101
+332-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:276:25-99
+333
+334                <category android:name="android.intent.category.DEFAULT" />
+334-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:266:17-76
+334-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:266:27-73
+335            </intent-filter>
+336        </service>
+337        <service
+337-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:280:9-286:19
+338            android:name="com.example.util.MessageService"
+338-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:280:18-64
+339            android:exported="false" >
+339-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:281:13-37
+340
+341            <!-- This is needed for Scheduler -->
+342            <intent-filter>
+342-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:283:13-285:29
+343                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+343-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:284:17-78
+343-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:284:25-75
+344            </intent-filter>
+345        </service>
+346        <service android:name="com.example.util.FcmTokenRegistrationService" >
+346-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:287:9-291:19
+346-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:287:18-77
+347            <intent-filter>
+347-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:288:13-290:29
+348                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+348-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:289:17-79
+348-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:289:25-77
+349            </intent-filter>
+350        </service>
+351
+352        <activity
+352-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:15:9-18:67
+353            android:name="com.nguyenhoanglam.imagepicker.ui.imagepicker.ImagePickerActivity"
+353-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:16:13-93
+354            android:configChanges="orientation|screenSize"
+354-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:17:13-59
+355            android:theme="@style/imagepicker_ImagePickerTheme" />
+355-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:18:13-64
+356        <activity
+356-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:19:9-22:62
+357            android:name="com.nguyenhoanglam.imagepicker.ui.camera.CameraActivty"
+357-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:20:13-82
+358            android:screenOrientation="portrait"
+358-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:21:13-49
+359            android:theme="@style/imagepicker_CameraTheme" />
+359-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:22:13-59
+360
+361        <provider
+361-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:24:9-32:20
+362            android:name="androidx.core.content.FileProvider"
+362-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:25:13-62
+363            android:authorities="ott.cineprime.fileprovider"
+363-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:26:13-64
+364            android:exported="false"
+364-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:27:13-37
+365            android:grantUriPermissions="true" >
+365-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:28:13-47
+366            <meta-data
+366-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:29:13-31:66
+367                android:name="android.support.FILE_PROVIDER_PATHS"
+367-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:30:17-67
+368                android:resource="@xml/imagepicker_file_paths" />
+368-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b2a4c7a6c37773db5dce546207c010f0\jetified-ImagePicker-1.2.0\AndroidManifest.xml:31:17-63
+369        </provider>
+370
+371        <activity
+371-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:12:9-14:57
+372            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+372-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:13:13-76
+373            android:theme="@style/StripeDefaultTheme" />
+373-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:14:13-54
+374        <activity
+374-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:15:9-17:57
+375            android:name="com.stripe.android.view.PaymentMethodsActivity"
+375-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:16:13-74
+376            android:theme="@style/StripeDefaultTheme" />
+376-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:17:13-54
+377        <activity
+377-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:18:9-20:57
+378            android:name="com.stripe.android.view.PaymentFlowActivity"
+378-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:19:13-71
+379            android:theme="@style/StripeDefaultTheme" />
+379-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:20:13-54
+380        <activity
+380-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:21:9-23:57
+381            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+381-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:22:13-78
+382            android:theme="@style/StripeDefaultTheme" />
+382-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:23:13-54
+383        <activity
+383-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:24:9-26:57
+384            android:name="com.stripe.android.view.PaymentRelayActivity"
+384-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:25:13-72
+385            android:theme="@style/StripeDefaultTheme" />
+385-->[com.stripe:stripe-android:12.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bd4957296eb22fdcfc40abe6cd730896\jetified-stripe-android-12.5.0\AndroidManifest.xml:26:13-54
+386        <activity
+386-->[com.stripe:stripe-3ds2-android:2.2.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a052a7a2daf6fdbf434711913a260c50\jetified-stripe-3ds2-android-2.2.2\AndroidManifest.xml:12:9-14:54
+387            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+387-->[com.stripe:stripe-3ds2-android:2.2.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a052a7a2daf6fdbf434711913a260c50\jetified-stripe-3ds2-android-2.2.2\AndroidManifest.xml:13:13-81
+388            android:theme="@style/Stripe3DS2Theme" />
+388-->[com.stripe:stripe-3ds2-android:2.2.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a052a7a2daf6fdbf434711913a260c50\jetified-stripe-3ds2-android-2.2.2\AndroidManifest.xml:14:13-51
+389        <activity
+389-->[com.stripe:stripe-3ds2-android:2.2.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a052a7a2daf6fdbf434711913a260c50\jetified-stripe-3ds2-android-2.2.2\AndroidManifest.xml:15:9-17:54
+390            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity"
+390-->[com.stripe:stripe-3ds2-android:2.2.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a052a7a2daf6fdbf434711913a260c50\jetified-stripe-3ds2-android-2.2.2\AndroidManifest.xml:16:13-95
+391            android:theme="@style/Stripe3DS2Theme" />
+391-->[com.stripe:stripe-3ds2-android:2.2.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a052a7a2daf6fdbf434711913a260c50\jetified-stripe-3ds2-android-2.2.2\AndroidManifest.xml:17:13-51
+392
+393        <receiver
+393-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:10:9-12:40
+394            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
+394-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:11:13-91
+395            android:exported="false" />
+395-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:12:13-37
+396
+397        <service
+397-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:14:9-16:40
+398            android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"
+398-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:15:13-96
+399            android:exported="false" />
+399-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:16:13-37
+400        <service
+400-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:17:9-19:40
+401            android:name="com.google.android.gms.cast.framework.ReconnectionService"
+401-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:18:13-85
+402            android:exported="false" />
+402-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2fb364f0a3b53ed8cec8685385f5fa6c\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:19:13-37
+403
+404        <activity android:name="com.facebook.CustomTabMainActivity" />
+404-->[com.facebook.android:facebook-common:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\496ac08c1ff6e03056cde3794097da52\jetified-facebook-common-5.11.0\AndroidManifest.xml:33:9-71
+404-->[com.facebook.android:facebook-common:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\496ac08c1ff6e03056cde3794097da52\jetified-facebook-common-5.11.0\AndroidManifest.xml:33:19-68
+405
+406        <meta-data
+406-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:49:9-51:51
+407            android:name="onesignal_app_id"
+407-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:50:13-44
+408            android:value="00e758f6-e45d-4725-b2cb-aa210d75eeb0" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+408-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:51:13-48
+409        <meta-data
+409-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:53:9-55:70
+410            android:name="onesignal_google_project_number"
+410-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:54:13-59
+411            android:value="str:REMOTE" />
+411-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:55:13-67
+412
+413        <receiver
+413-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:57:9-67:20
+414            android:name="com.onesignal.GcmBroadcastReceiver"
+414-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:58:13-62
+415            android:permission="com.google.android.c2dm.permission.SEND" >
+415-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:59:13-73
+416
+417            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+418            <intent-filter android:priority="999" >
+418-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:62:13-66:29
+418-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:62:28-50
+419                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+419-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:63:17-81
+419-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:63:25-78
+420
+421                <category android:name="ott.cineprime" />
+421-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:65:17-61
+421-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:65:27-58
+422            </intent-filter>
+423        </receiver>
+424        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+424-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:68:9-77
+424-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:68:19-74
+425
+426        <service
+426-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:70:9-76:19
+427            android:name="com.onesignal.HmsMessageServiceOneSignal"
+427-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:71:13-68
+428            android:exported="false" >
+428-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:72:13-37
+429            <intent-filter>
+429-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:73:13-75:29
+430                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+430-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:74:17-81
+430-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:74:25-78
+431            </intent-filter>
+432        </service>
+433
+434        <activity
+434-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:78:9-84:20
+435            android:name="com.onesignal.NotificationOpenedActivityHMS"
+435-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:79:13-71
+436            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+436-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:80:13-72
+437            <intent-filter>
+437-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:81:13-83:29
+438                <action android:name="android.intent.action.VIEW" />
+438-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:265:17-69
+438-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:265:25-66
+439            </intent-filter>
+440        </activity>
+441
+442        <service android:name="com.onesignal.GcmIntentService" />
+442-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:86:9-66
+442-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:86:18-63
+443        <service
+443-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:87:9-89:72
+444            android:name="com.onesignal.GcmIntentJobService"
+444-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:88:13-61
+445            android:permission="android.permission.BIND_JOB_SERVICE" />
+445-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:89:13-69
+446        <service
+446-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:90:9-92:72
+447            android:name="com.onesignal.RestoreJobService"
+447-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:91:13-59
+448            android:permission="android.permission.BIND_JOB_SERVICE" />
+448-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:92:13-69
+449        <service
+449-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:93:9-95:72
+450            android:name="com.onesignal.RestoreKickoffJobService"
+450-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:94:13-66
+451            android:permission="android.permission.BIND_JOB_SERVICE" />
+451-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:95:13-69
+452        <service
+452-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:96:9-98:43
+453            android:name="com.onesignal.SyncService"
+453-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:97:13-53
+454            android:stopWithTask="true" />
+454-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:98:13-40
+455        <service
+455-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:99:9-101:72
+456            android:name="com.onesignal.SyncJobService"
+456-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:100:13-56
+457            android:permission="android.permission.BIND_JOB_SERVICE" />
+457-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:101:13-69
+458
+459        <activity
+459-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:103:9-105:75
+460            android:name="com.onesignal.PermissionsActivity"
+460-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:104:13-61
+461            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+461-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:105:13-72
+462
+463        <service android:name="com.onesignal.NotificationRestoreService" />
+463-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:107:9-76
+463-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:107:18-73
+464
+465        <receiver android:name="com.onesignal.BootUpReceiver" >
+465-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:109:9-114:20
+465-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:109:19-62
+466            <intent-filter>
+466-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:110:13-113:29
+467                <action android:name="android.intent.action.BOOT_COMPLETED" />
+467-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:111:17-79
+467-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:111:25-76
+468                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+468-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:112:17-82
+468-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:112:25-79
+469            </intent-filter>
+470        </receiver>
+471        <receiver android:name="com.onesignal.UpgradeReceiver" >
+471-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:115:9-119:20
+471-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:115:19-63
+472            <intent-filter>
+472-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:116:13-118:29
+473                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+473-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:117:17-84
+473-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:117:25-81
+474            </intent-filter>
+475        </receiver>
+476
+477        <meta-data
+477-->[com.google.android.exoplayer:extension-ima:2.11.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\261c1f879dcf9bb29b797d4097c56d52\jetified-extension-ima-2.11.1\AndroidManifest.xml:25:9-27:36
+478            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+478-->[com.google.android.exoplayer:extension-ima:2.11.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\261c1f879dcf9bb29b797d4097c56d52\jetified-extension-ima-2.11.1\AndroidManifest.xml:26:13-69
+479            android:value="true" />
+479-->[com.google.android.exoplayer:extension-ima:2.11.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\261c1f879dcf9bb29b797d4097c56d52\jetified-extension-ima-2.11.1\AndroidManifest.xml:27:13-33
+480        <!--
+481             FirebaseMessagingService performs security checks at runtime,
+482             but set to not exported to explicitly avoid allowing another app to call it.
+483        -->
+484        <service
+484-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:28:9-35:19
+485            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+485-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:29:13-82
+486            android:directBootAware="true"
+486-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:30:13-43
+487            android:exported="false" >
+487-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:31:13-37
+488            <intent-filter android:priority="-500" >
+488-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:283:13-285:29
+489                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+489-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:284:17-78
+489-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:284:25-75
+490            </intent-filter>
+491        </service>
+492        <service
+492-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:36:9-42:19
+493            android:name="com.google.firebase.components.ComponentDiscoveryService"
+493-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:37:13-84
+494            android:directBootAware="true"
+494-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\746fde7761140995d0d7f9801980a27c\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+495            android:exported="false" >
+495-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:38:13-37
+496            <meta-data
+496-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:39:13-41:85
+497                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+497-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:40:17-119
+498                android:value="com.google.firebase.components.ComponentRegistrar" />
+498-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2754141022e228f924f9335d99ee00d3\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:41:17-82
+499            <meta-data
+499-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+500                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+500-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+501                android:value="com.google.firebase.components.ComponentRegistrar" />
+501-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+502            <meta-data
+502-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a56eabde4e60d55f80dcef6d9b070477\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:11:13-13:85
+503                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+503-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a56eabde4e60d55f80dcef6d9b070477\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:12:17-133
+504                android:value="com.google.firebase.components.ComponentRegistrar" />
+504-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a56eabde4e60d55f80dcef6d9b070477\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:13:17-82
+505            <meta-data
+505-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ba606b4c7f5c3766d9085114473b699a\jetified-firebase-iid-20.2.3\AndroidManifest.xml:32:13-34:85
+506                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+506-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ba606b4c7f5c3766d9085114473b699a\jetified-firebase-iid-20.2.3\AndroidManifest.xml:33:17-96
+507                android:value="com.google.firebase.components.ComponentRegistrar" />
+507-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ba606b4c7f5c3766d9085114473b699a\jetified-firebase-iid-20.2.3\AndroidManifest.xml:34:17-82
+508            <meta-data
+508-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\49467c069a543f2b1a2181c3ed91b4b8\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:30:13-32:85
+509                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+509-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\49467c069a543f2b1a2181c3ed91b4b8\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:31:17-139
+510                android:value="com.google.firebase.components.ComponentRegistrar" />
+510-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\49467c069a543f2b1a2181c3ed91b4b8\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:32:17-82
+511            <meta-data
+511-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\629e96a7a37fe2eac51e3fb78983a7c3\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+512                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+512-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\629e96a7a37fe2eac51e3fb78983a7c3\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+513                android:value="com.google.firebase.components.ComponentRegistrar" />
+513-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\629e96a7a37fe2eac51e3fb78983a7c3\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+514            <meta-data
+514-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4df96bd34bec368fb0ff2f7dbebdbbab\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+515                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+515-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4df96bd34bec368fb0ff2f7dbebdbbab\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+516                android:value="com.google.firebase.components.ComponentRegistrar" />
+516-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4df96bd34bec368fb0ff2f7dbebdbbab\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+517        </service>
+518
+519        <activity
+519-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+520            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+520-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+521            android:excludeFromRecents="true"
+521-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+522            android:exported="false"
+522-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+523            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+523-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+524        <!--
+525            Service handling Google Sign-In user revocation. For apps that do not integrate with
+526            Google Sign-In, this service will never be started.
+527        -->
+528        <service
+528-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+529            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+529-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+530            android:exported="true"
+530-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+531            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+531-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+532            android:visibleToInstantApps="true" />
+532-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\542dd270a0a61e736849f5e92dbf9161\jetified-play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+533
+534        <activity
+534-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+535            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+535-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+536            android:excludeFromRecents="true"
+536-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+537            android:exported="true"
+537-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+538            android:launchMode="singleTask"
+538-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+539            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+539-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+540            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+540-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\e39f048ac882d28c2cb8b54e8ba306ff\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+541
+542        <receiver
+542-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ba606b4c7f5c3766d9085114473b699a\jetified-firebase-iid-20.2.3\AndroidManifest.xml:37:9-44:20
+543            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+543-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ba606b4c7f5c3766d9085114473b699a\jetified-firebase-iid-20.2.3\AndroidManifest.xml:38:13-78
+544            android:exported="true"
+544-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ba606b4c7f5c3766d9085114473b699a\jetified-firebase-iid-20.2.3\AndroidManifest.xml:39:13-36
+545            android:permission="com.google.android.c2dm.permission.SEND" >
+545-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ba606b4c7f5c3766d9085114473b699a\jetified-firebase-iid-20.2.3\AndroidManifest.xml:40:13-73
+546            <intent-filter>
+546-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\ba606b4c7f5c3766d9085114473b699a\jetified-firebase-iid-20.2.3\AndroidManifest.xml:41:13-43:29
+547                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+547-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:63:17-81
+547-->[com.onesignal:OneSignal:3.15.7] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d3b814b4694e972c41b80a09d9e54fd4\jetified-OneSignal-3.15.7\AndroidManifest.xml:63:25-78
+548            </intent-filter>
+549        </receiver>
+550
+551        <activity
+551-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\69a6595f7f65a26506d1ba14e07d7cdf\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+552            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+552-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\69a6595f7f65a26506d1ba14e07d7cdf\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+553            android:exported="false"
+553-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\69a6595f7f65a26506d1ba14e07d7cdf\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+554            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+554-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\69a6595f7f65a26506d1ba14e07d7cdf\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+555
+556        <receiver
+556-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:29:9-33:20
+557            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+557-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:30:13-85
+558            android:enabled="true"
+558-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:31:13-35
+559            android:exported="false" >
+559-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:32:13-37
+560        </receiver>
+561
+562        <service
+562-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:35:9-38:40
+563            android:name="com.google.android.gms.measurement.AppMeasurementService"
+563-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:36:13-84
+564            android:enabled="true"
+564-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:37:13-35
+565            android:exported="false" />
+565-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:38:13-37
+566        <service
+566-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:39:9-43:72
+567            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+567-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:40:13-87
+568            android:enabled="true"
+568-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:41:13-35
+569            android:exported="false"
+569-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:42:13-37
+570            android:permission="android.permission.BIND_JOB_SERVICE" />
+570-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\86193c743bbb927ab30b0d4f15869db8\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:43:13-69
+571
+572        <provider
+572-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\646bb7391549383e9b2c25d87bb5a702\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:35:9-39:39
+573            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+573-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\646bb7391549383e9b2c25d87bb5a702\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:36:13-76
+574            android:authorities="ott.cineprime.mobileadsinitprovider"
+574-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\646bb7391549383e9b2c25d87bb5a702\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:37:13-73
+575            android:exported="false"
+575-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\646bb7391549383e9b2c25d87bb5a702\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:38:13-37
+576            android:initOrder="100" />
+576-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\646bb7391549383e9b2c25d87bb5a702\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:39:13-36
+577        <provider
+577-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\746fde7761140995d0d7f9801980a27c\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+578            android:name="com.google.firebase.provider.FirebaseInitProvider"
+578-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\746fde7761140995d0d7f9801980a27c\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+579            android:authorities="ott.cineprime.firebaseinitprovider"
+579-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\746fde7761140995d0d7f9801980a27c\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+580            android:exported="false"
+580-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\746fde7761140995d0d7f9801980a27c\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+581            android:initOrder="100" />
+581-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\746fde7761140995d0d7f9801980a27c\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+582        <!--
+583         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+584         with the application context. This config is merged in with the host app's manifest,
+585         but there can only be one provider with the same authority activated at any given
+586         point; so if the end user has two or more different apps that use Facebook SDK, only the
+587         first one will be able to use the provider. To work around this problem, we use the
+588         following placeholder in the authority to identify each host application as if it was
+589         a completely different provider.
+590        -->
+591        <provider
+591-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:39:9-42:40
+592            android:name="com.facebook.internal.FacebookInitProvider"
+592-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:40:13-70
+593            android:authorities="ott.cineprime.FacebookInitProvider"
+593-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:41:13-72
+594            android:exported="false" />
+594-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:42:13-37
+595
+596        <receiver
+596-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:44:9-50:20
+597            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+597-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:45:13-86
+598            android:exported="false" >
+598-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:46:13-37
+599            <intent-filter>
+599-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:47:13-49:29
+600                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+600-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:48:17-95
+600-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:48:25-92
+601            </intent-filter>
+602        </receiver>
+603        <receiver
+603-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:51:9-58:20
+604            android:name="com.facebook.CampaignTrackingReceiver"
+604-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:52:13-65
+605            android:exported="true"
+605-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:53:13-36
+606            android:permission="android.permission.INSTALL_PACKAGES" >
+606-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:54:13-69
+607            <intent-filter>
+607-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:55:13-57:29
+608                <action android:name="com.android.vending.INSTALL_REFERRER" />
+608-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:56:17-79
+608-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\fdb97e66bc09d14f02c1db48250f0d1e\jetified-facebook-core-5.11.0\AndroidManifest.xml:56:25-76
+609            </intent-filter>
+610        </receiver>
+611
+612        <service
+612-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c391d4c05ba8006845e9384f7a71e9e2\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+613            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+613-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c391d4c05ba8006845e9384f7a71e9e2\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+614            android:exported="false" >
+614-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c391d4c05ba8006845e9384f7a71e9e2\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+615            <meta-data
+615-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c391d4c05ba8006845e9384f7a71e9e2\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+616                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+616-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c391d4c05ba8006845e9384f7a71e9e2\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+617                android:value="cct" />
+617-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c391d4c05ba8006845e9384f7a71e9e2\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+618        </service>
+619        <service
+619-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b1f4fb0b7ba8d7cebcb60bf4130fe76a\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+620            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+620-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b1f4fb0b7ba8d7cebcb60bf4130fe76a\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+621            android:exported="false"
+621-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b1f4fb0b7ba8d7cebcb60bf4130fe76a\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+622            android:permission="android.permission.BIND_JOB_SERVICE" >
+622-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b1f4fb0b7ba8d7cebcb60bf4130fe76a\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+623        </service>
+624
+625        <receiver
+625-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b1f4fb0b7ba8d7cebcb60bf4130fe76a\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+626            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+626-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b1f4fb0b7ba8d7cebcb60bf4130fe76a\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+627            android:exported="false" />
+627-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\b1f4fb0b7ba8d7cebcb60bf4130fe76a\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+628
+629        <provider
+629-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bfc45d5ec4e9cf575e05ca93599e2265\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+630            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+630-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bfc45d5ec4e9cf575e05ca93599e2265\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+631            android:authorities="ott.cineprime.lifecycle-process"
+631-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bfc45d5ec4e9cf575e05ca93599e2265\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+632            android:exported="false"
+632-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bfc45d5ec4e9cf575e05ca93599e2265\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+633            android:multiprocess="true" />
+633-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\bfc45d5ec4e9cf575e05ca93599e2265\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+634
+635        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+635-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:17:9-96
+635-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:17:19-93
+636        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+636-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:18:9-97
+636-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:18:19-94
+637        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+637-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:19:9-94
+637-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:19:19-91
+638        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+638-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:20:9-97
+638-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:20:19-94
+639        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+639-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:21:9-98
+639-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:21:19-95
+640
+641        <service
+641-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:23:9-25:40
+642            android:name="com.paypal.android.sdk.payments.PayPalService"
+642-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:24:13-73
+643            android:exported="false" />
+643-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b1fe769bea6a827b6a268069da0def7\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:25:13-37
+644
+645        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+645-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:12:9-16:20
+645-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:12:19-63
+646            <intent-filter>
+646-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:13:13-15:29
+647                <action android:name="rzp.device_token.share" />
+647-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:14:17-65
+647-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:14:25-62
+648            </intent-filter>
+649        </receiver>
+650
+651        <activity
+651-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:18:9-29:20
+652            android:name="com.razorpay.CheckoutActivity"
+652-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:19:13-57
+653            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+653-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:20:13-83
+654            android:theme="@style/CheckoutTheme" >
+654-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:21:13-49
+655            <intent-filter>
+655-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6afad954af62eae497d563fdb4439577\jetified-checkout-1.5.16\AndroidManifest.xml:22:13-28:29
+656                <action android:name="android.intent.action.MAIN" />
+656-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:29:17-69
+656-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:29:25-66
+657
+658                <data
+658-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:268:17-75
+659                    android:host="rzp.io"
+660                    android:scheme="io.rzp" />
+660-->C:\Users\win\AndroidStudioProjects\CinePrime\Cineprime\Code\app\src\main\AndroidManifest.xml:268:23-72
+661            </intent-filter>
+662        </activity>
+663    </application>
+664
+665</manifest>

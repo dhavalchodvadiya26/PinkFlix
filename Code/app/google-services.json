@@ -1,0 +1,243 @@
+{
+  "project_info": {
+    "project_number": "1045034651503",
+    "project_id": "cineprime-563f1",
+    "storage_bucket": "cineprime-563f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045034651503:android:22380d393b21f16baa229a",
+        "android_client_info": {
+          "package_name": "appegic.cineprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045034651503-5mook8r14rjae7h2pohr6do1n7js1hj5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "appegic.cineprime",
+            "certificate_hash": "93445149400d2edde244f38faaed64d7cee7bca2"
+          }
+        },
+        {
+          "client_id": "1045034651503-877r0kv0chfkjf1pttnot9cnlb0l8qdl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "appegic.cineprime",
+            "certificate_hash": "4f4c3abef14e45b88350e2db3c1a25f223dd5a7b"
+          }
+        },
+        {
+          "client_id": "1045034651503-nrbu6p2e40fr8ldfmfabmkl16dk74m2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_O98nDYHiuRapucRIh2cFigeT1rxIEyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045034651503-05vc0uh1jfq38sb80d1kj6mee4ah2e21.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1045034651503-gh3phulkmmdfe2aq5f4hhpik3gde8jm8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.CinePrime",
+                "app_store_id": "1561387750"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045034651503:android:f8b9b633be872bebaa229a",
+        "android_client_info": {
+          "package_name": "appegic.moviesy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045034651503-q624rsogfmhe287ihve1ks2bt6s7vlde.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "appegic.moviesy",
+            "certificate_hash": "93445149400d2edde244f38faaed64d7cee7bca2"
+          }
+        },
+        {
+          "client_id": "1045034651503-nrbu6p2e40fr8ldfmfabmkl16dk74m2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_O98nDYHiuRapucRIh2cFigeT1rxIEyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045034651503-05vc0uh1jfq38sb80d1kj6mee4ah2e21.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1045034651503-gh3phulkmmdfe2aq5f4hhpik3gde8jm8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.CinePrime",
+                "app_store_id": "1561387750"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045034651503:android:6f51e369b792ab0daa229a",
+        "android_client_info": {
+          "package_name": "com.appegic.cineprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045034651503-iuednbnd7qr31rcplqdahlrhj419m8s4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appegic.cineprime",
+            "certificate_hash": "93445149400d2edde244f38faaed64d7cee7bca2"
+          }
+        },
+        {
+          "client_id": "1045034651503-nrbu6p2e40fr8ldfmfabmkl16dk74m2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_O98nDYHiuRapucRIh2cFigeT1rxIEyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045034651503-05vc0uh1jfq38sb80d1kj6mee4ah2e21.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1045034651503-gh3phulkmmdfe2aq5f4hhpik3gde8jm8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.CinePrime",
+                "app_store_id": "1561387750"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045034651503:android:3e5208d95a98e5b0aa229a",
+        "android_client_info": {
+          "package_name": "com.appegic.cprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045034651503-1v4c2qi044ne2483r1ndg4r6uo60ub6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appegic.cprime",
+            "certificate_hash": "93445149400d2edde244f38faaed64d7cee7bca2"
+          }
+        },
+        {
+          "client_id": "1045034651503-nrbu6p2e40fr8ldfmfabmkl16dk74m2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_O98nDYHiuRapucRIh2cFigeT1rxIEyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045034651503-05vc0uh1jfq38sb80d1kj6mee4ah2e21.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1045034651503-gh3phulkmmdfe2aq5f4hhpik3gde8jm8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.CinePrime",
+                "app_store_id": "1561387750"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045034651503:android:ce9dd103752842f6aa229a",
+        "android_client_info": {
+          "package_name": "ott.cineprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045034651503-l3l13jaloi3dnv90v23rsp2feh0tturc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ott.cineprime",
+            "certificate_hash": "93445149400d2edde244f38faaed64d7cee7bca2"
+          }
+        },
+        {
+          "client_id": "1045034651503-nrbu6p2e40fr8ldfmfabmkl16dk74m2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_O98nDYHiuRapucRIh2cFigeT1rxIEyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045034651503-05vc0uh1jfq38sb80d1kj6mee4ah2e21.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1045034651503-gh3phulkmmdfe2aq5f4hhpik3gde8jm8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.CinePrime",
+                "app_store_id": "1561387750"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

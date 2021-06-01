@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#343434</color>
+    <color name="colorPrimaryDark">#2a2a2a</color>
+    <color name="colorAccent">#fd8c00</color>
+
+    <color name="highlight">#fd8c00</color>
+    <!--    <color name="bg">#191919</color>-->
+    <color name="bg">#000000</color>
+    <color name="bg_home">#232323</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="text">#f4f4f4</color>
+    <color name="text_sub">#9c9c9c</color>
+
+    <color name="home_header_text">#cdcdcd</color>
+    <color name="tab_select">#ffad01</color>
+    <color name="transparent">#00000000</color>
+
+    <!--Navigation Drawer -->
+    <color name="navigation_default">#ffffff</color>
+    <color name="navigation_checked">#ff0532</color>
+
+    <!--forgot password-->
+    <color name="view_login">#aaaaaa</color>
+    <color name="gray">#9c9c9c</color>
+    <color name="gray_line">#9c9c9c</color>
+
+    <!--privacy policy & about us & setting-->
+    <color name="about_us_Text">#424242</color>
+    <color name="about_us_SubText">#767676</color>
+    <color name="setting_text">#f4f4f4</color>
+    <color name="setting_divider">#292b30</color>
+
+    <!-- profile -->
+    <color name="profile_text">#9c9c9c</color>
+    <color name="profile_sub_text">#f4f4f4</color>
+    <color name="profile_divider">#343434</color>
+
+    <!--Genre and Language -->
+    <color name="genre_view_bg">#80000000</color>
+    <color name="genre_view_select_bg">#99fd8c00</color>
+
+    <!-- Subscription -->
+    <color name="sub_select_bg">#ececec</color>
+    <color name="sub_normal_bg">#4c4c4c</color>
+    <color name="sub_price_select">#424242</color>
+    <color name="sub_price_normal">#ebebeb</color>
+    <color name="sub_pack_select">#686868</color>
+    <color name="sub_pack_normal">#cacaca</color>
+    <color name="sub_divider">#827e7f</color>
+
+    <!--Language -->
+    <color name="language_bg">#575757</color>
+    <color name="filter_divider">#edeff2</color>
+
+    <!--season -->
+    <color name="season_bg">#343434</color>
+    <color name="card_background">#f0efed</color>
+    <color name="bg_cat_premium_color">#061046</color>
+
+    <!-- Gredient Application Color -->
+    <color name="app_start_gredeint">#ffffff</color>
+    <color name="app_end_gredeint">#ffffff</color>
+
+    <color name="app_start_gredeint_bg">#457fca</color>
+    <color name="app_end_gredeint_bg">#5691c8</color>
+
+    <!-- Gredient Application Color Test-->
+    <color name="app_start_gredeint_test">#f46b45</color>
+    <color name="app_end_gredeint_test">#eea849</color>
+    <!-- Dialog colors-->
+    <color name="pdlg_color_white">#eeeeee</color>
+    <color name="pdlg_color_green">#ef5350</color>
+    <color name="pdlg_color_red">#d50000</color>
+    <color name="pdlg_color_blue">#1976D2</color>
+    <color name="pdlg_color_black">#212121</color>
+    <color name="pdlg_color_yellow">#FFEB3B</color>
+    <color name="pdlg_color_gray">#9E9E9E</color>
+</resources>

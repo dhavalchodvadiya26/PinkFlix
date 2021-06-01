@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Navegar para cima"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Mais opções"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Concluído"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Ver tudo"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Selecionar um app"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"DESATIVADO"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ATIVADO"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"espaço"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Pesquisar…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Limpar consulta"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Consulta de pesquisa"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Pesquisar"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string name="acc_label_card_number">Número do cartão</string>
+    <string name="acc_label_card_number_node">%s, Número do cartão</string>
+    <string name="acc_label_cvc_node">%s, CVC</string>
+    <string name="acc_label_expiry_date">Data de validade</string>
+    <string name="acc_label_expiry_date_node">%s, Data de validade</string>
+    <string name="acc_label_zip">Código postal</string>
+    <string name="acc_label_zip_short">CEP</string>
+    <string name="add_card">Adicione um novo cartão de débito ou cartão de crédito para fazer compras neste app.</string>
+    <string name="address_city_required">Digite o nome da sua cidade</string>
+    <string name="address_county_required">Digite o nome do seu município</string>
+    <string name="address_label_address">Endereço</string>
+    <string name="address_label_address_line1">Linha de endereço 1</string>
+    <string name="address_label_address_line1_optional">Linha de endereço 1 (opcional)</string>
+    <string name="address_label_address_line2">Linha de endereço 2</string>
+    <string name="address_label_address_line2_optional">Linha de endereço 2 (opcional)</string>
+    <string name="address_label_address_optional">Endereço (opcional) </string>
+    <string name="address_label_apt">Ap.</string>
+    <string name="address_label_apt_optional">Ap. (opcional)</string>
+    <string name="address_label_city">Cidade</string>
+    <string name="address_label_city_optional">Cidade (opcional)</string>
+    <string name="address_label_country">País</string>
+    <string name="address_label_county">Município</string>
+    <string name="address_label_county_optional">Município (opcional)</string>
+    <string name="address_label_name">Nome</string>
+    <string name="address_label_name_optional">Nome (opcional)</string>
+    <string name="address_label_phone_number">Número de telefone</string>
+    <string name="address_label_phone_number_optional">Número de telefone (opcional)</string>
+    <string name="address_label_postal_code">Código postal</string>
+    <string name="address_label_postal_code_optional">Código postal (opcional)</string>
+    <string name="address_label_postcode">Código postal</string>
+    <string name="address_label_postcode_optional">Código postal (opcional)</string>
+    <string name="address_label_province">Província</string>
+    <string name="address_label_province_optional">Província (opcional)</string>
+    <string name="address_label_region_generic">Estado / Província / Região</string>
+    <string name="address_label_region_generic_optional">Estado / Província / Região (opcional)</string>
+    <string name="address_label_state">Estado</string>
+    <string name="address_label_state_optional">Estado (opcional)</string>
+    <string name="address_label_zip_code">Código postal</string>
+    <string name="address_label_zip_code_optional">Código postal (opcional)</string>
+    <string name="address_label_zip_postal_code">CEP / Código postal</string>
+    <string name="address_label_zip_postal_code_optional">CEP / Código postal (opcional)</string>
+    <string name="address_name_required">Digite seu nome</string>
+    <string name="address_phone_number_required">Digite seu número de telefone</string>
+    <string name="address_postal_code_invalid">Seu código postal é inválido</string>
+    <string name="address_postcode_invalid">Seu código postal é inválido</string>
+    <string name="address_province_required">Digite o nome da sua província</string>
+    <string name="address_region_generic_required">Digite o nome do seu Estado / Província / Região</string>
+    <string name="address_required">Digite seu endereço</string>
+    <string name="address_shipping_address">Endereço de entrega</string>
+    <string name="address_state_required">Digite o nome do seu estado</string>
+    <string name="address_zip_invalid">Seu CEP é inválido.</string>
+    <string name="address_zip_postal_invalid">Seu CEP/Código postal é inválido</string>
+    <string name="close">Fechar</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">Acesse &lt;b>facebook.com/device&lt;/b> e insira o código mostrado acima.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">Erro inesperado ao baixar uma imagem.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">O login do WebView exige permissão da INTERNET</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">Erro AndroidManifest</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">Curtiu</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">Curtir</string>
+    <string gender="unknown" name="com_facebook_loading">Carregando...</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">Cancelar</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">Entrar</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Continuar com o Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Entrar com o Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">Sair</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">Sair</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">Conectado como: %1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Conectado usando o Facebook</string>
+    <string gender="unknown" name="com_facebook_send_button_text">Enviar</string>
+    <string gender="unknown" name="com_facebook_share_button_text">Compartilhar</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">Para conectar sua conta, abra o aplicativo do Facebook no seu dispositivo móvel e verifique se há notificações.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- OU -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">Não é você?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">Continuar como %1$s</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">Confirmar login</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">Você está no controle — escolha quais informações você quer compartilhar com os aplicativos.</string>
+    <string name="ending_in">%1$s terminado em %2$s</string>
+    <string name="exo_controls_fastforward_description">Avançar</string>
+    <string name="exo_controls_fullscreen_description">Modo de tela cheia</string>
+    <string name="exo_controls_hide">Ocultar controles do player</string>
+    <string name="exo_controls_next_description">Próxima faixa</string>
+    <string name="exo_controls_pause_description">Pausar</string>
+    <string name="exo_controls_play_description">Reproduzir</string>
+    <string name="exo_controls_previous_description">Faixa anterior</string>
+    <string name="exo_controls_repeat_all_description">Repetir tudo</string>
+    <string name="exo_controls_repeat_off_description">Não repetir</string>
+    <string name="exo_controls_repeat_one_description">Repetir uma</string>
+    <string name="exo_controls_rewind_description">Retroceder</string>
+    <string name="exo_controls_show">Mostrar controles do player</string>
+    <string name="exo_controls_shuffle_off_description">Ordem aleatória desativada</string>
+    <string name="exo_controls_shuffle_on_description">Ordem aleatória ativada</string>
+    <string name="exo_controls_stop_description">Parar</string>
+    <string name="exo_controls_vr_description">Modo RV</string>
+    <string name="exo_download_completed">Download concluído</string>
+    <string name="exo_download_description">Fazer o download</string>
+    <string name="exo_download_downloading">Fazendo o download</string>
+    <string name="exo_download_failed">Falha no download</string>
+    <string name="exo_download_notification_channel_name">Downloads</string>
+    <string name="exo_download_removing">Removendo downloads</string>
+    <string name="exo_item_list">%1$s, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mbps</string>
+    <string name="exo_track_mono">Mono</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_role_alternate">Alternativa</string>
+    <string name="exo_track_role_closed_captions">CC</string>
+    <string name="exo_track_role_commentary">Comentários</string>
+    <string name="exo_track_role_supplementary">Complementar</string>
+    <string name="exo_track_selection_auto">Automática</string>
+    <string name="exo_track_selection_none">Nenhuma</string>
+    <string name="exo_track_selection_title_audio">Áudio</string>
+    <string name="exo_track_selection_title_text">Texto</string>
+    <string name="exo_track_selection_title_video">Vídeo</string>
+    <string name="exo_track_stereo">Estéreo</string>
+    <string name="exo_track_surround">Sistema surround</string>
+    <string name="exo_track_surround_5_point_1">Sistema surround 5.1</string>
+    <string name="exo_track_surround_7_point_1">Sistema surround 7.1</string>
+    <string name="exo_track_unknown">Desconhecido</string>
+    <string name="expiry_date_hint">MM/AA</string>
+    <string name="expiry_label_short">Validade</string>
+    <string name="invalid_card_number">O número do seu cartão é inválido.</string>
+    <string name="invalid_cvc">O código de segurança do seu cartão é inválido.</string>
+    <string name="invalid_expiry_month">O mês de validade do seu cartão é inválido.</string>
+    <string name="invalid_expiry_year">O ano de validade do seu cartão é inválido.</string>
+    <string name="invalid_shipping_information">Endereço de entrega inválido</string>
+    <string name="invalid_zip">Seu código postal está incompleto.</string>
+    <string msgid="1685185767093348095" name="mr_button_content_description">"Botão \"Transmitir\""</string>
+    <string msgid="1350095112462806159" name="mr_cast_button_connected">"Botão \"Transmitir\". Conectado"</string>
+    <string msgid="8959304318293841992" name="mr_cast_button_connecting">"Botão \"Transmitir\". Conectando"</string>
+    <string msgid="5501231066847739632" name="mr_cast_button_disconnected">"Botão \"Transmitir\". Desconectado"</string>
+    <string msgid="5504553798429329689" name="mr_chooser_searching">"Localizando dispositivos"</string>
+    <string msgid="7548226170787476564" name="mr_chooser_title">"Transmitir para"</string>
+    <string msgid="5813284753012893250" name="mr_controller_album_art">"Arte do álbum"</string>
+    <string msgid="5286734709674025661" name="mr_controller_casting_screen">"Transmitindo tela"</string>
+    <string msgid="5468775621814500662" name="mr_controller_close_description">"Fechar"</string>
+    <string msgid="5518911192681928413" name="mr_controller_collapse_group">"Recolher"</string>
+    <string msgid="1370654436555555647" name="mr_controller_disconnect">"Desconectar"</string>
+    <string msgid="2422682304043876468" name="mr_controller_expand_group">"Expandir"</string>
+    <string msgid="7299368841849988218" name="mr_controller_no_info_available">"Nenhuma informação disponível"</string>
+    <string msgid="4342878516155861006" name="mr_controller_no_media_selected">"Nenhuma mídia selecionada"</string>
+    <string msgid="4701315813294065305" name="mr_controller_pause">"Pausar"</string>
+    <string msgid="4443315438268112801" name="mr_controller_play">"Reproduzir"</string>
+    <string msgid="5106056093749454009" name="mr_controller_stop">"Parar"</string>
+    <string msgid="7617024847862349259" name="mr_controller_stop_casting">"Parar transmissão"</string>
+    <string msgid="691656961160498512" name="mr_controller_volume_slider">"Controle deslizante de volume"</string>
+    <string msgid="3117964881088969586" name="mr_system_route_name">"Sistema"</string>
+    <string msgid="8236416097133080726" name="mr_user_route_category_name">"Dispositivos"</string>
+    <string name="no_payment_methods">Nenhuma forma de pagamento.</string>
+    <string name="payment_method_add_new_card">Adicionar novo cartão…</string>
+    <string name="price_free">Grátis</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Pesquisar"</string>
+    <string name="secure_checkout">Finalização de compra segura</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="title_add_a_card">Adicionar um cartão</string>
+    <string name="title_add_an_address">Adicionar um endereço</string>
+    <string name="title_payment_method">Forma de pagamento</string>
+    <string name="title_select_shipping_method">Selecione forma de envio</string>
+</resources>
