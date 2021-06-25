@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         app:title="Movies"
         android:id="@+id/toolbar_more"
-        app:titleTextColor="@color/white"/>
+        app:titleTextColor="@color/colorAccent"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

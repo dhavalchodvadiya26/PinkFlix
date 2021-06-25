@@ -3,8 +3,7 @@
     <item android:width="@dimen/space_15"
         android:height="@dimen/space_15">
 
-        <bitmap android:src="@drawable/search"
-            android:tint="@color/white" />
+        <bitmap android:src="@drawable/search" />
 
     </item>
 </layer-list>

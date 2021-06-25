@@ -37,7 +37,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/space_30"
             android:text="How can we Help you?"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:textSize="20sp" />
 
 
@@ -52,7 +52,7 @@
             android:gravity="center"
             android:justificationMode="inter_word"
             android:text="@string/help_msg"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/font_16" />
 
             <RelativeLayout
@@ -81,9 +81,9 @@
                     android:layout_below="@id/img_call"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="@dimen/space_10"
-                    android:text="Call us"
+                    android:text="Contact us"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp" />
 
                 <TextView
@@ -93,8 +93,8 @@
                     android:layout_below="@id/t3"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="@dimen/space_5"
-                    android:text="+91 9372825730"
-                    android:textColor="@color/white"
+                    android:text="+91 8356967009"
+                    android:textColor="@color/colorAccent"
                     android:textSize="11sp" />
 
             </RelativeLayout>
@@ -127,7 +127,7 @@
                     android:layout_marginTop="@dimen/space_10"
                     android:text="Email us"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="@dimen/font_16" />
 
                 <TextView
@@ -137,8 +137,8 @@
                     android:layout_below="@id/t5"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="@dimen/space_5"
-                    android:text="admin@cineprime.app"
-                    android:textColor="@color/white"
+                    android:text="contact@sanskrati.in"
+                    android:textColor="@color/colorAccent"
                     android:textSize="11sp" />
 
             </RelativeLayout>

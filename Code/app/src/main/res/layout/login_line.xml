@@ -8,17 +8,17 @@
     <View
         android:layout_width="1dp"
         android:layout_height="5dp"
-        android:background="@color/white" />
+        android:background="@color/colorAccent" />
 
     <View
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_weight="1"
-        android:background="@color/white" />
+        android:background="@color/colorAccent" />
 
     <View
         android:layout_width="1dp"
         android:layout_height="5dp"
-        android:background="@color/white" />
+        android:background="@color/colorAccent" />
 
 </LinearLayout>

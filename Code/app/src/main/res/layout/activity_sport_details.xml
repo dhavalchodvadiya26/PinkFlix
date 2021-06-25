@@ -44,14 +44,14 @@
             android:layout_height="80dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_no_item"
-            android:tint="@color/white" />
+            android:tint="@color/colorAccent" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_item_found"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
     <RelativeLayout
@@ -164,7 +164,7 @@
                         android:paddingLeft="20dp"
                         android:paddingRight="20dp"
                         android:text="@string/download"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp" />
 
                     <WebView

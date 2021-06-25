@@ -28,8 +28,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/watchlist_white"
-            android:tint="@color/white" />
+            android:src="@drawable/watchlist_white" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,7 +36,7 @@
             android:text="@string/no_item_found"
             android:layout_marginTop="@dimen/space_20"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

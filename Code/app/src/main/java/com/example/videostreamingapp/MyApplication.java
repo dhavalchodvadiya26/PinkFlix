@@ -58,7 +58,7 @@ public class MyApplication extends Application {
     public String prefName = "VideoStreamingApp";
     private DownloadManager downloadManager;
     private DownloadTracker downloadTracker;
-    private static final String TAG = "Cineprime";
+    private static final String TAG = "PinkFlix";
     private DatabaseProvider databaseProvider;
     private File downloadDirectory;
     protected String userAgent;
@@ -83,7 +83,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        userAgent = Util.getUserAgent(this, "Cine Prime");
+        userAgent = Util.getUserAgent(this, "PinkFlix");
         itemMovie=new ItemMovie();
 //        ViewPump.init(ViewPump.builder()
 //                .addInterceptor(new CalligraphyInterceptor(
@@ -101,7 +101,7 @@ public class MyApplication extends Application {
                 .init();
         Remember.init(getApplicationContext(), getString(R.string.app_name));
         mInstance = this;
-        setupActivityListener();
+//        setupActivityListener();
 
     }
 
@@ -109,31 +109,31 @@ public class MyApplication extends Application {
         return mInstance;
     }
 
-    private void setupActivityListener() {
-        registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
-            @Override
-            public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-                activity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);            }
-            @Override
-            public void onActivityStarted(Activity activity) {
-            }
-            @Override
-            public void onActivityResumed(Activity activity) {
-            }
-            @Override
-            public void onActivityPaused(Activity activity) {
-            }
-            @Override
-            public void onActivityStopped(Activity activity) {
-            }
-            @Override
-            public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
-            }
-            @Override
-            public void onActivityDestroyed(Activity activity) {
-            }
-        });
-    }
+//    private void setupActivityListener() {
+//        registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
+//            @Override
+//            public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
+//                activity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);            }
+//            @Override
+//            public void onActivityStarted(Activity activity) {
+//            }
+//            @Override
+//            public void onActivityResumed(Activity activity) {
+//            }
+//            @Override
+//            public void onActivityPaused(Activity activity) {
+//            }
+//            @Override
+//            public void onActivityStopped(Activity activity) {
+//            }
+//            @Override
+//            public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
+//            }
+//            @Override
+//            public void onActivityDestroyed(Activity activity) {
+//            }
+//        });
+//    }
 
     public void saveIsLogin(boolean flag) {
         preferences = this.getSharedPreferences(prefName, 0);

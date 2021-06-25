@@ -30,14 +30,14 @@
             android:layout_height="80dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_no_item"
-            android:tint="@color/white" />
+            android:tint="@color/colorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_item_found"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 
 
@@ -64,6 +64,7 @@
                     android:layout_height="40dp"
                     android:contentDescription="@string/app_name"
                     android:padding="@dimen/space_10"
+                    android:tint="@color/colorAccent"
                     android:src="@drawable/ic_back" />
 
                 <TextView
@@ -74,7 +75,7 @@
                     android:layout_gravity="center"
                     android:gravity="start"
                     android:text="@string/subscription_plan"
-                    android:textColor="@color/white"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />
@@ -101,7 +102,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:text="@string/select_subscription_plan"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16sp" />
 
 
@@ -151,7 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/subscription_proceed"
-            android:textColor="@color/white"
+            android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
 
 

@@ -58,7 +58,7 @@
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
             android:text="@string/subscribe_now"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
     </LinearLayout>
 

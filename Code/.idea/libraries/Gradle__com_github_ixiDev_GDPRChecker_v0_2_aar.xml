@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.ixiDev:GDPRChecker:v0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/43f5c4ec01c57047eac295b281fe1540/jetified-GDPRChecker-v0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/43f5c4ec01c57047eac295b281fe1540/jetified-GDPRChecker-v0.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/43f5c4ec01c57047eac295b281fe1540/jetified-GDPRChecker-v0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbef3c3c4d904f7292a6e6e67e2f2447/jetified-GDPRChecker-v0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbef3c3c4d904f7292a6e6e67e2f2447/jetified-GDPRChecker-v0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fbef3c3c4d904f7292a6e6e67e2f2447/jetified-GDPRChecker-v0.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

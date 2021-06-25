@@ -1,9 +1,11 @@
 package com.example.videostreamingapp;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.text.method.PasswordTransformationMethod;
@@ -72,7 +74,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     TextView btnForgotPass, btnRegister;
     MyApplication myApplication;
     ProgressDialog pDialog;
-    SmoothCheckBox checkBox;
+    SmoothCheckBox checkBox,checkBox2;
     boolean isFromOtherScreen = false;
     String postId, postType;
     ImageView btnFacebook, btnGoogle;
@@ -117,6 +119,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         btnForgotPass = findViewById(R.id.textView_forget_password_login);
         btnRegister = findViewById(R.id.textView_signup_login);
         checkBox = findViewById(R.id.checkbox_login_activity);
+        checkBox2 = findViewById(R.id.checkbox_login_age);
         btnFacebook = findViewById(R.id.button_fb_login);
         btnGoogle = findViewById(R.id.button_google_login);
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -146,14 +149,20 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
 
         btnLogin.setOnClickListener(v ->
         {
-            if (!TextUtils.isEmpty(edtEmail.getText().toString().trim()))
-                if (!TextUtils.isEmpty(edtPassword.getText().toString().trim()))
-                    putSignIn();
-                else
+            if (!TextUtils.isEmpty(edtEmail.getText().toString().trim())) {
+                if (!TextUtils.isEmpty(edtPassword.getText().toString().trim())) {
+                    if (checkBox2.isChecked()) {
+                        putSignIn();
+                        showProgressDialog();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Please Verify Your Age", Toast.LENGTH_LONG).show();
+                    }
+                } else {
                     Toast.makeText(getApplicationContext(), "Please Enter Password", Toast.LENGTH_LONG).show();
-            else
+                }
+            }else{
                 Toast.makeText(getApplicationContext(), "Please Enter Mobile Number", Toast.LENGTH_LONG).show();
-            showProgressDialog();
+            }
         });
         imgShowPassword = findViewById(R.id.imgShowPassword);
         imgShowPassword.setOnClickListener(v -> {
@@ -335,7 +344,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
         System.out.println("callGoogleAPI => googleID => " + googleId);
         params.put("name", strName);
-        params.put("phone", email);
+        params.put("email", email);
         params.put("is_facebook", googleId);
         params.put("s_type", "google");
 
@@ -398,6 +407,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         });
     }
 
+    @SuppressLint("HardwareIds")
     public void putSignIn() {
         strEmail = edtEmail.getText().toString();
         strPassword = edtPassword.getText().toString();
@@ -415,6 +425,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
         jsObj.addProperty("email", strEmail);
         jsObj.addProperty("password", strPassword);
+        jsObj.addProperty("imei_number", Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID));
         params.put("data", API.toBase64(jsObj.toString()));
 
         client.post(Constant.LOGIN_URL, params, new AsyncHttpResponseHandler() {
@@ -431,6 +442,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                 try {
                     JSONObject mainJson = new JSONObject(result);
                     JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+                    System.out.println("LoginActivity ==> mainJson ==> "+jsonArray);
                     JSONObject objJson;
                     for (int i = 0; i < jsonArray.length(); i++) {
                         objJson = jsonArray.getJSONObject(i);
@@ -442,7 +454,6 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                             strUserId = objJson.getString(Constant.USER_ID);
                         }
                     }
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -456,6 +467,65 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
 
         });
     }
+
+//    public void putSignIn() {
+//        strEmail = edtEmail.getText().toString();
+//        strPassword = edtPassword.getText().toString();
+//
+//        if (checkBox.isChecked()) {
+//            myApplication.saveIsRemember(true);
+//            myApplication.saveRemember(strEmail, strPassword);
+//        } else {
+//            myApplication.saveIsRemember(false);
+//        }
+//
+//        AsyncHttpClient client = new AsyncHttpClient();
+//        RequestParams params = new RequestParams();
+//
+//        JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
+//        jsObj.addProperty("email", strEmail);
+//        jsObj.addProperty("password", strPassword);
+//        params.put("data", API.toBase64(jsObj.toString()));
+//
+//        client.post(Constant.LOGIN_URL, params, new AsyncHttpResponseHandler() {
+//
+//            @Override
+//            public void onStart() {
+//                super.onStart();
+//            }
+//
+//            @Override
+//            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+//                dismissProgressDialog();
+//                String result = new String(responseBody);
+//                try {
+//                    JSONObject mainJson = new JSONObject(result);
+//                    JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+//                    JSONObject objJson;
+//                    for (int i = 0; i < jsonArray.length(); i++) {
+//                        objJson = jsonArray.getJSONObject(i);
+//                        Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
+//                        if (Constant.GET_SUCCESS_MSG == 0) {
+//                            strMessage = objJson.getString(Constant.MSG);
+//                        } else {
+//                            strName = objJson.getString(Constant.USER_NAME);
+//                            strUserId = objJson.getString(Constant.USER_ID);
+//                        }
+//                    }
+//
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//                setResult();
+//            }
+//
+//            @Override
+//            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+//                dismissProgressDialog();
+//            }
+//
+//        });
+//    }
 
     public void setResult() {
 

@@ -12,7 +12,7 @@
         android:gravity="center_vertical"
         android:layout_marginStart="@dimen/space_30"
         android:textSize="20sp"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         android:id="@+id/upcoming_text"
         tools:ignore="MissingPrefix" />
 
@@ -48,8 +48,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/upcoming_white"
-            android:tint="@color/white" />
+            android:src="@drawable/upcoming_white" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,7 +56,7 @@
             android:layout_marginTop="@dimen/space_20"
             android:text="@string/no_item_found"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
 

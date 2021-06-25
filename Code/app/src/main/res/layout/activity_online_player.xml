@@ -42,14 +42,14 @@
             android:layout_height="80dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_no_item"
-            android:tint="@color/white" />
+            android:tint="@color/colorAccent" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_item_found"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
     <RelativeLayout
@@ -75,6 +75,7 @@
             android:layout_marginTop="10dp"
             android:contentDescription="@null"
             android:padding="10dp"
+            android:tint="@color/colorPrimary"
             android:src="@drawable/ic_back" />
 
         <androidx.core.widget.NestedScrollView
@@ -100,13 +101,12 @@
                     <com.example.util.GradientTextView
                         android:id="@+id/textTitle"
                         fontPath="fonts/customSemiBold.otf"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ellipsize="marquee"
                         android:marqueeRepeatLimit="marquee_forever"
                         android:singleLine="true"
                         android:text="@string/app_name"
-                        android:textColor="@color/colorAccent"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         app:gt_color_list="@array/gradient"
@@ -130,7 +130,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=" | "
-                            android:textColor="@color/white" />
+                            android:textColor="@color/colorAccent" />
 
 
                         <TextView
@@ -219,7 +219,7 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:text="@string/donate"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="12sp"
                             android:visibility="gone" />
 
@@ -238,7 +238,7 @@
                             android:layout_marginTop="5dp"
                             android:includeFontPadding="false"
                             android:text="Expire in :"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="18sp"
                             android:visibility="gone"
                             app:gt_color_list="@array/gradient"
@@ -251,7 +251,7 @@
                             android:layout_marginTop="5dp"
                             android:includeFontPadding="false"
                             android:text="@string/str_rental"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="18sp"
                             android:visibility="gone"
                             app:gt_color_list="@array/gradient"
@@ -268,7 +268,7 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:text="@string/str_rental"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="12sp"
                             android:visibility="gone" />
 
@@ -287,7 +287,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -317,8 +317,7 @@
                             android:layout_weight="1"
                             android:contentDescription="@null"
                             android:padding="@dimen/space_10"
-                            android:src="@drawable/ic_tick"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_tick"/>
 
                         <ImageView
                             android:id="@+id/btnWatchListselect2"
@@ -328,7 +327,6 @@
                             android:contentDescription="@null"
                             android:padding="@dimen/space_10"
                             android:src="@drawable/ic_plus"
-                            android:tint="@color/white"
                             android:visibility="gone" />
 
                         <TextView
@@ -339,8 +337,8 @@
                             android:layout_weight="1"
                             android:gravity="center"
                             android:text="WatchList"
+                            android:textColor="@color/colorAccent"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
                             android:textSize="12sp" />
 
                     </LinearLayout>
@@ -362,8 +360,7 @@
                             android:layout_weight="1"
                             android:contentDescription="@null"
                             android:padding="10dp"
-                            android:src="@drawable/ic_download_video"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_download" />
 
                         <TextView
                             android:id="@+id/tv_download_state"
@@ -373,7 +370,7 @@
                             android:layout_weight="1"
                             android:gravity="center"
                             android:text="Download"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="12sp" />
 
 
@@ -397,8 +394,7 @@
                             android:layout_weight="1"
                             android:contentDescription="@null"
                             android:padding="10dp"
-                            android:src="@drawable/ic_share"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_share"/>
 
                         <TextView
                             android:id="@+id/txtShare1"
@@ -408,8 +404,8 @@
                             android:layout_weight="1"
                             android:gravity="center"
                             android:text="Share"
+                            android:textColor="@color/colorAccent"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
                             android:textSize="12sp" />
 
 
@@ -433,8 +429,7 @@
                             android:layout_weight="1"
                             android:contentDescription="@null"
                             android:padding="10dp"
-                            android:src="@drawable/like"
-                            android:tint="@color/white" />
+                            android:src="@drawable/like" />
 
                         <TextView
                             android:id="@+id/txtLike1"
@@ -445,7 +440,7 @@
                             android:gravity="center"
                             android:text="Like"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="12sp" />
 
 
@@ -471,7 +466,7 @@
                             android:contentDescription="@null"
                             android:padding="10dp"
                             android:src="@drawable/dislike"
-                            android:tint="@color/white"
+                            android:tint="@color/colorAccent"
                             android:visibility="gone" />
 
                         <TextView
@@ -483,7 +478,7 @@
                             android:gravity="center"
                             android:text="DisLike"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="12sp" />
 
 
@@ -543,8 +538,7 @@
                                 android:layout_marginStart="@dimen/space_5"
                                 android:contentDescription="@null"
                                 android:paddingBottom="8dp"
-                                android:src="@drawable/ic_play"
-                                android:tint="@color/white" />
+                                android:src="@drawable/ic_play" />
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
 

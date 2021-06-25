@@ -38,7 +38,7 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="center"
                         android:text="You need a Premium Membership to \n watch this video"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="18sp"
                         android:visibility="gone" />
 
@@ -51,7 +51,7 @@
                         android:paddingLeft="25dp"
                         android:paddingRight="25dp"
                         android:text="@string/try_again"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:visibility="gone" />
 
                     <LinearLayout
@@ -69,8 +69,7 @@
                             android:layout_weight="0.7"
                             android:contentDescription="@null"
                             android:padding="@dimen/space_20"
-                            android:src="@drawable/ic_backward"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_backward"/>
 
                         <ImageView
                             android:id="@+id/btn_play"
@@ -80,8 +79,7 @@
                             android:layout_weight="0.8"
                             android:contentDescription="@null"
                             android:padding="@dimen/space_20"
-                            android:src="@drawable/ic_play_player"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_play_player" />
 
                         <ImageView
                             android:id="@+id/btn_pause"
@@ -92,7 +90,6 @@
                             android:contentDescription="@null"
                             android:padding="@dimen/space_20"
                             android:src="@drawable/ic_pause"
-                            android:tint="@color/white"
                             android:visibility="gone" />
 
                         <ImageView
@@ -103,8 +100,7 @@
                             android:layout_weight="0.7"
                             android:contentDescription="@null"
                             android:padding="@dimen/space_20"
-                            android:src="@drawable/ic_forward"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_forward" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -122,7 +118,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Watch Now"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="@dimen/font_16" />
 
                     <TextView
@@ -130,7 +126,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text=""
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="@dimen/font_16" />
 
                     <TextView
@@ -139,7 +135,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/txtMovieTitle"
                         android:text=""
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="10sp" />
 
                     <TextView
@@ -148,7 +144,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="Expire in"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="16sp"
                         android:visibility="gone" />
 
@@ -161,7 +157,7 @@
                         android:layout_alignStart="@id/txtExpire"
                         android:layout_alignParentEnd="true"
                         android:text=""
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp" />
                 </RelativeLayout>
 
@@ -176,8 +172,7 @@
                     android:contentDescription="@null"
                     android:padding="@dimen/space_5"
                     android:visibility="gone"
-                    android:src="@drawable/ic_zoom"
-                    android:tint="@color/white"/>
+                    android:src="@drawable/ic_zoom"/>
 
             </RelativeLayout>
         </com.google.android.exoplayer2.ui.PlayerView>
@@ -212,7 +207,7 @@
                 android:layout_height="@dimen/space_40"
                 android:contentDescription="@string/app_name"
                 android:padding="@dimen/space_10"
-                android:src="@drawable/ic_play_setting" />
+                android:src="@drawable/ic_more_seeting" />
     </RelativeLayout>
 
     <RelativeLayout

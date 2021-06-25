@@ -27,7 +27,7 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/logo"
+                    android:src="@drawable/img_splash"
                     android:layout_marginBottom="@dimen/space_30"
                     android:layout_gravity="center_horizontal"/>
 
@@ -45,8 +45,7 @@
                         android:contentDescription="@string/app_name"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:src="@drawable/ic_user"
-                        android:tint="@color/white" />
+                        android:src="@drawable/ic_user"/>
 
                     <EditText
                         android:id="@+id/editText_name_register"
@@ -59,8 +58,8 @@
                         android:hint="@string/name_login"
                         android:inputType="text"
                         android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
                         android:textCursorDrawable="@drawable/cursor"
                         android:textSize="16sp" />
 
@@ -84,8 +83,7 @@
                         android:contentDescription="@string/app_name"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:src="@drawable/ic_phone_login"
-                        android:tint="@color/white" />
+                        android:src="@drawable/ic_phone_login" />
 
                     <EditText
                         android:id="@+id/edtCountry"
@@ -100,8 +98,8 @@
                         android:maxLength="14"
                         android:singleLine="true"
                         android:text="+91"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
                         android:textCursorDrawable="@drawable/cursor"
                         android:textSize="16sp" />
 
@@ -117,8 +115,8 @@
                         android:inputType="number"
                         android:maxLength="14"
                         android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
                         android:textCursorDrawable="@drawable/cursor"
                         android:textSize="16sp" />
 
@@ -142,8 +140,7 @@
                         android:contentDescription="@string/app_name"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:src="@drawable/ic_password"
-                        android:tint="@color/white" />
+                        android:src="@drawable/ic_password" />
 
                     <EditText
                         android:id="@+id/editText_password_register"
@@ -156,8 +153,8 @@
                         android:hint="@string/password_login"
                         android:inputType="textPassword"
                         android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
                         android:textCursorDrawable="@drawable/cursor"
                         android:textSize="16sp" />
 
@@ -182,8 +179,7 @@
                         android:contentDescription="@string/app_name"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:src="@drawable/ic_password"
-                        android:tint="@color/white" />
+                        android:src="@drawable/ic_confirm_password"/>
 
                     <EditText
                         android:id="@+id/editText_confirm"
@@ -196,8 +192,8 @@
                         android:hint="@string/confirm_password"
                         android:inputType="textPassword"
                         android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
                         android:textCursorDrawable="@drawable/cursor"
                         android:textSize="16sp" />
 
@@ -237,8 +233,8 @@
                         android:focusableInTouchMode="false"
                         android:hint="@string/select_birthdate"
                         android:singleLine="true"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
                         android:textCursorDrawable="@drawable/cursor"
                         android:textSize="16sp" />
 
@@ -277,7 +273,7 @@
                     <View
                         android:layout_width="80dp"
                         android:layout_height="1dp"
-                        android:background="@color/white" />
+                        android:background="@color/colorAccent" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -285,14 +281,14 @@
                         android:layout_marginStart="@dimen/space_10"
                         android:layout_marginEnd="@dimen/space_10"
                         android:text="OR"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="16sp"
                         tools:ignore="MissingPrefix" />
 
                     <View
                         android:layout_width="80dp"
                         android:layout_height="1dp"
-                        android:background="@color/white" />
+                        android:background="@color/colorAccent" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -365,7 +361,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/already_account"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="14sp"
                             tools:ignore="MissingPrefix" />
 
@@ -393,12 +389,12 @@
                         <View
                             android:layout_width="50dp"
                             android:layout_height="3dp"
-                            android:background="@color/white" />
+                            android:background="@color/colorAccent" />
 
                         <View
                             android:layout_width="50dp"
                             android:layout_height="3dp"
-                            android:background="@color/white" />
+                            android:background="@color/colorAccent" />
 
                     </LinearLayout>
 

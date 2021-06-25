@@ -46,14 +46,14 @@
             android:layout_height="80dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_no_item"
-            android:tint="@color/white" />
+            android:tint="@color/colorAccent" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_item_found"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -94,7 +94,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/menu_movie"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -107,7 +107,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:text="@string/view_all"
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="12sp"
                         android:visibility="invisible" />
 
@@ -148,7 +148,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/menu_tv_show"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -161,7 +161,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:text="@string/view_all"
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="12sp"
                         android:visibility="invisible" />
 
@@ -203,7 +203,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/menu_sport"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="15sp"
                             android:textStyle="bold" />
                     </LinearLayout>
@@ -215,7 +215,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:text="@string/view_all"
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="12sp"
                         android:visibility="invisible" />
 
@@ -256,7 +256,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/menu_tv"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textSize="15sp"
                             android:textStyle="bold" />
                     </LinearLayout>
@@ -268,7 +268,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:text="@string/view_all"
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="12sp"
                         android:visibility="invisible" />
 

@@ -33,8 +33,7 @@
                     android:layout_height="32dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/space_10"
-                    android:tint="@color/white"
-                    android:src="@drawable/ic_home" />
+                    android:src="@drawable/bg_home_footer" />
 
                 <TextView
                     fontPath="fonts/customSemiBold.otf"
@@ -45,7 +44,7 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
                     android:text="@string/menu_home"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />
@@ -68,7 +67,6 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/space_10"
                     android:clickable="false"
-                    android:tint="@color/white"
                     android:contentDescription="@null"
                     android:src="@drawable/ic_more_member" />
 
@@ -82,7 +80,7 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
                     android:text="@string/menu_dashboard"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />
@@ -99,7 +97,6 @@
                     android:layout_height="32dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/space_10"
-                    android:tint="@color/white"
                     android:src="@drawable/ic_more_transaction" />
 
                 <TextView
@@ -111,7 +108,7 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
                     android:text="@string/menu_transaction"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />
@@ -139,7 +136,7 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
                     android:text="@string/menu_watchlist"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />
@@ -155,7 +152,6 @@
                     android:layout_height="32dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/space_10"
-                    android:tint="@color/white"
                     android:src="@drawable/bg_more_setting" />
 
                 <TextView
@@ -167,7 +163,7 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
                     android:text="@string/menu_setting"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />
@@ -184,8 +180,7 @@
                     android:layout_height="32dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/space_10"
-                    android:tint="@color/white"
-                    android:src="@drawable/ic_more_logout" />
+                    android:src="@drawable/ic_login" />
 
                 <TextView
                     fontPath="fonts/customSemiBold.otf"
@@ -196,7 +191,7 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
                     android:text="@string/menu_login"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />
@@ -213,7 +208,6 @@
                     android:layout_height="32dp"
                     android:layout_gravity="center"
                     android:layout_marginStart="@dimen/space_10"
-                    android:tint="@color/white"
                     android:src="@drawable/ic_more_logout" />
 
                 <TextView
@@ -225,7 +219,7 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="16dp"
                     android:text="@string/menu_logout"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />

@@ -4,6 +4,6 @@
     <item
         android:width="@dimen/space_20"
         android:height="@dimen/space_20"
-        android:drawable="@drawable/ic_more_profile" />
+        android:drawable="@drawable/ic_user" />
 
 </layer-list>

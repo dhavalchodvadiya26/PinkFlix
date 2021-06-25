@@ -357,14 +357,14 @@ public class ExoPlayerFragment extends Fragment {
                             .setIcon(R.drawable.reel)
                             .addButton(
                                     getString(R.string.menu_login),
-                                    R.color.pdlg_color_white,
+                                    R.color.pdlg_color_white2,
                                     R.color.pdlg_color_green,
                                     () -> {
                                         pDialog.dismiss();
                                         startActivity(new Intent(getActivity(), SignInActivity.class));
                                     }).addButton(
                             getString(android.R.string.no),
-                            R.color.pdlg_color_white,
+                            R.color.pdlg_color_white2,
                             R.color.pdlg_color_green,
                             pDialog::dismiss)
                             .show();

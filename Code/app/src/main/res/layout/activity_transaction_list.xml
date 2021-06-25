@@ -1,47 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <include
         android:id="@+id/toolbar_main"
         layout="@layout/row_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true" />
-
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:id="@+id/lyt_not_found"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_main"
         android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="vertical"
         android:visibility="gone"
-        android:layout_below="@id/toolbar_main"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="@dimen/space_30"
             android:layout_height="@dimen/space_30"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_more_transaction"
-            android:tint="@color/white" />
+            android:src="@drawable/ic_more_transaction" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You Have not performed any transaction yet."
             android:layout_marginTop="@dimen/space_20"
+            android:text="You Have not performed any transaction yet."
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -59,10 +54,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:gravity="center"
                 android:layout_marginBottom="10dp"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="Subscribed Transactions"
+                android:textColor="@color/colorPrimary"
                 android:visibility="gone" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -77,14 +72,14 @@
                 android:id="@+id/txtRental"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_marginBottom="10dp"
+                android:gravity="center"
                 android:text="Rental Transactions"
-                android:visibility="gone"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_rental"
@@ -102,8 +97,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:text="Donation"
-                android:visibility="gone"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:visibility="gone" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_donation"

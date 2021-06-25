@@ -9,9 +9,17 @@ public class FcmTokenRegistrationService extends FirebaseInstanceIdService {
     private static final String TAG = "MyFirebaseIIDService";
 
     @Override
+    public void onCreate() {
+        super.onCreate();
+        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+        Log.d(TAG, "Refreshed token: " + refreshedToken);
+        System.out.println("Refreshed token: " + refreshedToken);
+        sendRegistrationToServer(refreshedToken);
+    }
+
+    @Override
     public void onTokenRefresh() {
         super.onTokenRefresh();
-
         String refreshedToken = FirebaseInstanceId.getInstance().getToken();
         Log.d(TAG, "Refreshed token: " + refreshedToken);
         System.out.println("Refreshed token: " + refreshedToken);

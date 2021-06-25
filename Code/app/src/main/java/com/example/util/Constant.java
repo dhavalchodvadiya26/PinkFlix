@@ -16,7 +16,9 @@ public class Constant implements Serializable {
     public static final String ARRAY_NAME = "VIDEO_STREAMING_APP";
 
     public static final String DYNAMIC_HOME_URL = API_URL + "dynamic_home_screen";
-    public static final String LOGIN_URL = API_URL + "login";
+    public static final String CHECK_USER_PLAN = API_URL + "user_plan_exp_chek";
+    public static final String LOGIN_URL = API_URL + "login2";
+    public static final String LOGOUT_URL = API_URL + "logout2";
     public static final String CONTINUE_WATCHING_URL = API_URL + "c_watchlist_add";
     public static final String CONTINUE_WATCHING_GET_URL = API_URL + "c_watchlist_get";
     public static final String LOGIN_WITH_FACEBOOK_URL = API_URL + "facebook";
@@ -55,6 +57,7 @@ public class Constant implements Serializable {
     public static final String DASH_BOARD_URL = API_URL + "dashboard";
 
     public static final String TRANSACTION_URL = API_URL + "transaction_add";
+    public static final String TEMP_BHARGAV = API_URL + "temp_bhargav";
     public static final String CHECK_PROMOCODE = API_URL + "check_promocode";
     public static final String FORGOT_PASSWORD_URL = API_URL + "forgot_password";
     public static final String WATCH_HOUR = API_URL + "watch_hours";
@@ -177,7 +180,7 @@ public class Constant implements Serializable {
 
 
     //User details field
-    public static java.lang.String FB_NAME = "name";
+    public static String FB_NAME = "name";
     public static String FB_PICTURE = "picture";
     public static String FB_DATA = "data";
     public static String FB_PICTURE_URL = "url";

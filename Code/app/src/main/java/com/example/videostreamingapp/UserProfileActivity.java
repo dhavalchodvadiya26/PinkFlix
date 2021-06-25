@@ -2,6 +2,7 @@ package com.example.videostreamingapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -12,11 +13,24 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.util.API;
+import com.example.util.Constant;
 import com.example.util.GradientTextView;
 import com.example.util.IsRTL;
 import com.example.util.PrettyDialog;
 import com.example.util.Remember;
 import com.example.util.fullscreen.FullScreenDialogController;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import cz.msebera.android.httpclient.Header;
 
 
 public class UserProfileActivity extends AppCompatActivity {
@@ -25,7 +39,7 @@ public class UserProfileActivity extends AppCompatActivity {
     private FragmentManager fragmentManager;
     Toolbar toolbar;
     LinearLayout header;
-
+    String strMessage;
     private FullScreenDialogController dialogController;
     private MyApplication myApplication;
 
@@ -165,14 +179,14 @@ public class UserProfileActivity extends AppCompatActivity {
                 .setIcon(R.drawable.login)
                 .addButton(
                         getString(R.string.menu_login),
-                        R.color.pdlg_color_white,
+                        R.color.pdlg_color_white2,
                         R.color.pdlg_color_green,
                         () -> {
                             pDialog.dismiss();
                             login();
                         }).addButton(
                 getString(android.R.string.no),
-                R.color.pdlg_color_white,
+                R.color.pdlg_color_white2,
                 R.color.pdlg_color_red,
                 pDialog::dismiss)
                 .show();
@@ -193,13 +207,57 @@ public class UserProfileActivity extends AppCompatActivity {
                         R.color.pdlg_color_white,
                         R.color.pdlg_color_green,
                         () -> {
-                            pDialog.dismiss();
-                            myApplication.saveIsLogin(false);
-                            Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            startActivity(intent);
-                            Remember.clear();
-                            finish();
+                            AsyncHttpClient client = new AsyncHttpClient();
+                            RequestParams params = new RequestParams();
+
+                            JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
+                            params.put("user_id", myApplication.getIsLogin()?myApplication.getUserId():" ");
+                            params.put("imei_number", Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID));
+
+                            client.post(Constant.LOGOUT_URL, params, new AsyncHttpResponseHandler() {
+
+                                @Override
+                                public void onStart() {
+                                    super.onStart();
+                                }
+
+                                @Override
+                                public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+//                                    dismissProgressDialog();
+                                    String result = new String(responseBody);
+                                    try {
+                                        JSONObject mainJson = new JSONObject(result);
+                                        JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+                                        System.out.println("LogoutActivity ==> mainJson ==> "+jsonArray);
+                                        JSONObject objJson;
+                                        for (int i = 0; i < jsonArray.length(); i++) {
+                                            objJson = jsonArray.getJSONObject(i);
+                                            Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
+                                            if (Constant.GET_SUCCESS_MSG == 0) {
+                                                strMessage = objJson.getString(Constant.MSG);
+                                            } else {
+                                                pDialog.dismiss();
+                                                myApplication.saveIsLogin(false);
+                                                Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
+                                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                                startActivity(intent);
+                                                Remember.clear();
+                                                finish();
+                                            }
+                                        }
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+//                                    dismissProgressDialog();
+                                    pDialog.dismiss();
+                                }
+
+                            });
+
                         }).addButton(
                 getString(android.R.string.no),
                 R.color.pdlg_color_white,

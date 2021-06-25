@@ -61,7 +61,7 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/logo"
+                android:src="@drawable/ic_v"
                 android:layout_gravity="center_horizontal"/>
 
             <LinearLayout
@@ -232,7 +232,7 @@
                     android:paddingStart="40dp"
                     android:paddingEnd="40dp"
                     android:text="@string/save"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="MissingPrefix" />

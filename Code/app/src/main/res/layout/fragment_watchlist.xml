@@ -8,14 +8,15 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Movies"
-        android:gravity="center_vertical"
-        android:layout_marginStart="@dimen/space_30"
-        android:textSize="20sp"
-        android:textColor="@color/white"
         android:id="@+id/watchlist_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/space_30"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:text="Movies"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
         tools:ignore="MissingPrefix" />
 
     <LinearLayout
@@ -26,31 +27,33 @@
         android:layout_centerVertical="true"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:visibility="gone"
+        android:visibility="visible"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/watchlist_white"
-            android:tint="@color/white" />
+            android:src="@drawable/watchlist_white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/no_item_found"
+            android:layout_gravity="center"
             android:layout_marginTop="@dimen/space_20"
+            android:gravity="center"
+            android:text="No videos available for this category"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorAccent" />
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_recently_watched"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/watchlist_text"
         android:clipToPadding="false"
         android:visibility="visible"
-        android:layout_below="@id/watchlist_text"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 </RelativeLayout>

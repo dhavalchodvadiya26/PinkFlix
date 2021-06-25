@@ -38,7 +38,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
                     android:layout_gravity="center"
-                    android:tint="@color/white"
                     android:contentDescription="@string/app_name"
                     android:padding="@dimen/space_10"
                     android:src="@drawable/ic_user" />
@@ -89,7 +88,6 @@
                 android:drawableStart="@drawable/bg_more_profile"
                 android:drawableEnd="@drawable/bg_more_arrow"
                 android:text="Profile"
-                android:drawableTint="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:gt_color_list="@array/gradient"
@@ -113,7 +111,6 @@
                 style="@style/profile_bg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableTint="@color/white"
                 android:fontFamily="@font/custom_t"
                 android:drawableStart="@drawable/bg_more_watchlist"
                 android:drawableEnd="@drawable/bg_more_arrow"
@@ -124,17 +121,30 @@
                 app:gt_gradient_direction="right" />
 
             <com.example.util.GradientTextView
+                android:id="@+id/txtMemberShip"
+                style="@style/profile_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_t"
+                android:drawableStart="@drawable/bg_more_membership"
+                android:drawableEnd="@drawable/bg_more_arrow"
+                android:text="Subscription Plan"
+                android:textSize="16sp"
+                app:gt_color_list="@array/gradient"
+                app:gt_gradient_direction="right" />
+
+            <com.example.util.GradientTextView
                 android:id="@+id/txtTransaction"
                 style="@style/profile_bg"
                 android:layout_width="match_parent"
-                android:drawableTint="@color/white"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/custom_t"
                 android:drawableStart="@drawable/bg_more_transaction"
                 android:drawableEnd="@drawable/bg_more_arrow"
                 android:text="My Transaction"
                 android:textSize="16sp"
-                app:gt_color_list="@array/gradient"/>
+                app:gt_color_list="@array/gradient"
+                app:gt_gradient_direction="right"/>
 
             <!--        <com.example.util.GradientTextView-->
             <!--            android:id="@+id/txtDownload"-->
@@ -149,39 +159,10 @@
             <!--            app:gt_color_list="@array/gradient"-->
             <!--            app:gt_gradient_direction="right" />-->
 
-            <com.example.util.GradientTextView
-                android:id="@+id/txtMemberShip"
-                style="@style/profile_bg"
-                android:drawableTint="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/custom_t"
-                android:drawableStart="@drawable/bg_more_membership"
-                android:drawableEnd="@drawable/bg_more_arrow"
-                android:text="Subscription Plan"
-                android:textSize="16sp"
-                app:gt_color_list="@array/gradient"
-                app:gt_gradient_direction="right" />
-
-            <com.example.util.GradientTextView
-                android:id="@+id/txtSetting"
-                style="@style/profile_bg"
-                android:drawableTint="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/custom_t"
-                android:drawableStart="@drawable/bg_more_setting"
-                android:drawableEnd="@drawable/bg_more_arrow"
-                android:text="Setting"
-                android:onClick="gotoSetting"
-                android:textSize="16sp"
-                app:gt_color_list="@array/gradient"
-                app:gt_gradient_direction="right" />
 
             <com.example.util.GradientTextView
                 android:id="@+id/txtHelp"
                 style="@style/profile_bg"
-                android:drawableTint="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/custom_t"
@@ -193,6 +174,21 @@
                 app:gt_gradient_direction="right" />
 
             <com.example.util.GradientTextView
+                android:id="@+id/txtSetting"
+                style="@style/profile_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom_t"
+                android:drawableStart="@drawable/bg_more_setting"
+                android:drawableEnd="@drawable/bg_more_arrow"
+                android:text="Setting"
+                android:onClick="gotoSetting"
+                android:textSize="16sp"
+                app:gt_color_list="@array/gradient"
+                app:gt_gradient_direction="right" />
+
+
+            <com.example.util.GradientTextView
                 android:id="@+id/txtLogout"
                 style="@style/profile_bg"
                 android:layout_width="match_parent"
@@ -201,7 +197,6 @@
                 android:drawableStart="@drawable/bg_more_logout"
                 android:drawableEnd="@drawable/bg_more_arrow"
                 android:text="Logout"
-                android:drawableTint="@color/white"
                 android:textSize="16sp"
                 app:gt_color_list="@array/gradient"
                 app:gt_gradient_direction="right" />
@@ -213,8 +208,8 @@
                 android:layout_marginStart="@dimen/space_20"
                 android:layout_marginTop="@dimen/space_10"
                 android:fontFamily="@font/custom_t"
-                android:text="Powered By: My OTT"
-                android:textColor="@color/white" />
+                android:text="Version: 1.0"
+                android:textColor="@color/colorAccent" />
 
         </LinearLayout>
 

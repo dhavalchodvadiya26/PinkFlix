@@ -598,7 +598,7 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
                                     .setIcon(R.drawable.ic_more_download)
                                     .addButton(
                                             "Okay",
-                                            R.color.pdlg_color_white,
+                                            R.color.pdlg_color_white2,
                                             R.color.pdlg_color_green,
                                             pDialog::dismiss)
                                     .show();
@@ -611,14 +611,14 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
                                 .setIcon(R.drawable.reel)
                                 .addButton(
                                         getString(R.string.menu_login),
-                                        R.color.pdlg_color_white,
+                                        R.color.pdlg_color_white2,
                                         R.color.pdlg_color_green,
                                         () -> {
                                             pDialog.dismiss();
                                             startActivity(new Intent(MovieDetailsActivity2.this, SignInActivity.class));
                                         }).addButton(
                                 getString(android.R.string.no),
-                                R.color.pdlg_color_white,
+                                R.color.pdlg_color_white2,
                                 R.color.pdlg_color_green,
                                 pDialog::dismiss)
                                 .show();
@@ -641,14 +641,14 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
                                 .setIcon(R.drawable.reel)
                                 .addButton(
                                         getString(R.string.menu_login),
-                                        R.color.pdlg_color_white,
+                                        R.color.pdlg_color_white2,
                                         R.color.pdlg_color_green,
                                         () -> {
                                             pDialog.dismiss();
                                             startActivity(new Intent(MovieDetailsActivity2.this, SignInActivity.class));
                                         }).addButton(
                                 getString(android.R.string.no),
-                                R.color.pdlg_color_white,
+                                R.color.pdlg_color_white2,
                                 R.color.pdlg_color_green,
                                 pDialog::dismiss)
                                 .show();
@@ -671,14 +671,14 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
                                 .setIcon(R.drawable.reel)
                                 .addButton(
                                         getString(R.string.menu_login),
-                                        R.color.pdlg_color_white,
+                                        R.color.pdlg_color_white2,
                                         R.color.pdlg_color_green,
                                         () -> {
                                             pDialog.dismiss();
                                             startActivity(new Intent(MovieDetailsActivity2.this, SignInActivity.class));
                                         }).addButton(
                                 getString(android.R.string.no),
-                                R.color.pdlg_color_white,
+                                R.color.pdlg_color_white2,
                                 R.color.pdlg_color_green,
                                 pDialog::dismiss)
                                 .show();
@@ -711,14 +711,14 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
                                 .setIcon(R.drawable.reel)
                                 .addButton(
                                         getString(R.string.menu_login),
-                                        R.color.pdlg_color_white,
+                                        R.color.pdlg_color_white2,
                                         R.color.pdlg_color_green,
                                         () -> {
                                             pDialog.dismiss();
                                             startActivity(new Intent(MovieDetailsActivity2.this, SignInActivity.class));
                                         }).addButton(
                                 getString(android.R.string.no),
-                                R.color.pdlg_color_white,
+                                R.color.pdlg_color_white2,
                                 R.color.pdlg_color_green,
                                 pDialog::dismiss)
                                 .show();
@@ -743,14 +743,14 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
                                 .setIcon(R.drawable.reel)
                                 .addButton(
                                         getString(R.string.menu_login),
-                                        R.color.pdlg_color_white,
+                                        R.color.pdlg_color_white2,
                                         R.color.pdlg_color_green,
                                         () -> {
                                             pDialog.dismiss();
                                             startActivity(new Intent(MovieDetailsActivity2.this, SignInActivity.class));
                                         }).addButton(
                                 getString(android.R.string.no),
-                                R.color.pdlg_color_white,
+                                R.color.pdlg_color_white2,
                                 R.color.pdlg_color_green,
                                 pDialog::dismiss)
                                 .show();
@@ -768,23 +768,23 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
         Log.i("MovieDetailsActivity2", "Creating Link...");
 
         DynamicLink dynamicLink = FirebaseDynamicLinks.getInstance().createDynamicLink()
-                .setLink(Uri.parse("https://cineprime.app/"))
-                .setDomainUriPrefix("https://cineprime.page.link/")
+                .setLink(Uri.parse("https://pinkflix.in/"))
+                .setDomainUriPrefix("https://pinkflix.page.link/")
                 // Open links with this app on Android
                 .setAndroidParameters(new DynamicLink.AndroidParameters.Builder().build())
                 .buildDynamicLink();
 
         Uri dynamicLinkUri = dynamicLink.getUri();
 
-        Log.e("MovieDetailsActivity2", "Long Refer Link ==> " + dynamicLinkUri);//https://cineprime.page.link/?apn=com.appegic.cprime&ibi=com.example.ios&link=https%3A%2F%2Fcineprime.app%2F
+        Log.e("MovieDetailsActivity2", "Long Refer Link ==> " + dynamicLinkUri);//https://pinkflix.page.link/?apn=com.appegic.cprime&ibi=com.example.ios&link=https%3A%2F%2Fpinkflix.app%2F
 
         //Shorten The Link
 
         //Manually
-        String shortLink = "https://cineprime.page.link/?"
-                + "link=https://cineprime.app/myrefer.php?Id=" + movie_id
+        String shortLink = "https://pinkflix.page.link/?"
+                + "link=https://pinkflix.in/myrefer.php?Id=" + movie_id
                 + "&apn=" + getPackageName()
-                + "&ibi=com.CinePrime"
+//                + "&ibi=com.CinePrime"
                 + "&st=" + itemMovie.getMovieName().replaceAll(" ", "%20")
                 + "&sd=" + "Click%20to%20Watch%20Movie"
                 + "&si=" + itemMovie.getMovieImage();
@@ -946,7 +946,7 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
                                 .setIcon(R.drawable.watchlist)
                                 .addButton(
                                         getString(android.R.string.ok),
-                                        R.color.pdlg_color_white,
+                                        R.color.pdlg_color_white2,
                                         R.color.pdlg_color_red,
                                         pDialog::dismiss)
                                 .show();
@@ -997,7 +997,7 @@ public class MovieDetailsActivity2 extends AppCompatActivity implements View.OnC
                                 .setIcon(R.drawable.watchlist)
                                 .addButton(
                                         getString(android.R.string.ok),
-                                        R.color.pdlg_color_white,
+                                        R.color.pdlg_color_white2,
                                         R.color.pdlg_color_red,
                                         pDialog::dismiss)
                                 .show();

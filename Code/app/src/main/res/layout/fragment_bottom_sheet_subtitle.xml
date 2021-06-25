@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:text="Setting"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/space_15" />
 
     <LinearLayout
@@ -38,7 +38,6 @@
             android:layout_height="@dimen/space_20"
             android:layout_marginRight="32dp"
             android:src="@drawable/resolution"
-            android:tint="@color/white"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
@@ -46,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="Video Quality"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/space_15" />
 
     </LinearLayout>
@@ -65,15 +64,14 @@
             android:layout_width="@dimen/space_20"
             android:layout_height="@dimen/space_20"
             android:layout_marginRight="32dp"
-            android:src="@drawable/subtitle"
-            android:tint="@color/white" />
+            android:src="@drawable/subtitle" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="Subtitle"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/space_15" />
 
     </LinearLayout>

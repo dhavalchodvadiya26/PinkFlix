@@ -38,7 +38,7 @@
                         android:layout_marginBottom="10dp"
                         android:gravity="center"
                         android:text="You need a Premium Membership to \n watch this video"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="18sp"
                         android:visibility="gone" />
 
@@ -51,7 +51,7 @@
                         android:paddingLeft="25dp"
                         android:paddingRight="25dp"
                         android:text="@string/try_again"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:visibility="gone" />
 
                     <LinearLayout
@@ -69,8 +69,7 @@
                             android:layout_weight="0.7"
                             android:contentDescription="@null"
                             android:padding="20dp"
-                            android:src="@drawable/ic_backward"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_backward" />
 
                         <ImageView
                             android:id="@+id/btn_play"
@@ -80,8 +79,7 @@
                             android:layout_weight="0.8"
                             android:contentDescription="@null"
                             android:padding="@dimen/space_20"
-                            android:src="@drawable/ic_play_player"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_play_player" />
 
                         <ImageView
                             android:id="@+id/btn_pause"
@@ -92,7 +90,6 @@
                             android:contentDescription="@null"
                             android:padding="@dimen/space_20"
                             android:src="@drawable/ic_pause"
-                            android:tint="@color/white"
                             android:visibility="gone" />
 
                         <ImageView
@@ -104,8 +101,7 @@
                             android:contentDescription="@null"
                             android:padding="@dimen/space_20"
                             android:rotation="45"
-                            android:src="@drawable/ic_backward"
-                            android:tint="@color/white" />
+                            android:src="@drawable/ic_backward" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -119,8 +115,7 @@
                     android:layout_marginBottom="@dimen/space_30"
                     android:contentDescription="@null"
                     android:padding="@dimen/space_20"
-                    android:src="@drawable/ic_play_setting"
-                    android:tint="@color/white" />
+                    android:src="@drawable/ic_more_seeting" />
             </RelativeLayout>
         </com.google.android.exoplayer2.ui.PlayerView>
 

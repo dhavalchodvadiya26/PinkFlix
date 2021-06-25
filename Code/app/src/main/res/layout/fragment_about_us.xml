@@ -45,7 +45,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="10dp"
                         android:text="@string/app_name"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -72,7 +72,7 @@
                         android:id="@+id/Verson"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:tint="@color/white"
+                        android:tint="@color/colorAccent"
                         android:layout_marginTop="6dp"
                         android:contentDescription="@string/app_name"
                         android:src="@drawable/ic_version" />
@@ -95,7 +95,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/about_us_version"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textStyle="bold" />
 
                         <TextView
@@ -104,7 +104,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:text="@string/about_us_version_text"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
 
@@ -132,7 +132,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:tint="@color/white"
+                        android:tint="@color/colorAccent"
                         android:contentDescription="@string/app_name"
                         android:src="@drawable/ic_user_ab" />
 
@@ -154,7 +154,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/about_us_Company"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textStyle="bold" />
 
                         <TextView
@@ -163,7 +163,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="1dp"
                             android:text="@string/about_us_company_name"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
 
@@ -193,7 +193,7 @@
                         android:layout_height="30dp"
                         android:layout_marginTop="4dp"
                         android:contentDescription="@string/app_name"
-                        android:tint="@color/white"
+                        android:tint="@color/colorAccent"
                         android:src="@drawable/ic_email_ab" />
 
                     <View
@@ -214,7 +214,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/about_us_email"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textStyle="bold" />
 
                         <TextView
@@ -223,7 +223,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="1dp"
                             android:text="@string/about_us_email_text"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -253,7 +253,7 @@
                         android:layout_marginTop="4dp"
                         android:contentDescription="@string/app_name"
                         android:src="@drawable/ic_web"
-                        android:tint="@color/white" />
+                        android:tint="@color/colorAccent" />
 
                     <View
                         android:layout_width="1dp"
@@ -273,7 +273,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/about_us_website"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textStyle="bold" />
 
                         <TextView
@@ -282,7 +282,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="1dp"
                             android:text="@string/about_us_website_text"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/colorAccent" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -311,7 +311,7 @@
                         android:layout_marginTop="4dp"
                         android:contentDescription="@string/app_name"
                         android:src="@drawable/ic_call"
-                        android:tint="@color/white" />
+                        android:tint="@color/colorAccent" />
 
                     <View
                         android:layout_width="1dp"
@@ -331,7 +331,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/about_us_contact"
-                            android:textColor="@color/white"
+                            android:textColor="@color/colorAccent"
                             android:textStyle="bold" />
 
                         <TextView
@@ -340,7 +340,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="1dp"
                             android:text="@string/about_us_contact_text"
-                            android:textColor="@color/white" />
+                            android:textColor="@color/colorAccent" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -370,7 +370,7 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         android:text="@string/about_us_about"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorAccent"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 

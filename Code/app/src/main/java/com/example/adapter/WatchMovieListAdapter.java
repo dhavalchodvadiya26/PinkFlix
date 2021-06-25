@@ -90,12 +90,12 @@ public class WatchMovieListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
                 PrettyDialog pDialog = new PrettyDialog(mContext);
                 pDialog
-                        .setTitle("CINE PRIME")
+                        .setTitle("PinkFlix")
                         .setMessage("Are you sure to remove this movie from WatchList?")
                         .setIcon(R.drawable.watchlist)
                         .addButton(
                                 "YES",
-                                R.color.pdlg_color_white,
+                                R.color.pdlg_color_white2,
                                 R.color.pdlg_color_green,
                                 () -> {
                                     pDialog.dismiss();
@@ -128,12 +128,12 @@ public class WatchMovieListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 
                                                     PrettyDialog pDialog = new PrettyDialog(mContext);
                                                     pDialog
-                                                            .setTitle("CINE PRIME")
+                                                            .setTitle("PinkFlix")
                                                             .setMessage(mainJson.getString("message"))
                                                             .setIcon(R.drawable.watchlist)
                                                             .addButton(
                                                                     "OK",
-                                                                    R.color.pdlg_color_white,
+                                                                    R.color.pdlg_color_white2,
                                                                     R.color.pdlg_color_red,
                                                                     pDialog::dismiss)
                                                             .show();
@@ -154,7 +154,7 @@ public class WatchMovieListAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                                     });
                                 }).addButton(
                         "CANCEL",
-                        R.color.pdlg_color_white,
+                        R.color.pdlg_color_white2,
                         R.color.pdlg_color_green,
                         pDialog::dismiss)
                         .show();

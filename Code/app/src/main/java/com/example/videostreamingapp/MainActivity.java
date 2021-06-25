@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
@@ -61,6 +62,14 @@ import com.ixidev.gdpr.GDPRChecker;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+
+import org.json.JSONObject;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import cz.msebera.android.httpclient.Header;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
@@ -143,6 +152,7 @@ public class MainActivity extends BaseActivity implements MenuCategoryListAdapte
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
 
         getWindow().getDecorView().setSystemUiVisibility(flags);
+        sendFcmRegistrationToken();
 
         int PERMISSION_ALL = 1;
         String[] PERMISSIONS = {
@@ -244,6 +254,7 @@ public class MainActivity extends BaseActivity implements MenuCategoryListAdapte
         }
         if (NetworkUtils.isConnected(MainActivity.this)) {
             getCategory();
+            getPlanStatus();
         } else {
             dismissProgressDialog();
         }
@@ -325,7 +336,7 @@ public class MainActivity extends BaseActivity implements MenuCategoryListAdapte
                 .setIcon(R.drawable.logout)
                 .addButton(
                         getString(R.string.menu_logout),
-                        R.color.pdlg_color_white,
+                        R.color.pdlg_color_white2,
                         R.color.pdlg_color_green,
                         () -> {
                             pDialog.dismiss();
@@ -337,7 +348,7 @@ public class MainActivity extends BaseActivity implements MenuCategoryListAdapte
                             finish();
                         }).addButton(
                 getString(android.R.string.no),
-                R.color.pdlg_color_white,
+                R.color.pdlg_color_white2,
                 R.color.pdlg_color_red,
                 pDialog::dismiss)
                 .show();
@@ -562,14 +573,14 @@ public class MainActivity extends BaseActivity implements MenuCategoryListAdapte
                 .setIcon(R.drawable.login)
                 .addButton(
                         getString(R.string.menu_login),
-                        R.color.pdlg_color_white,
+                        R.color.pdlg_color_white2,
                         R.color.pdlg_color_green,
                         () -> {
                             pDialog.dismiss();
                             login();
                         }).addButton(
                 getString(android.R.string.no),
-                R.color.pdlg_color_white,
+                R.color.pdlg_color_white2,
                 R.color.pdlg_color_red,
                 pDialog::dismiss)
                 .show();
@@ -617,4 +628,147 @@ public class MainActivity extends BaseActivity implements MenuCategoryListAdapte
     public void onNeutralClick(int from) {
 
     }
+
+    private void getPlanStatus() {
+        AsyncHttpClient client = new AsyncHttpClient();
+        RequestParams params = new RequestParams();
+        JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
+        jsObj.addProperty("user_id", myApplication.getIsLogin() ? myApplication.getUserId() : "");
+        params.put("data", API.toBase64(jsObj.toString()));
+        client.post(Constant.CHECK_USER_PLAN, params, new AsyncHttpResponseHandler() {
+            @Override
+            public void onStart() {
+                super.onStart();
+                showProgressDialog();
+            }
+
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                dismissProgressDialog();
+
+                String result = new String(responseBody);
+                try {
+                    JSONObject mainJson = new JSONObject(result);
+                    JSONObject mainArray = mainJson.getJSONObject(Constant.ARRAY_NAME);
+                    System.out.println("MainActivity ==> VIDEO_STREAMING_APP ==> " + mainArray);
+                    System.out.println("MainActivity ==> mainJson ==> " + mainJson);
+                    String success = mainArray.getString("success");
+                    if (success.equals("1")) {
+                        String exp_date = mainArray.getString("date");
+                        String plan_id = mainArray.getString("plan_id");
+                        String plan_name = mainArray.getString("current_plan");
+                        String plan_duration = mainArray.getString("plan_duration");
+                        String plan_price = mainArray.getString("plan_price");
+                        System.out.println("MainActivity ==> exp_date ==> " + exp_date);
+                        Date date = Calendar.getInstance().getTime();
+                        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+                        String current_date = dateFormat.format(date);
+                        System.out.println("Converted String: " + current_date);
+
+                        findDifference(current_date, exp_date, plan_id, plan_name, plan_duration, plan_price);
+
+//                        LocalDate dateBefore = LocalDate.parse(current_date);
+////                        LocalDate dateAfter = LocalDate.parse(exp_date);
+////                        Period period = Period.between(dateBefore, dateAfter);
+////                        int days = Math.abs(period.getDays());
+//////                        long daysBetween = ChronoUnit.DAYS.between(dateBefore, dateAfter);
+//////                        System.out.println ("Days: " + daysBetween);o
+                    }
+
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                dismissProgressDialog();
+            }
+
+        });
+    }
+
+    public void findDifference(String start_date, String end_date,String plan_id, String plan_name, String plan_duration, String plan_price) {
+
+        // SimpleDateFormat converts the
+        // string format to date object
+        DateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+
+        // Try Block
+        try {
+
+            // parse method is used to parse
+            // the text from a string to
+            // produce the date
+            Date d1 = sdf.parse(start_date);
+            Date d2 = sdf.parse(end_date);
+
+            // Calucalte time difference
+            // in milliseconds
+            long difference_In_Time = d2.getTime() - d1.getTime();
+
+            // Calucalte time difference in
+            // seconds, minutes, hours, years,
+            // and days
+            long difference_In_Seconds = (difference_In_Time / 1000) % 60;
+
+            long difference_In_Minutes = (difference_In_Time / (1000 * 60)) % 60;
+
+            long difference_In_Hours = (difference_In_Time / (1000 * 60 * 60)) % 24;
+
+            long difference_In_Years = (difference_In_Time / (1000 * 60 * 60 * 24))/365;
+
+            long difference_In_Months = (difference_In_Time / (1000 * 60 * 60 * 24))/30;
+
+            long difference_In_Days = (difference_In_Time / (1000 * 60 * 60 * 24)) % 365;
+            // Print the date difference in
+            // years, in days, in hours, in
+            // minutes, and in seconds
+
+            if (difference_In_Days<=2){
+                showAlert2(plan_id, plan_name, plan_duration, plan_price);
+            }
+
+            System.out.print("Difference " + "between two dates is: " +difference_In_Time);
+
+            System.out.println(" "+difference_In_Years + " years, " +difference_In_Months + " Months, " + difference_In_Days + " days, " + difference_In_Hours + " hours, " + difference_In_Minutes + " minutes, " + difference_In_Seconds + " seconds");
+        }
+
+        // Catch the Exception
+        catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void showAlert2(String plan_id,String plan_name, String plan_duration, String plan_price) {
+        PrettyDialog pDialog = new PrettyDialog(this);
+        pDialog
+                .setTitle("Alert!!")
+                .setMessage("Your subscription is going to expire soon !! Please renew it.")
+                .setIcon(R.drawable.ic_more_member)
+                .addButton(
+                        "Renew Now",
+                        R.color.pdlg_color_white,
+                        R.color.pdlg_color_green,
+                        () -> {
+                            pDialog.dismiss();
+                            Intent intent = new Intent(getApplicationContext(), SelectPlanActivity.class);
+                            intent.putExtra("planId", plan_id);
+                            intent.putExtra("planName", plan_name);
+                            intent.putExtra("promoCode", "");
+                            intent.putExtra("planPrice", plan_price);
+                            intent.putExtra("planDuration", plan_duration);
+                            startActivity(intent);
+                            finish();
+                        }).addButton(
+                getString(android.R.string.no),
+                R.color.pdlg_color_white,
+                R.color.pdlg_color_red,
+                pDialog::dismiss)
+                .show();
+    }
+
+
 }

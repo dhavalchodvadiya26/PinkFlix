@@ -312,7 +312,7 @@ public class SplashActivity extends Activity {
         final String appPackageName = getPackageName();
 
         new AlertDialog.Builder(SplashActivity.this)
-                .setTitle("CinePrime")
+                .setTitle("PinkFlix")
                 .setMessage("New Version of This app is Available Now!!")
 
                 // Specifying a listener allows you to take an action before dismissing the dialog.

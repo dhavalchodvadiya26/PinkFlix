@@ -82,6 +82,7 @@ public class WatchListContentFragment extends Fragment {
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
         JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
+        System.out.println("GetWatchlist Called...");
         params.put("user_id", myApplication.getIsLogin() ? myApplication.getUserId() : "");
         client.post(Constant.GET_WATCHLIST, params, new AsyncHttpResponseHandler() {
             @Override
@@ -125,6 +126,7 @@ public class WatchListContentFragment extends Fragment {
                                 startActivity(intent);
                             });
                         }
+                        lyt_not_found.setVisibility(View.GONE);
                     } else {
                         lyt_not_found.setVisibility(View.VISIBLE);
                     }

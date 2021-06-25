@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#343434</color>
+    <color name="colorPrimary">#f2994a</color>
     <color name="colorPrimaryDark">#2a2a2a</color>
-    <color name="colorAccent">#fd8c00</color>
+    <color name="colorAccent">#ffd452</color>
 
     <color name="highlight">#fd8c00</color>
     <!--    <color name="bg">#191919</color>-->
@@ -11,10 +11,10 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
 
-    <color name="text">#f4f4f4</color>
-    <color name="text_sub">#9c9c9c</color>
+    <color name="text">@color/colorAccent</color>
+    <color name="text_sub">@color/colorAccent</color>
 
-    <color name="home_header_text">#cdcdcd</color>
+    <color name="home_header_text">@color/colorPrimary</color>
     <color name="tab_select">#ffad01</color>
     <color name="transparent">#00000000</color>
 
@@ -30,12 +30,12 @@
     <!--privacy policy & about us & setting-->
     <color name="about_us_Text">#424242</color>
     <color name="about_us_SubText">#767676</color>
-    <color name="setting_text">#f4f4f4</color>
-    <color name="setting_divider">#292b30</color>
+    <color name="setting_text">@color/colorPrimary</color>
+    <color name="setting_divider">@color/colorAccent</color>
 
     <!-- profile -->
-    <color name="profile_text">#9c9c9c</color>
-    <color name="profile_sub_text">#f4f4f4</color>
+    <color name="profile_text">@color/colorAccent</color>
+    <color name="profile_sub_text">@color/colorPrimary</color>
     <color name="profile_divider">#343434</color>
 
     <!--Genre and Language -->
@@ -61,19 +61,20 @@
     <color name="bg_cat_premium_color">#061046</color>
 
     <!-- Gredient Application Color -->
-    <color name="app_start_gredeint">#ffffff</color>
-    <color name="app_end_gredeint">#ffffff</color>
+    <color name="app_start_gredeint">@color/colorPrimary</color>
+    <color name="app_end_gredeint">@color/colorAccent</color>
 
     <color name="app_start_gredeint_bg">#457fca</color>
     <color name="app_end_gredeint_bg">#5691c8</color>
 
     <!-- Gredient Application Color Test-->
-    <color name="app_start_gredeint_test">#f46b45</color>
-    <color name="app_end_gredeint_test">#eea849</color>
+    <color name="app_start_gredeint_test">@color/colorPrimary</color>
+    <color name="app_end_gredeint_test">@color/colorAccent</color>
     <!-- Dialog colors-->
-    <color name="pdlg_color_white">#eeeeee</color>
-    <color name="pdlg_color_green">#ef5350</color>
-    <color name="pdlg_color_red">#d50000</color>
+    <color name="pdlg_color_white2">@color/black</color>
+    <color name="pdlg_color_white">@color/white</color>
+    <color name="pdlg_color_green">@color/colorAccent</color>
+    <color name="pdlg_color_red">@color/colorPrimary</color>
     <color name="pdlg_color_blue">#1976D2</color>
     <color name="pdlg_color_black">#212121</color>
     <color name="pdlg_color_yellow">#FFEB3B</color>

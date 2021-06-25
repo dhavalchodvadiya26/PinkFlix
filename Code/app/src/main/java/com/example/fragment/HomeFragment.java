@@ -324,7 +324,7 @@ public class HomeFragment extends Fragment {
 
                     System.out.println("Dashboard Array ==> " + dashboardDataArray);
                     if (Objects.requireNonNull(dashboardDataArray).length() > 0) {
-                        for (int i = 1; i < dashboardDataArray.length(); i++) {
+                        for (int i = 0; i < dashboardDataArray.length(); i++) {
                             JSONObject data = dashboardDataArray.optJSONObject(i);
                             System.out.println("data ==> " + data);
                             layoutHome.addView(addMainView(i, data));
@@ -335,6 +335,7 @@ public class HomeFragment extends Fragment {
                     latestMovieViewAll.setVisibility(View.VISIBLE);
 
                     JSONArray latestMovieArray = liveTVJson.optJSONArray("latest_movies");
+                    System.out.println("LatestMovieArray ==> "+latestMovieArray);
                     if (latestMovieArray != null)
                         if (latestMovieArray.length() > 0)
                             for (int i = 0; i < latestMovieArray.length(); i++) {

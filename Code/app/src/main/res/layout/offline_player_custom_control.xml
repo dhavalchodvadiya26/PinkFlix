@@ -24,6 +24,7 @@
                 android:layout_width="@dimen/space_30"
                 android:layout_height="@dimen/space_30"
                 android:layout_marginTop="@dimen/space_5"
+                android:padding="5dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="80dp"
                 android:background="@android:color/transparent"
@@ -36,6 +37,7 @@
                 android:layout_height="@dimen/space_40"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
+                android:paddingBottom="@dimen/space_10"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/ic_play_player" />
@@ -47,6 +49,7 @@
                 android:layout_height="@dimen/space_40"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
+                android:padding="@dimen/space_10"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/ic_pause" />
@@ -58,6 +61,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_width="@dimen/space_30"
                 android:layout_height="@dimen/space_30"
+                android:padding="5dp"
                 android:layout_marginTop="@dimen/space_5"
                 android:background="@android:color/transparent"
                 app:srcCompat="@drawable/ic_forward" />
@@ -89,7 +93,7 @@
                     android:gravity="center"
                     android:paddingLeft="@dimen/space_5"
                     android:text="00:00"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/colorAccent"
                     android:textSize="@dimen/space_10"
                     android:textStyle="bold" />
 
@@ -100,11 +104,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="0.6"
-                    app:buffered_color="#D15D5D"
-                    app:played_color="#8BC34A"
-                    app:scrubber_color="#FF9800"
+                    app:buffered_color="@color/colorAccent"
+                    app:played_color="@color/colorPrimary"
+                    app:scrubber_color="@color/colorPrimary"
                     app:unplayed_color="@android:color/white" />
-
 
                 <TextView
                     android:id="@+id/tv_player_end_time"
@@ -115,7 +118,7 @@
                     android:gravity="center"
                     android:paddingRight="@dimen/space_5"
                     android:text="99:99"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/colorAccent"
                     android:textSize="@dimen/space_10"
                     android:textStyle="bold" />
 
@@ -170,6 +173,7 @@
                     android:id="@+id/img_full_screen_enter_exit"
                     android:src="@drawable/exo_controls_fullscreen_enter"
                     android:layout_width="@dimen/space_30"
+                    android:tint="@color/colorPrimary"
                     android:layout_height="@dimen/space_30" />
 
 
@@ -188,6 +192,7 @@
         app:srcCompat="@drawable/ic_arrow_back"
         android:layout_width="@dimen/space_30"
         android:layout_height="@dimen/space_30"
+        android:tint="@color/colorPrimary"
         tools:ignore="VectorDrawableCompat" />
 
 

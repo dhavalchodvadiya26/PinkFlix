@@ -32,14 +32,14 @@
             android:layout_height="80dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_no_item"
-            android:tint="@color/white" />
+            android:tint="@color/colorAccent" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_item_found"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/white" />
+            android:textColor="@color/colorAccent" />
 
     </LinearLayout>
 
@@ -87,9 +87,9 @@
                             android:paddingBottom="230dp"
                             app:gapWidth="7dp"
                             app:lineWidth="15dp"
-                            app:selectedColor="@color/colorAccent"
+                            app:selectedColor="@color/colorPrimary"
                             app:strokeWidth="3dp"
-                            app:unselectedColor="@color/white" />
+                            app:unselectedColor="@color/colorAccent" />
 
                     </LinearLayout>
 
@@ -142,8 +142,7 @@
                             android:layout_height="25dp"
                             android:id="@+id/my_account"
                             android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_user"
-                            android:tint="@color/white"/>
+                            android:src="@drawable/ic_user"/>
 
                     </LinearLayout>
 
@@ -190,14 +189,14 @@
 
                     <TextView
                         android:id="@+id/textHomeRecentlyWatchedViewAll"
-                        android:layout_width="@dimen/space_20"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/space_20"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_menu"
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp"
-                        android:visibility="invisible" />
+                        android:visibility="gone"
+                        android:text="See All" />
 
                 </RelativeLayout>
 
@@ -261,14 +260,13 @@
 
                     <TextView
                         android:id="@+id/textHomeLatestMovieViewAll"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_menu"
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp"
-                        android:visibility="gone" />
+                        android:text="See All"  />
 
                 </RelativeLayout>
 
@@ -312,15 +310,13 @@
 
                     <TextView
                         android:id="@+id/textHomeLatestShowViewAll"
-                        android:layout_width="@dimen/space_20"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/space_20"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_menu"
-                        android:text=""
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp"
-                        android:visibility="gone" />
+                        android:text="See All" />
 
                 </RelativeLayout>
 
@@ -363,15 +359,13 @@
 
                     <TextView
                         android:id="@+id/textHomePopularShowViewAll"
-                        android:layout_width="@dimen/space_20"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/space_20"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_menu"
-                        android:text=""
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp"
-                        android:visibility="gone" />
+                        android:text="See All" />
 
                 </RelativeLayout>
 
@@ -414,15 +408,13 @@
 
                     <TextView
                         android:id="@+id/textHomePopularMovieViewAll"
-                        android:layout_width="@dimen/space_20"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/space_20"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_menu"
-                        android:text=""
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp"
-                        android:visibility="gone" />
+                        android:text="See All" />
 
                 </RelativeLayout>
 
@@ -466,15 +458,13 @@
 
                     <TextView
                         android:id="@+id/textHome3ViewAll"
-                        android:layout_width="@dimen/space_20"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/space_20"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_menu"
-                        android:text=""
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp"
-                        android:visibility="gone" />
+                        android:text="See All" />
 
                 </RelativeLayout>
 
@@ -519,15 +509,13 @@
 
                     <TextView
                         android:id="@+id/textHome4ViewAll"
-                        android:layout_width="@dimen/space_20"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/space_20"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_menu"
-                        android:text=""
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp"
-                        android:visibility="gone" />
+                        android:text="See All" />
 
                 </RelativeLayout>
 
@@ -571,15 +559,13 @@
 
                     <TextView
                         android:id="@+id/textHome5ViewAll"
-                        android:layout_width="@dimen/space_20"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/space_20"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/ic_menu"
-                        android:text=""
-                        android:textColor="@color/highlight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="12sp"
-                        android:visibility="gone" />
+                        android:text="See All" />
 
                 </RelativeLayout>
 
