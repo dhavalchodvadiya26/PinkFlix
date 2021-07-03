@@ -19,16 +19,16 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapter.TVListAdapter;
+import com.example.adapter.TvVideoListAdapter;
 import com.example.dialog.FilterDialog;
-import com.example.item.ItemTV;
+import com.example.itemmodels.ItemTV;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.EndlessRecyclerViewScrollListener;
 import com.example.util.NetworkUtils;
 import com.example.util.RvOnClickListener;
-import com.example.videostreamingapp.R;
-import com.example.videostreamingapp.TVDetailsActivity;
+import com.example.streamingapp.R;
+import com.example.streamingapp.TvVideoDetailsActivity;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -48,7 +48,7 @@ public class TVListFragment extends Fragment implements FilterDialog.FilterDialo
 
     private ArrayList<ItemTV> mListItem;
     private RecyclerView recyclerView;
-    private TVListAdapter adapter;
+    private TvVideoListAdapter adapter;
     private ProgressBar progressBar;
     private LinearLayout lyt_not_found;
     private String Id;
@@ -185,7 +185,7 @@ public class TVListFragment extends Fragment implements FilterDialog.FilterDialo
             lyt_not_found.setVisibility(View.GONE);
             if (isFirst) {
                 isFirst = false;
-                adapter = new TVListAdapter(getActivity(), mListItem);
+                adapter = new TvVideoListAdapter(getActivity(), mListItem);
                 recyclerView.setAdapter(adapter);
             } else {
                 adapter.notifyDataSetChanged();
@@ -195,7 +195,7 @@ public class TVListFragment extends Fragment implements FilterDialog.FilterDialo
                 @Override
                 public void onItemClick(int position) {
                     String sportId = mListItem.get(position).getTvId();
-                    Intent intent = new Intent(getActivity(), TVDetailsActivity.class);
+                    Intent intent = new Intent(getActivity(), TvVideoDetailsActivity.class);
                     intent.putExtra("Id", sportId);
                     startActivity(intent);
                 }

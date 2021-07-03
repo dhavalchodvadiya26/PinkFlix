@@ -2,7 +2,7 @@ package com.example.util;
 
 import android.view.Menu;
 
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 import com.google.android.gms.cast.framework.CastButtonFactory;
 import com.google.android.gms.cast.framework.media.widget.ExpandedControllerActivity;
 

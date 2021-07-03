@@ -15,14 +15,14 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapter.HomeShowListAdapter;
-import com.example.item.ItemShow;
+import com.example.adapter.HomeShowVideoListAdapter;
+import com.example.itemmodels.ItemShow;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.NetworkUtils;
 import com.example.util.RvOnClickListener;
-import com.example.videostreamingapp.R;
-import com.example.videostreamingapp.ShowDetailsActivity;
+import com.example.streamingapp.R;
+import com.example.streamingapp.ShowVideoDetailsActivity;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -41,7 +41,7 @@ public class HomeShowMoreListFragment extends Fragment {
 
     private ArrayList<ItemShow> mListItem;
     private RecyclerView recyclerView;
-    private HomeShowListAdapter adapter;
+    private HomeShowVideoListAdapter adapter;
     private ProgressBar progressBar;
     private LinearLayout lyt_not_found;
     private String Id, showUrl, categoryId;
@@ -132,14 +132,14 @@ public class HomeShowMoreListFragment extends Fragment {
         } else {
 
             lyt_not_found.setVisibility(View.GONE);
-            adapter = new HomeShowListAdapter(getActivity(), mListItem, true);
+            adapter = new HomeShowVideoListAdapter(getActivity(), mListItem, true);
             recyclerView.setAdapter(adapter);
 
             adapter.setOnItemClickListener(new RvOnClickListener() {
                 @Override
                 public void onItemClick(int position) {
                     String showId = mListItem.get(position).getShowId();
-                    Intent intent = new Intent(getActivity(), ShowDetailsActivity.class);
+                    Intent intent = new Intent(getActivity(), ShowVideoDetailsActivity.class);
                     intent.putExtra("Id", showId);
                     startActivity(intent);
                 }

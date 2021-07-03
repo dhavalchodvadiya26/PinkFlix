@@ -9,8 +9,8 @@ import android.database.sqlite.SQLiteStatement;
 
 import androidx.annotation.Nullable;
 
-import com.example.item.ItemMovie;
-import com.example.item.ItemRecent;
+import com.example.itemmodels.ItemMovie;
+import com.example.itemmodels.ItemRecent;
 
 public class OfflineDatabaseHelper extends SQLiteOpenHelper {
 

@@ -17,13 +17,13 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapter.TVCategoryAdapter;
-import com.example.item.ItemTVCategory;
+import com.example.adapter.TvVideosCategoryAdapter;
+import com.example.itemmodels.ItemTVCategory;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.NetworkUtils;
 import com.example.util.RvOnClickListener;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -43,7 +43,7 @@ public class TVCategoryListFragment extends Fragment {
 
     private ArrayList<ItemTVCategory> mListItem;
     private RecyclerView recyclerView;
-    private TVCategoryAdapter adapter;
+    private TvVideosCategoryAdapter adapter;
     private ProgressBar progressBar;
     private TextView txtNoFound;
     private LinearLayout lytRView;
@@ -130,7 +130,7 @@ public class TVCategoryListFragment extends Fragment {
             lytRView.setVisibility(View.GONE);
         } else {
             txtNoFound.setVisibility(View.GONE);
-            adapter = new TVCategoryAdapter(getActivity(), mListItem);
+            adapter = new TvVideosCategoryAdapter(getActivity(), mListItem);
             recyclerView.setAdapter(adapter);
             listByCategory(0);
             adapter.select(0);

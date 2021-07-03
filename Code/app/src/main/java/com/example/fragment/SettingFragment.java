@@ -1,32 +1,26 @@
 package com.example.fragment;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
-import com.example.videostreamingapp.AboutActivity;
-import com.example.videostreamingapp.ArtistActivity;
-import com.example.videostreamingapp.MainActivity;
-import com.example.videostreamingapp.MyApplication;
-import com.example.videostreamingapp.PrivacyPolicyActivity;
-import com.example.videostreamingapp.ProductionActivity;
-import com.example.videostreamingapp.R;
-import com.example.videostreamingapp.RefundActivity;
-import com.example.videostreamingapp.SettingsActivity;
-import com.example.videostreamingapp.TechnicalIssueActivity;
-import com.example.videostreamingapp.TermsandConditionActivity;
+import com.example.streamingapp.AboutUsActivity;
+import com.example.streamingapp.ArtistListActivity;
+import com.example.streamingapp.MyApplication;
+import com.example.streamingapp.PrivacyPolicyActivity;
+import com.example.streamingapp.ProductionCollaborationActivity;
+import com.example.streamingapp.R;
+import com.example.streamingapp.RefundPolicyActivity;
+import com.example.streamingapp.TechnicalHelpActivity;
+import com.example.streamingapp.TandCActivity;
 import com.onesignal.OneSignal;
 
 
@@ -58,19 +52,19 @@ public class SettingFragment extends Fragment {
         });
 
         lytAbout.setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(),AboutActivity.class));
+            startActivity(new Intent(getActivity(), AboutUsActivity.class));
         });
 
         lytTechnicalIssue.setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), TechnicalIssueActivity.class));
+            startActivity(new Intent(getActivity(), TechnicalHelpActivity.class));
         });
 
         lytProduction.setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), ProductionActivity.class));
+            startActivity(new Intent(getActivity(), ProductionCollaborationActivity.class));
         });
 
         lytArtist.setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), ArtistActivity.class));
+            startActivity(new Intent(getActivity(), ArtistListActivity.class));
         });
 
         lytPrivacy.setOnClickListener(new View.OnClickListener() {
@@ -81,11 +75,11 @@ public class SettingFragment extends Fragment {
         });
 
         lytTerms.setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), TermsandConditionActivity.class));
+            startActivity(new Intent(getActivity(), TandCActivity.class));
         });
 
         lytRefund.setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(), RefundActivity.class));
+            startActivity(new Intent(getActivity(), RefundPolicyActivity.class));
         });
 
         return rootView;

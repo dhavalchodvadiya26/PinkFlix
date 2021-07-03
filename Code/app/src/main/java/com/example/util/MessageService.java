@@ -12,8 +12,8 @@ import android.media.RingtoneManager;
 
 import androidx.core.app.NotificationCompat;
 
-import com.example.videostreamingapp.MainActivity;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.MainActivity;
+import com.example.streamingapp.R;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;

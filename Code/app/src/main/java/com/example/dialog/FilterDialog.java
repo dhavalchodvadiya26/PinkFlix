@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.util.Constant;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 
 public class FilterDialog extends BaseDialog {
 

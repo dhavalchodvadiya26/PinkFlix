@@ -31,7 +31,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatDialog;
 import androidx.appcompat.widget.AppCompatImageView;
 
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 
 import static android.widget.ImageView.ScaleType.CENTER_CROP;
 import static android.widget.ImageView.ScaleType.CENTER_INSIDE;

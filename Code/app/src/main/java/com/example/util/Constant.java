@@ -1,7 +1,7 @@
 package com.example.util;
 
 
-import com.example.videostreamingapp.BuildConfig;
+import com.example.streamingapp.BuildConfig;
 
 import java.io.Serializable;
 

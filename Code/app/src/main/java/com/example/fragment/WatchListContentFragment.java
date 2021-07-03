@@ -15,15 +15,15 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapter.WatchMovieListAdapter;
-import com.example.item.ItemMovie;
+import com.example.adapter.WatchMovieVideoListAdapter;
+import com.example.itemmodels.ItemMovie;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.IsRTL;
 import com.example.util.NetworkUtils;
-import com.example.videostreamingapp.MovieDetailsActivity2;
-import com.example.videostreamingapp.MyApplication;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.MovieDetailActivity1;
+import com.example.streamingapp.MyApplication;
+import com.example.streamingapp.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -42,7 +42,7 @@ public class WatchListContentFragment extends Fragment {
     private RecyclerView rvRecently;
     private MyApplication myApplication;
     private ArrayList<ItemMovie> recentList;
-    private WatchMovieListAdapter latestMovieAdapter;
+    private WatchMovieVideoListAdapter latestMovieAdapter;
     TextView watchlist_text;
     LinearLayout lyt_not_found;
     @Nullable
@@ -96,7 +96,7 @@ public class WatchListContentFragment extends Fragment {
                 recentList.clear();
                 try {
                     JSONObject mainJson = new JSONObject(result);
-                    System.out.println("WatchListActivity ==> Movie_RESPONSE ==> "+mainJson);
+                    System.out.println("WatchScreenActivity ==> Movie_RESPONSE ==> "+mainJson);
                     if (mainJson.optString("status_code").equalsIgnoreCase("200")) {
                         JSONArray video_Array = mainJson.getJSONArray("VIDEO_STREAMING_APP");
                         JSONArray recentArray = video_Array.optJSONObject(0).optJSONArray("data");
@@ -115,13 +115,13 @@ public class WatchListContentFragment extends Fragment {
                             itemRecent.setMovieAccess(jsonObject.getString(Constant.MOVIE_ACCESS));
                             /*itemRecent.setRecentType(jsonObject.getString("video_type"));*/
                             recentList.add(itemRecent);
-                            latestMovieAdapter = new WatchMovieListAdapter(getActivity(), recentList, false);
+                            latestMovieAdapter = new WatchMovieVideoListAdapter(getActivity(), recentList, false);
                             rvRecently.setAdapter(latestMovieAdapter);
                             latestMovieAdapter.notifyItemRemoved(i);
                             latestMovieAdapter.setOnItemClickListener(position ->
                             {
                                 String movieId = recentList.get(position).getMovieId();
-                                Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                                Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                                 intent.putExtra("Id", movieId);
                                 startActivity(intent);
                             });

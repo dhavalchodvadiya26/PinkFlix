@@ -4,7 +4,7 @@ import android.util.Pair;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.mediacodec.MediaCodecRenderer;
 import com.google.android.exoplayer2.mediacodec.MediaCodecUtil;

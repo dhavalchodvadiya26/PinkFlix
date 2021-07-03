@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 
 /**
  * Created by mJafarinejad on 8/15/2017.

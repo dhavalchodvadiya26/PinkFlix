@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Build;
 import android.view.View;
 
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 
 public class IsRTL {
     public static void ifSupported(Activity mContext) {

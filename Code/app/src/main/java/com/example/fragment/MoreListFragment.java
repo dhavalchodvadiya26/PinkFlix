@@ -16,8 +16,8 @@ import androidx.fragment.app.Fragment;
 import com.example.util.GradientTextView;
 import com.example.util.fullscreen.FullScreenDialogContent;
 import com.example.util.fullscreen.FullScreenDialogController;
-import com.example.videostreamingapp.MyApplication;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.MyApplication;
+import com.example.streamingapp.R;
 
 public class MoreListFragment extends Fragment implements FullScreenDialogContent {
 

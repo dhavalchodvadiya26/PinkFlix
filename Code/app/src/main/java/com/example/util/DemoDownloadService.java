@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.item.ItemMovie;
-import com.example.videostreamingapp.MyApplication;
-import com.example.videostreamingapp.R;
+import com.example.itemmodels.ItemMovie;
+import com.example.streamingapp.MyApplication;
+import com.example.streamingapp.R;
 import com.google.android.exoplayer2.offline.Download;
 import com.google.android.exoplayer2.offline.DownloadManager;
 import com.google.android.exoplayer2.offline.DownloadService;

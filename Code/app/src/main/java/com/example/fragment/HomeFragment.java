@@ -26,15 +26,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.adapter.HomeMovieLandscapListAdapter;
-import com.example.adapter.HomeMovieListAdapter;
-import com.example.adapter.HomeRecentListAdapter;
-import com.example.adapter.HomeShowListAdapter;
-import com.example.adapter.SliderListAdapter;
-import com.example.item.ItemMovie;
-import com.example.item.ItemRecent;
-import com.example.item.ItemShow;
-import com.example.item.ItemSlider;
+import com.example.adapter.HomeLandscapeMovieListAdapter;
+import com.example.adapter.HomeMovieVideoListAdapter;
+import com.example.adapter.HomeRecentMovieListAdapter;
+import com.example.adapter.HomeShowVideoListAdapter;
+import com.example.adapter.SliderVideoListAdapter;
+import com.example.itemmodels.ItemMovie;
+import com.example.itemmodels.ItemRecent;
+import com.example.itemmodels.ItemShow;
+import com.example.itemmodels.ItemSlider;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.GradientTextView;
@@ -42,15 +42,15 @@ import com.example.util.NetworkUtils;
 import com.example.util.OfflineDatabaseHelper;
 import com.example.util.RvOnClickListener;
 import com.example.util.multisnaprecyclerview.MultiSnapRecyclerView;
-import com.example.videostreamingapp.MainActivity;
-import com.example.videostreamingapp.MovieDetailsActivity2;
-import com.example.videostreamingapp.MyApplication;
-import com.example.videostreamingapp.R;
-import com.example.videostreamingapp.SearchHorizontalActivity;
-import com.example.videostreamingapp.ShowDetailsActivity;
-import com.example.videostreamingapp.SportDetailsActivity;
-import com.example.videostreamingapp.TVDetailsActivity;
-import com.example.videostreamingapp.UserProfileActivity;
+import com.example.streamingapp.MainActivity;
+import com.example.streamingapp.MovieDetailActivity1;
+import com.example.streamingapp.MyApplication;
+import com.example.streamingapp.R;
+import com.example.streamingapp.SearchActivity;
+import com.example.streamingapp.ShowVideoDetailsActivity;
+import com.example.streamingapp.SportVideoDetailsActivity;
+import com.example.streamingapp.TvVideoDetailsActivity;
+import com.example.streamingapp.ViewUserProfileActivity;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -89,11 +89,11 @@ public class HomeFragment extends Fragment {
     private LinePageIndicator circleIndicator;
     private ArrayList<ItemMovie> latestMovieList, popularMovieList, latestShowList;
     private ArrayList<ItemShow> popularShowList;
-    private HomeMovieListAdapter latestMovieAdapter, popularMovieAdapter, home3MovieAdapter, home4MovieAdapter, home5MovieAdapter, latestShowAdapter;
-    private HomeMovieLandscapListAdapter homeMovieLandscapAdapter;
-    private HomeShowListAdapter popularShowAdapter, home3ShowAdapter, home4ShowAdapter, home5ShowAdapter;
-    private SliderListAdapter sliderAdapter;
-    private HomeRecentListAdapter recentAdapter;
+    private HomeMovieVideoListAdapter latestMovieAdapter, popularMovieAdapter, home3MovieAdapter, home4MovieAdapter, home5MovieAdapter, latestShowAdapter;
+    private HomeLandscapeMovieListAdapter homeMovieLandscapAdapter;
+    private HomeShowVideoListAdapter popularShowAdapter, home3ShowAdapter, home4ShowAdapter, home5ShowAdapter;
+    private SliderVideoListAdapter sliderAdapter;
+    private HomeRecentMovieListAdapter recentAdapter;
     private String home3Title, home4Title, home5Title, home3Id, home4Id, home5Id;
     private GradientTextView viewHome3Title, viewHome4Title, viewHome5Title;
     private boolean isHome3Movie = false, isHome4Movie = false, isHome5Movie = false;
@@ -127,7 +127,7 @@ public class HomeFragment extends Fragment {
         my_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(requireActivity(), UserProfileActivity.class));
+                startActivity(new Intent(requireActivity(), ViewUserProfileActivity.class));
             }
         });
 
@@ -144,7 +144,7 @@ public class HomeFragment extends Fragment {
             @Override
             public boolean onQueryTextSubmit(String arg0) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(getContext(), SearchHorizontalActivity.class);
+                Intent intent = new Intent(getContext(), SearchActivity.class);
                 intent.putExtra("search", arg0);
                 startActivity(intent);
                 searchView.clearFocus();
@@ -520,7 +520,7 @@ public class HomeFragment extends Fragment {
 
     private void displayData() {
         if (!sliderList.isEmpty()) {
-            sliderAdapter = new SliderListAdapter(Objects.requireNonNull(getActivity()), sliderList);
+            sliderAdapter = new SliderVideoListAdapter(Objects.requireNonNull(getActivity()), sliderList);
 
 
             viewPager.setAdapter(sliderAdapter);
@@ -553,16 +553,16 @@ public class HomeFragment extends Fragment {
                 String recentType = itemChannel.getSliderType();
                 switch (recentType) {
                     case "Movies":
-                        aClass = MovieDetailsActivity2.class;
+                        aClass = MovieDetailActivity1.class;
                         break;
                     case "Shows":
-                        aClass = ShowDetailsActivity.class;
+                        aClass = ShowVideoDetailsActivity.class;
                         break;
                     case "LiveTV":
-                        aClass = TVDetailsActivity.class;
+                        aClass = TvVideoDetailsActivity.class;
                         break;
                     default:
-                        aClass = SportDetailsActivity.class;
+                        aClass = SportVideoDetailsActivity.class;
                         break;
                 }
                 Intent intent = new Intent(getActivity().getApplicationContext(), aClass);
@@ -575,7 +575,7 @@ public class HomeFragment extends Fragment {
         }
 
         if (!recentList.isEmpty()) {
-            recentAdapter = new HomeRecentListAdapter(getActivity(), recentList);
+            recentAdapter = new HomeRecentMovieListAdapter(getActivity(), recentList);
             rvRecently.setAdapter(recentAdapter);
 
             recentAdapter.setOnItemClickListener(position -> {
@@ -586,16 +586,16 @@ public class HomeFragment extends Fragment {
                 String recentType = itemRecent.getRecentType();
                 switch (recentType) {
                     case "Movies":
-                        aClass = MovieDetailsActivity2.class;
+                        aClass = MovieDetailActivity1.class;
                         break;
                     case "Shows":
-                        aClass = ShowDetailsActivity.class;
+                        aClass = ShowVideoDetailsActivity.class;
                         break;
                     case "LiveTV":
-                        aClass = TVDetailsActivity.class;
+                        aClass = TvVideoDetailsActivity.class;
                         break;
                     default:
-                        aClass = SportDetailsActivity.class;
+                        aClass = SportVideoDetailsActivity.class;
                         break;
                 }
                 long recentDuration = offlineDatabaseHelper.getMovieByID1(recentId).getMovieDuration2();
@@ -611,13 +611,13 @@ public class HomeFragment extends Fragment {
         }
 
         if (!latestMovieList.isEmpty()) {
-            latestMovieAdapter = new HomeMovieListAdapter(getActivity(), latestMovieList, false);
+            latestMovieAdapter = new HomeMovieVideoListAdapter(getActivity(), latestMovieList, false);
             rvLatestMovie.setAdapter(latestMovieAdapter);
 
             latestMovieAdapter.setOnItemClickListener(position ->
             {
                 String movieId = latestMovieList.get(position).getMovieId();
-                Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                 intent.putExtra("Id", movieId);
                 startActivity(intent);
             });
@@ -627,12 +627,12 @@ public class HomeFragment extends Fragment {
         }
 
         if (!latestShowList.isEmpty()) {
-            latestShowAdapter = new HomeMovieListAdapter(getActivity(), latestShowList, false);
+            latestShowAdapter = new HomeMovieVideoListAdapter(getActivity(), latestShowList, false);
             rvLatestShow.setAdapter(latestShowAdapter);
 
             latestShowAdapter.setOnItemClickListener(position -> {
                 String showId = latestShowList.get(position).getMovieId();
-                Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                 intent.putExtra("Id", showId);
                 startActivity(intent);
             });
@@ -641,12 +641,12 @@ public class HomeFragment extends Fragment {
         }
 
         if (!popularMovieList.isEmpty()) {
-            popularMovieAdapter = new HomeMovieListAdapter(getActivity(), popularMovieList, false);
+            popularMovieAdapter = new HomeMovieVideoListAdapter(getActivity(), popularMovieList, false);
             rvPopularMovie.setAdapter(popularMovieAdapter);
 
             popularMovieAdapter.setOnItemClickListener(position -> {
                 String movieId = popularMovieList.get(position).getMovieId();
-                Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                 intent.putExtra("Id", movieId);
                 startActivity(intent);
             });
@@ -656,12 +656,12 @@ public class HomeFragment extends Fragment {
         }
 
         if (!popularShowList.isEmpty()) {
-            popularShowAdapter = new HomeShowListAdapter(getActivity(), popularShowList, false);
+            popularShowAdapter = new HomeShowVideoListAdapter(getActivity(), popularShowList, false);
             rvPopularShow.setAdapter(popularShowAdapter);
 
             popularShowAdapter.setOnItemClickListener(position -> {
                 String showId = popularShowList.get(position).getShowId();
-                Intent intent = new Intent(getActivity(), ShowDetailsActivity.class);
+                Intent intent = new Intent(getActivity(), ShowVideoDetailsActivity.class);
                 intent.putExtra("Id", showId);
                 startActivity(intent);
             });
@@ -675,12 +675,12 @@ public class HomeFragment extends Fragment {
         home3ViewAll.setVisibility(View.VISIBLE);
         if (isHome3Movie) {
             if (!home3Movie.isEmpty()) {
-                home3MovieAdapter = new HomeMovieListAdapter(getActivity(), home3Movie, false);
+                home3MovieAdapter = new HomeMovieVideoListAdapter(getActivity(), home3Movie, false);
                 rvHome3.setAdapter(home3MovieAdapter);
 
                 home3MovieAdapter.setOnItemClickListener(position -> {
                     String movieId = home3Movie.get(position).getMovieId();
-                    Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                    Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                     intent.putExtra("Id", movieId);
                     startActivity(intent);
                 });
@@ -690,14 +690,14 @@ public class HomeFragment extends Fragment {
             }
         } else {
             if (!home3Show.isEmpty()) {
-                home3ShowAdapter = new HomeShowListAdapter(getActivity(), home3Show, false);
+                home3ShowAdapter = new HomeShowVideoListAdapter(getActivity(), home3Show, false);
                 rvHome3.setAdapter(home3ShowAdapter);
 
                 home3ShowAdapter.setOnItemClickListener(new RvOnClickListener() {
                     @Override
                     public void onItemClick(int position) {
                         String showId = home3Show.get(position).getShowId();
-                        Intent intent = new Intent(getActivity(), ShowDetailsActivity.class);
+                        Intent intent = new Intent(getActivity(), ShowVideoDetailsActivity.class);
                         intent.putExtra("Id", showId);
                         startActivity(intent);
                     }
@@ -714,12 +714,12 @@ public class HomeFragment extends Fragment {
         home4ViewAll.setVisibility(View.VISIBLE);
         if (isHome4Movie) {
             if (!home4Movie.isEmpty()) {
-                home4MovieAdapter = new HomeMovieListAdapter(getActivity(), home4Movie, false);
+                home4MovieAdapter = new HomeMovieVideoListAdapter(getActivity(), home4Movie, false);
                 rvHome4.setAdapter(home4MovieAdapter);
 
                 home4MovieAdapter.setOnItemClickListener(position -> {
                     String movieId = home4Movie.get(position).getMovieId();
-                    Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                    Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                     intent.putExtra("Id", movieId);
                     startActivity(intent);
                 });
@@ -729,12 +729,12 @@ public class HomeFragment extends Fragment {
             }
         } else {
             if (!home4Show.isEmpty()) {
-                home4ShowAdapter = new HomeShowListAdapter(getActivity(), home4Show, false);
+                home4ShowAdapter = new HomeShowVideoListAdapter(getActivity(), home4Show, false);
                 rvHome4.setAdapter(home4ShowAdapter);
 
                 home4ShowAdapter.setOnItemClickListener(position -> {
                     String showId = home4Show.get(position).getShowId();
-                    Intent intent = new Intent(getActivity(), ShowDetailsActivity.class);
+                    Intent intent = new Intent(getActivity(), ShowVideoDetailsActivity.class);
                     intent.putExtra("Id", showId);
                     startActivity(intent);
                 });
@@ -750,12 +750,12 @@ public class HomeFragment extends Fragment {
         home5ViewAll.setVisibility(View.VISIBLE);
         if (isHome5Movie) {
             if (!home5Movie.isEmpty()) {
-                home5MovieAdapter = new HomeMovieListAdapter(getActivity(), home5Movie, false);
+                home5MovieAdapter = new HomeMovieVideoListAdapter(getActivity(), home5Movie, false);
                 rvHome5.setAdapter(home5MovieAdapter);
 
                 home5MovieAdapter.setOnItemClickListener(position -> {
                     String movieId = home5Movie.get(position).getMovieId();
-                    Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                    Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                     intent.putExtra("Id", movieId);
                     startActivity(intent);
                 });
@@ -766,14 +766,14 @@ public class HomeFragment extends Fragment {
             }
         } else {
             if (!home5Show.isEmpty()) {
-                home5ShowAdapter = new HomeShowListAdapter(getActivity(), home5Show, false);
+                home5ShowAdapter = new HomeShowVideoListAdapter(getActivity(), home5Show, false);
                 rvHome5.setAdapter(home5ShowAdapter);
 
                 home5ShowAdapter.setOnItemClickListener(new RvOnClickListener() {
                     @Override
                     public void onItemClick(int position) {
                         String showId = home5Show.get(position).getShowId();
-                        Intent intent = new Intent(getActivity(), ShowDetailsActivity.class);
+                        Intent intent = new Intent(getActivity(), ShowVideoDetailsActivity.class);
                         intent.putExtra("Id", showId);
                         startActivity(intent);
                     }
@@ -1018,22 +1018,22 @@ public class HomeFragment extends Fragment {
                     movieList.add(objItem);
                 }
                 if (jsonMovie.optString("is_landscape").equalsIgnoreCase("0")) {
-                    latestMovieAdapter = new HomeMovieListAdapter(getActivity(), movieList, false);
+                    latestMovieAdapter = new HomeMovieVideoListAdapter(getActivity(), movieList, false);
                     rvLatestMovie.setAdapter(latestMovieAdapter);
                     latestMovieAdapter.setOnItemClickListener(position ->
                     {
                         String movieId = movieList.get(position).getMovieId();
-                        Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                        Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                         intent.putExtra("Id", movieId);
                         startActivity(intent);
                     });
                 } else {
-                    homeMovieLandscapAdapter = new HomeMovieLandscapListAdapter(getActivity(), movieList, false);
+                    homeMovieLandscapAdapter = new HomeLandscapeMovieListAdapter(getActivity(), movieList, false);
                     rvLatestMovie.setAdapter(homeMovieLandscapAdapter);
                     homeMovieLandscapAdapter.setOnItemClickListener(position ->
                     {
                         String movieId = movieList.get(position).getMovieId();
-                        Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                        Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                         intent.putExtra("Id", movieId);
                         startActivity(intent);
                     });
@@ -1049,12 +1049,12 @@ public class HomeFragment extends Fragment {
                     objItem.setShowImage(jsonShowData.optString((Constant.MOVIE_POSTER)));
                     showList.add(objItem);
                 }
-                popularShowAdapter = new HomeShowListAdapter(getActivity(), showList, false);
+                popularShowAdapter = new HomeShowVideoListAdapter(getActivity(), showList, false);
                 rvLatestMovie.setAdapter(popularShowAdapter);
 
                 popularShowAdapter.setOnItemClickListener(position -> {
                     String showId = showList.get(position).getShowId();
-                    Intent intent = new Intent(getActivity(), ShowDetailsActivity.class);
+                    Intent intent = new Intent(getActivity(), ShowVideoDetailsActivity.class);
                     intent.putExtra("Id", showId);
                     startActivity(intent);
                 });

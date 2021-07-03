@@ -12,7 +12,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 import com.google.android.material.tabs.TabLayout;
 
 import org.jetbrains.annotations.NotNull;
@@ -53,8 +53,8 @@ public class ShowsTabFragment extends Fragment {
 
     private void setupViewPager(final ViewPager viewPager) {
         final ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(LanguageListFragment.newInstance(isShow, strPosition), getString(R.string.language));
-        adapter.addFragment(GenreListFragment.newInstance(isShow), getString(R.string.genre));
+        adapter.addFragment(MovieLanguageListFragment.newInstance(isShow, strPosition), getString(R.string.language));
+        adapter.addFragment(MovieGenreListFragment.newInstance(isShow), getString(R.string.genre));
         viewPager.setAdapter(adapter);
     }
 

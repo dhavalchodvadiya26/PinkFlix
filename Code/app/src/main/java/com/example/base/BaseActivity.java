@@ -6,7 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

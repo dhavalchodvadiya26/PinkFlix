@@ -2,7 +2,7 @@ package com.example.util;
 
 import android.util.Log;
 
-import com.example.videostreamingapp.BuildConfig;
+import com.example.streamingapp.BuildConfig;
 
 public class Logg {
 

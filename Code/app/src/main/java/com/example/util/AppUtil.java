@@ -6,8 +6,8 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.os.Build;
 
-import com.example.item.ItemMovie;
-import com.example.videostreamingapp.MyApplication;
+import com.example.itemmodels.ItemMovie;
+import com.example.streamingapp.MyApplication;
 import com.google.android.exoplayer2.offline.Download;
 
 import java.text.DecimalFormat;

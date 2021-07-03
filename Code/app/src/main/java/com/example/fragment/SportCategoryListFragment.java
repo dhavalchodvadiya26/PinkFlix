@@ -17,13 +17,13 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapter.SportCategoryListAdapter;
-import com.example.item.ItemSportCategory;
+import com.example.adapter.SportVideosCategoryListAdapter;
+import com.example.itemmodels.ItemSportCategory;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.NetworkUtils;
 import com.example.util.Remember;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -43,7 +43,7 @@ public class SportCategoryListFragment extends Fragment {
 
     private ArrayList<ItemSportCategory> mListItem;
     private RecyclerView recyclerView;
-    private SportCategoryListAdapter adapter;
+    private SportVideosCategoryListAdapter adapter;
     private ProgressBar progressBar;
     private TextView txtNoFound;
     private LinearLayout lytRView;
@@ -130,7 +130,7 @@ public class SportCategoryListFragment extends Fragment {
             lytRView.setVisibility(View.GONE);
         } else {
             txtNoFound.setVisibility(View.GONE);
-            adapter = new SportCategoryListAdapter(getActivity(), mListItem);
+            adapter = new SportVideosCategoryListAdapter(getActivity(), mListItem);
             recyclerView.setAdapter(adapter);
             listByCategory(Integer.parseInt(Remember.getString(Constant.POSITION,"")));
             adapter.select(Integer.parseInt(Remember.getString(Constant.POSITION,"")));

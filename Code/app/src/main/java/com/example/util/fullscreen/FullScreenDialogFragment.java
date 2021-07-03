@@ -33,7 +33,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.R;
 
 
 public class FullScreenDialogFragment extends DialogFragment {

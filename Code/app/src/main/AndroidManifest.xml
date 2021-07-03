@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.videostreamingapp">
+    package="com.example.streamingapp">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,7 +12,7 @@
 
 
     <application
-        android:name=".MyApplication"
+        android:name="com.example.streamingapp.MyApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@drawable/logo"
@@ -23,195 +23,191 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
 
-        <activity android:name=".DonateActivity"/>
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.example.streamingapp.DonateListActivity"/>
+        <activity android:name="com.example.streamingapp.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.streamingapp.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SignInActivity"
+            android:name="com.example.streamingapp.SignInScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.example.streamingapp.SignUpScreenActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name="com.example.streamingapp.ForgotPasswordActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".MovieDetailsActivity"
+            android:name="com.example.streamingapp.MovieDetailActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".OnlinePlayerActivity"
+            android:name="com.example.streamingapp.OnlineMoviePlayerActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".MovieDetailsActivity2"
+            android:name="com.example.streamingapp.MovieDetailActivity1"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name=".OfflinePlayerActivity"
+            android:name="com.example.streamingapp.OfflineMoviePlayerActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".AboutActivity"
+            android:name="com.example.streamingapp.AboutUsActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".TechnicalIssueActivity"
+            android:name="com.example.streamingapp.TechnicalHelpActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ProductionActivity"
+            android:name="com.example.streamingapp.ProductionCollaborationActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ChangePasswordActivity"
+            android:name="com.example.streamingapp.UpdatePasswordActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ArtistActivity"
+            android:name="com.example.streamingapp.ArtistListActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".TermsandConditionActivity"
+            android:name="com.example.streamingapp.TandCActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".RefundActivity"
+            android:name="com.example.streamingapp.RefundPolicyActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".PrivacyPolicyActivity"
+            android:name="com.example.streamingapp.PrivacyPolicyActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".TransactionListActivity"
+            android:name="com.example.streamingapp.TransactionListActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SportDetailsActivity"
+            android:name="com.example.streamingapp.SportVideoDetailsActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ShowDetailsActivity"
+            android:name="com.example.streamingapp.ShowVideoDetailsActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".TVDetailsActivity"
+            android:name="com.example.streamingapp.TvVideoDetailsActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".PlanActivity"
+            android:name="com.example.streamingapp.SubscriptionPlanActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SelectPlanActivity"
+            android:name="com.example.streamingapp.SelectSubscriptionPlanActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SearchHorizontalActivity"
+            android:name="com.example.streamingapp.SearchActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".DashboardActivity"
+            android:name="com.example.streamingapp.DashboardActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".EditProfileActivity"
+            android:name="com.example.streamingapp.UpdateProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".PayPalActivity"
+            android:name="com.example.streamingapp.PayPalPaymentActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".RazorPayActivity"
+            android:name="com.example.streamingapp.RazorPayPaymentActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity
-            android:name=".StripeActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".EmbeddedPlayerActivity"
+            android:name="com.example.streamingapp.EmbeddedMoviePlayerActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="sensorLandscape" />
         <activity
-            android:name=".WatchListActivity"
+            android:name="com.example.streamingapp.WatchScreenActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".UserProfileActivity"
+            android:name="com.example.streamingapp.ViewUserProfileActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.example.streamingapp.SettingActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".OTPVerificationActivity"
+            android:name="com.example.streamingapp.VerifyOTPActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />

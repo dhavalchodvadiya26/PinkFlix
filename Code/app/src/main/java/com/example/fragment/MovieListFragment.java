@@ -16,15 +16,15 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapter.MovieListAdapter;
-import com.example.item.ItemMovie;
+import com.example.adapter.MovieVideoListAdapter;
+import com.example.itemmodels.ItemMovie;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.EndlessRecyclerViewScrollListener;
 import com.example.util.NetworkUtils;
 import com.example.util.RvOnClickListener;
-import com.example.videostreamingapp.MovieDetailsActivity2;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.MovieDetailActivity1;
+import com.example.streamingapp.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -43,7 +43,7 @@ public class MovieListFragment extends Fragment {
 
     private ArrayList<ItemMovie> mListItem;
     private RecyclerView recyclerView;
-    private MovieListAdapter adapter;
+    private MovieVideoListAdapter adapter;
     private ProgressBar progressBar;
     private LinearLayout lyt_not_found;
     private String Id;
@@ -187,7 +187,7 @@ public class MovieListFragment extends Fragment {
             lyt_not_found.setVisibility(View.GONE);
             if (isFirst) {
                 isFirst = false;
-                adapter = new MovieListAdapter(getActivity(), mListItem);
+                adapter = new MovieVideoListAdapter(getActivity(), mListItem);
                 recyclerView.setAdapter(adapter);
             } else {
                 adapter.notifyDataSetChanged();
@@ -197,7 +197,7 @@ public class MovieListFragment extends Fragment {
                 @Override
                 public void onItemClick(int position) {
                     String movieId = mListItem.get(position).getMovieId();
-                    Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                    Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                     intent.putExtra("Id", movieId);
                     startActivity(intent);
                 }

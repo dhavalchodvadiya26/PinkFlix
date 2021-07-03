@@ -9,8 +9,8 @@ import android.util.Log;
 
 import androidx.appcompat.widget.AppCompatTextView;
 
-import com.example.videostreamingapp.BuildConfig;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.BuildConfig;
+import com.example.streamingapp.R;
 
 public class GradientTextView extends AppCompatTextView {
     private final static String TAG = GradientTextView.class.getSimpleName();

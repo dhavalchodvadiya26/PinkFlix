@@ -19,16 +19,16 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapter.SportListAdapter;
+import com.example.adapter.SportVideoListAdapter;
 import com.example.dialog.FilterDialog;
-import com.example.item.ItemSport;
+import com.example.itemmodels.ItemSport;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.EndlessRecyclerViewScrollListener;
 import com.example.util.NetworkUtils;
 import com.example.util.RvOnClickListener;
-import com.example.videostreamingapp.R;
-import com.example.videostreamingapp.SportDetailsActivity;
+import com.example.streamingapp.R;
+import com.example.streamingapp.SportVideoDetailsActivity;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -48,7 +48,7 @@ public class SportListFragment extends Fragment implements FilterDialog.FilterDi
 
     private ArrayList<ItemSport> mListItem;
     private RecyclerView recyclerView;
-    private SportListAdapter adapter;
+    private SportVideoListAdapter adapter;
     private ProgressBar progressBar;
     private LinearLayout lyt_not_found;
     private String Id;
@@ -185,7 +185,7 @@ public class SportListFragment extends Fragment implements FilterDialog.FilterDi
             lyt_not_found.setVisibility(View.GONE);
             if (isFirst) {
                 isFirst = false;
-                adapter = new SportListAdapter(getActivity(), mListItem);
+                adapter = new SportVideoListAdapter(getActivity(), mListItem);
                 recyclerView.setAdapter(adapter);
             } else {
                 adapter.notifyDataSetChanged();
@@ -195,7 +195,7 @@ public class SportListFragment extends Fragment implements FilterDialog.FilterDi
                 @Override
                 public void onItemClick(int position) {
                     String sportId = mListItem.get(position).getSportId();
-                    Intent intent = new Intent(getActivity(), SportDetailsActivity.class);
+                    Intent intent = new Intent(getActivity(), SportVideoDetailsActivity.class);
                     intent.putExtra("Id", sportId);
                     startActivity(intent);
                 }

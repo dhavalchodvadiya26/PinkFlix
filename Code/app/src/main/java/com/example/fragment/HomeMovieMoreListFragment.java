@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -22,15 +21,14 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapter.HomeMovieListAdapter;
-import com.example.item.ItemMovie;
+import com.example.adapter.HomeMovieVideoListAdapter;
+import com.example.itemmodels.ItemMovie;
 import com.example.util.API;
 import com.example.util.Constant;
 import com.example.util.NetworkUtils;
 import com.example.util.RvOnClickListener;
-import com.example.videostreamingapp.MainActivity;
-import com.example.videostreamingapp.MovieDetailsActivity2;
-import com.example.videostreamingapp.R;
+import com.example.streamingapp.MovieDetailActivity1;
+import com.example.streamingapp.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -42,7 +40,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 import cz.msebera.android.httpclient.Header;
 
@@ -50,7 +47,7 @@ public class HomeMovieMoreListFragment extends Fragment {
 
     private ArrayList<ItemMovie> mListItem;
     private RecyclerView recyclerView;
-    private HomeMovieListAdapter adapter;
+    private HomeMovieVideoListAdapter adapter;
     private ProgressBar progressBar;
     private LinearLayout lyt_not_found;
     private String Id, movieUrl, categoryId;
@@ -156,7 +153,7 @@ public class HomeMovieMoreListFragment extends Fragment {
         } else {
 
             lyt_not_found.setVisibility(View.GONE);
-            adapter = new HomeMovieListAdapter(getActivity(), mListItem, true);
+            adapter = new HomeMovieVideoListAdapter(getActivity(), mListItem, true);
             recyclerView.setAdapter(adapter);
 
 
@@ -164,7 +161,7 @@ public class HomeMovieMoreListFragment extends Fragment {
                 @Override
                 public void onItemClick(int position) {
                     String movieId = mListItem.get(position).getMovieId();
-                    Intent intent = new Intent(getActivity(), MovieDetailsActivity2.class);
+                    Intent intent = new Intent(getActivity(), MovieDetailActivity1.class);
                     intent.putExtra("Id", movieId);
                     startActivity(intent);
                 }
