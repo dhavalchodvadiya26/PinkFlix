@@ -74,7 +74,7 @@ public class SignInScreenActivity extends AppCompatActivity implements View.OnCl
     TextView btnForgotPass, btnRegister;
     MyApplication myApplication;
     ProgressDialog pDialog;
-    SmoothCheckBox checkBox,checkBox2;
+    SmoothCheckBox checkBox, checkBox2;
     boolean isFromOtherScreen = false;
     String postId, postType;
     ImageView btnFacebook, btnGoogle;
@@ -122,7 +122,9 @@ public class SignInScreenActivity extends AppCompatActivity implements View.OnCl
         checkBox2 = findViewById(R.id.checkbox_login_age);
         btnFacebook = findViewById(R.id.button_fb_login);
         btnGoogle = findViewById(R.id.button_google_login);
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        gso = new GoogleSignInOptions
+                .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
@@ -160,7 +162,7 @@ public class SignInScreenActivity extends AppCompatActivity implements View.OnCl
                 } else {
                     Toast.makeText(getApplicationContext(), "Please Enter Password", Toast.LENGTH_LONG).show();
                 }
-            }else{
+            } else {
                 Toast.makeText(getApplicationContext(), "Please Enter Mobile Number", Toast.LENGTH_LONG).show();
             }
         });
@@ -316,13 +318,22 @@ public class SignInScreenActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+//        try {
+//            GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+//            callGoogleAPI(account.getDisplayName(), account.getEmail(), account.getId());
+//            updateUserInterface(account);
+//        } catch (ApiException e) {
+//            Log.w("TAG", "signInResult:failed code=" + e.getStatusCode());
+//            updateUserInterface(null);
+//        }
+
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+            Log.d("TAG", "firebaseAuthWithGoogle:" + account.getId());
             callGoogleAPI(account.getDisplayName(), account.getEmail(), account.getId());
             updateUserInterface(account);
         } catch (ApiException e) {
-            Log.w("TAG", "signInResult:failed code=" + e.getStatusCode());
-            updateUserInterface(null);
+            Log.w("TAG", "Google sign in failed", e);
         }
     }
 
@@ -442,7 +453,7 @@ public class SignInScreenActivity extends AppCompatActivity implements View.OnCl
                 try {
                     JSONObject mainJson = new JSONObject(result);
                     JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
-                    System.out.println("LoginActivity ==> mainJson ==> "+jsonArray);
+                    System.out.println("LoginActivity ==> mainJson ==> " + jsonArray);
                     JSONObject objJson;
                     for (int i = 0; i < jsonArray.length(); i++) {
                         objJson = jsonArray.getJSONObject(i);
