@@ -91,6 +91,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1sIxwp6UJqtyIuDRVl2ntG0ptKn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -120,7 +121,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -314,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625728634970</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Commit(08-07-2021)">
+      <created>1625729434425</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1625729434425</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,39 +401,44 @@
     </state>
     <state x="450" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1625723690107" />
     <state x="527" y="126" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1625396011241" />
-    <state width="1323" height="235" key="GridCell.Tab.0.bottom" timestamp="1625727444686">
+    <state width="1323" height="235" key="GridCell.Tab.0.bottom" timestamp="1625729345155">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625727444686" />
+    <state width="1323" height="235" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625729345155" />
     <state width="1543" height="570" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1625125130001" />
-    <state width="1323" height="235" key="GridCell.Tab.0.center" timestamp="1625727444686">
+    <state width="1323" height="235" key="GridCell.Tab.0.center" timestamp="1625729345155">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1625727444686" />
+    <state width="1323" height="235" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1625729345155" />
     <state width="1543" height="570" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1625125130000" />
-    <state width="1323" height="235" key="GridCell.Tab.0.left" timestamp="1625727444686">
+    <state width="1323" height="235" key="GridCell.Tab.0.left" timestamp="1625729345155">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1625727444686" />
+    <state width="1323" height="235" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1625729345155" />
     <state width="1543" height="570" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1625125130000" />
-    <state width="1323" height="235" key="GridCell.Tab.0.right" timestamp="1625727444686">
+    <state width="1323" height="235" key="GridCell.Tab.0.right" timestamp="1625729345155">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1625727444686" />
+    <state width="1323" height="235" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1625729345155" />
     <state width="1543" height="570" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1625125130001" />
-    <state x="191" y="0" key="SettingsEditor" timestamp="1622522585594">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="191" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1622522585594" />
-    <state x="249" y="82" key="Vcs.Push.Dialog.v2" timestamp="1625728912322">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1625729688413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="249" y="82" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1625728912322" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1625729688413" />
+    <state x="191" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1622522585594" />
+    <state x="249" y="82" key="Vcs.Push.Dialog.v2" timestamp="1625729520457">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="249" y="82" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1625729520457" />
     <state x="292" y="97" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1625290048997" />
     <state x="581" y="192" key="chooseDestDirectoryDialog" timestamp="1623835155482">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="581" y="192" key="chooseDestDirectoryDialog/0.0.1600.860@0.0.1600.860" timestamp="1623835155482" />
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1625729330603">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1625729330603" />
     <state x="382" y="83" width="603" height="624" key="find.popup" timestamp="1625722924963">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
