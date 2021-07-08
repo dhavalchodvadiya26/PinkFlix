@@ -1,0 +1,1214 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="appegic.pinkflix"
+4    android:versionCode="2"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:6:5-79
+11-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:7:5-67
+12-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:8:5-76
+13-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:8:22-74
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:9:5-81
+14-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:10:5-79
+15-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+16-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:11:5-84
+16-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:11:22-82
+17
+18    <queries>
+18-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:285:5-287:15
+19        <package android:name="com.facebook.katana" />
+19-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:286:9-55
+19-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:286:18-52
+20    </queries>
+21
+22    <uses-permission android:name="android.permission.CAMERA" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+22-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:12:5-65
+22-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:12:22-62
+23    <permission
+23-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:7:5-9:47
+24        android:name="appegic.pinkflix.permission.C2D_MESSAGE"
+24-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:8:9-63
+25        android:protectionLevel="signature" />
+25-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:9:9-44
+26
+27    <uses-permission android:name="appegic.pinkflix.permission.C2D_MESSAGE" />
+27-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:11:5-79
+27-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:11:22-76
+28    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+28-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:17:5-82
+28-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:17:22-79
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:18:5-68
+29-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:18:22-65
+30    <!--
+31 Required so the device vibrates on receiving a push notification.
+32         Vibration settings of the device still apply.
+33    -->
+34    <uses-permission android:name="android.permission.VIBRATE" />
+34-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:23:5-66
+34-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:23:22-63
+35    <!--
+36 Use to restore notifications the user hasn't interacted with.
+37         They could be missed notifications if the user reboots their device if this isn't in place.
+38    -->
+39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+39-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:29:5-81
+39-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:29:22-78
+40    <!-- Samsung -->
+41    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+41-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:31:5-86
+41-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:31:22-83
+42    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+42-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:32:5-87
+42-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:32:22-84
+43    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+43-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:33:5-81
+43-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:33:22-78
+44    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+44-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:34:5-83
+44-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:34:22-80
+45    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+45-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:35:5-88
+45-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:35:22-85
+46    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+46-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:36:5-92
+46-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:36:22-89
+47    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+47-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:37:5-84
+47-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:37:22-81
+48    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+48-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:38:5-83
+48-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:38:22-80
+49    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+49-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:39:5-91
+49-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:39:22-88
+50    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+50-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:40:5-92
+50-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:40:22-89
+51    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+51-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:41:5-93
+51-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:41:22-90
+52    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+52-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:42:5-73
+52-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:42:22-70
+53    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+53-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:43:5-82
+53-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:43:22-79
+54    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+54-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:44:5-83
+54-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:44:22-80
+55    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+55-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:45:5-88
+55-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:45:22-85
+56    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+56-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:46:5-89
+56-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:46:22-86
+57    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+57-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:5-110
+57-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:26:22-107
+58
+59    <uses-feature
+59-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:12:5-14:36
+60        android:name="android.hardware.camera"
+60-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:13:9-47
+61        android:required="false" />
+61-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:14:9-33
+62    <uses-feature
+62-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:15:5-17:36
+63        android:name="android.hardware.camera.autofocus"
+63-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:16:9-57
+64        android:required="false" />
+64-->[io.card:android-sdk:5.5.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:17:9-33
+65
+66    <application
+66-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:14:5-284:19
+67        android:name="com.example.streamingapp.MyApplication"
+67-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:15:9-62
+68        android:allowBackup="true"
+68-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:16:9-35
+69        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+69-->[androidx.core:core:1.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\14a8f482db6e6569c77b2b8456a9edc1\core-1.1.0\AndroidManifest.xml:24:18-86
+70        android:hardwareAccelerated="true"
+70-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:17:9-43
+71        android:icon="@drawable/logo"
+71-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:18:9-38
+72        android:label="@string/app_name"
+72-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:19:9-41
+73        android:roundIcon="@drawable/logo"
+73-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:20:9-43
+74        android:supportsRtl="true"
+74-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:21:9-35
+75        android:theme="@style/AppTheme"
+75-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:22:9-40
+76        android:usesCleartextTraffic="true" >
+76-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:23:9-44
+77        <activity android:name="com.example.streamingapp.DonateListActivity" />
+77-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:26:9-79
+77-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:26:19-77
+78        <activity android:name="com.example.streamingapp.SplashScreenActivity" >
+78-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:27:9-32:20
+78-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:27:19-79
+79            <intent-filter>
+79-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:28:13-31:29
+80                <action android:name="android.intent.action.MAIN" />
+80-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:29:17-69
+80-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:29:25-66
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+82-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:30:17-77
+82-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:30:27-74
+83            </intent-filter>
+84        </activity>
+85        <activity
+85-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:33:9-37:55
+86            android:name="com.example.streamingapp.MainActivity"
+86-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:34:13-65
+87            android:screenOrientation="portrait"
+87-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:35:13-49
+88            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+88-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:36:13-80
+89            android:windowSoftInputMode="adjustPan" />
+89-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:37:13-52
+90        <activity
+90-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:38:9-42:57
+91            android:name="com.example.streamingapp.SignInScreenActivity"
+91-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:39:13-73
+92            android:screenOrientation="portrait"
+92-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:40:13-49
+93            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+93-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:41:13-80
+94            android:windowSoftInputMode="adjustResize" />
+94-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:42:13-55
+95        <activity
+95-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:43:9-47:57
+96            android:name="com.example.streamingapp.SignUpScreenActivity"
+96-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:44:13-73
+97            android:screenOrientation="portrait"
+97-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:46:13-49
+98            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+98-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:45:13-80
+99            android:windowSoftInputMode="adjustResize" />
+99-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:47:13-55
+100        <activity
+100-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:48:9-52:58
+101            android:name="com.example.streamingapp.ForgotPasswordActivity"
+101-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:49:13-75
+102            android:screenOrientation="portrait"
+102-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:51:13-49
+103            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+103-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:50:13-80
+104            android:windowSoftInputMode="adjustResize" />
+104-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:52:13-55
+105        <activity
+105-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:53:9-58:55
+106            android:name="com.example.streamingapp.MovieDetailActivity"
+106-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:54:13-72
+107            android:configChanges="orientation|screenLayout|screenSize"
+107-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:55:13-72
+108            android:screenOrientation="portrait"
+108-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:56:13-49
+109            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+109-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:57:13-80
+110            android:windowSoftInputMode="adjustPan" />
+110-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:58:13-52
+111        <activity
+111-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:59:9-64:55
+112            android:name="com.example.streamingapp.OnlineMoviePlayerActivity"
+112-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:60:13-78
+113            android:configChanges="orientation|screenLayout|screenSize"
+113-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:61:13-72
+114            android:screenOrientation="portrait"
+114-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:62:13-49
+115            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+115-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:63:13-80
+116            android:windowSoftInputMode="adjustPan" />
+116-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:64:13-52
+117        <activity
+117-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:65:9-71:20
+118            android:name="com.example.streamingapp.MovieDetailActivity1"
+118-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:66:13-73
+119            android:configChanges="orientation|screenLayout|screenSize"
+119-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:67:13-72
+120            android:screenOrientation="portrait"
+120-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:68:13-49
+121            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+121-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:69:13-80
+122            android:windowSoftInputMode="adjustPan" >
+122-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:70:13-52
+123        </activity>
+124        <activity
+124-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:72:9-77:55
+125            android:name="com.example.streamingapp.OfflineMoviePlayerActivity"
+125-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:73:13-79
+126            android:configChanges="orientation|screenLayout|screenSize"
+126-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:74:13-72
+127            android:screenOrientation="portrait"
+127-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:75:13-49
+128            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+128-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:76:13-80
+129            android:windowSoftInputMode="adjustPan" />
+129-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:77:13-52
+130        <activity
+130-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:78:9-83:55
+131            android:name="com.example.streamingapp.AboutUsActivity"
+131-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:79:13-68
+132            android:configChanges="orientation|screenLayout|screenSize"
+132-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:80:13-72
+133            android:screenOrientation="portrait"
+133-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:81:13-49
+134            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+134-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:82:13-80
+135            android:windowSoftInputMode="adjustPan" />
+135-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:83:13-52
+136        <activity
+136-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:84:9-89:55
+137            android:name="com.example.streamingapp.TechnicalHelpActivity"
+137-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:85:13-74
+138            android:configChanges="orientation|screenLayout|screenSize"
+138-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:86:13-72
+139            android:screenOrientation="portrait"
+139-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:87:13-49
+140            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+140-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:88:13-80
+141            android:windowSoftInputMode="adjustPan" />
+141-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:89:13-52
+142        <activity
+142-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:90:9-95:55
+143            android:name="com.example.streamingapp.ProductionCollaborationActivity"
+143-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:91:13-84
+144            android:configChanges="orientation|screenLayout|screenSize"
+144-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:92:13-72
+145            android:screenOrientation="portrait"
+145-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:93:13-49
+146            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+146-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:94:13-80
+147            android:windowSoftInputMode="adjustPan" />
+147-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:95:13-52
+148        <activity
+148-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:96:9-101:55
+149            android:name="com.example.streamingapp.UpdatePasswordActivity"
+149-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:97:13-75
+150            android:configChanges="orientation|screenLayout|screenSize"
+150-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:98:13-72
+151            android:screenOrientation="portrait"
+151-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:99:13-49
+152            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+152-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:100:13-80
+153            android:windowSoftInputMode="adjustPan" />
+153-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:101:13-52
+154        <activity
+154-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:102:9-107:55
+155            android:name="com.example.streamingapp.ArtistListActivity"
+155-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:103:13-71
+156            android:configChanges="orientation|screenLayout|screenSize"
+156-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:104:13-72
+157            android:screenOrientation="portrait"
+157-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:105:13-49
+158            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+158-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:106:13-80
+159            android:windowSoftInputMode="adjustPan" />
+159-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:107:13-52
+160        <activity
+160-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:108:9-113:55
+161            android:name="com.example.streamingapp.TandCActivity"
+161-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:109:13-66
+162            android:configChanges="orientation|screenLayout|screenSize"
+162-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:110:13-72
+163            android:screenOrientation="portrait"
+163-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:111:13-49
+164            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+164-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:112:13-80
+165            android:windowSoftInputMode="adjustPan" />
+165-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:113:13-52
+166        <activity
+166-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:114:9-119:55
+167            android:name="com.example.streamingapp.RefundPolicyActivity"
+167-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:115:13-73
+168            android:configChanges="orientation|screenLayout|screenSize"
+168-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:116:13-72
+169            android:screenOrientation="portrait"
+169-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:117:13-49
+170            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+170-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:118:13-80
+171            android:windowSoftInputMode="adjustPan" />
+171-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:119:13-52
+172        <activity
+172-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:120:9-125:55
+173            android:name="com.example.streamingapp.PrivacyPolicyActivity"
+173-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:121:13-74
+174            android:configChanges="orientation|screenLayout|screenSize"
+174-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:122:13-72
+175            android:screenOrientation="portrait"
+175-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:123:13-49
+176            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+176-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:124:13-80
+177            android:windowSoftInputMode="adjustPan" />
+177-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:125:13-52
+178        <activity
+178-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:126:9-131:55
+179            android:name="com.example.streamingapp.TransactionListActivity"
+179-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:127:13-76
+180            android:configChanges="orientation|screenLayout|screenSize"
+180-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:128:13-72
+181            android:screenOrientation="portrait"
+181-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:129:13-49
+182            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+182-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:130:13-80
+183            android:windowSoftInputMode="adjustPan" />
+183-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:131:13-52
+184        <activity
+184-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:132:9-137:55
+185            android:name="com.example.streamingapp.SportVideoDetailsActivity"
+185-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:133:13-78
+186            android:configChanges="orientation|screenLayout|screenSize"
+186-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:134:13-72
+187            android:screenOrientation="portrait"
+187-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:135:13-49
+188            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+188-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:136:13-80
+189            android:windowSoftInputMode="adjustPan" />
+189-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:137:13-52
+190        <activity
+190-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:138:9-143:55
+191            android:name="com.example.streamingapp.ShowVideoDetailsActivity"
+191-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:139:13-77
+192            android:configChanges="orientation|screenLayout|screenSize"
+192-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:140:13-72
+193            android:screenOrientation="portrait"
+193-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:141:13-49
+194            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+194-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:142:13-80
+195            android:windowSoftInputMode="adjustPan" />
+195-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:143:13-52
+196        <activity
+196-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:144:9-149:55
+197            android:name="com.example.streamingapp.TvVideoDetailsActivity"
+197-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:145:13-75
+198            android:configChanges="orientation|screenLayout|screenSize"
+198-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:146:13-72
+199            android:screenOrientation="portrait"
+199-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:148:13-49
+200            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+200-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:147:13-80
+201            android:windowSoftInputMode="adjustPan" />
+201-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:149:13-52
+202        <activity
+202-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:150:9-155:55
+203            android:name="com.example.streamingapp.SubscriptionPlanActivity"
+203-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:151:13-77
+204            android:configChanges="orientation|screenLayout|screenSize"
+204-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:152:13-72
+205            android:screenOrientation="portrait"
+205-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:154:13-49
+206            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+206-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:153:13-80
+207            android:windowSoftInputMode="adjustPan" />
+207-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:155:13-52
+208        <activity
+208-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:156:9-161:55
+209            android:name="com.example.streamingapp.SelectSubscriptionPlanActivity"
+209-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:157:13-83
+210            android:configChanges="orientation|screenLayout|screenSize"
+210-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:158:13-72
+211            android:screenOrientation="portrait"
+211-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:160:13-49
+212            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+212-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:159:13-80
+213            android:windowSoftInputMode="adjustPan" />
+213-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:161:13-52
+214        <activity
+214-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:162:9-167:55
+215            android:name="com.example.streamingapp.SearchActivity"
+215-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:163:13-67
+216            android:configChanges="orientation|screenLayout|screenSize"
+216-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:164:13-72
+217            android:screenOrientation="portrait"
+217-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:166:13-49
+218            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+218-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:165:13-80
+219            android:windowSoftInputMode="adjustPan" />
+219-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:167:13-52
+220        <activity
+220-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:168:9-173:55
+221            android:name="com.example.streamingapp.DashboardActivity"
+221-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:169:13-70
+222            android:configChanges="orientation|screenLayout|screenSize"
+222-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:170:13-72
+223            android:screenOrientation="portrait"
+223-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:172:13-49
+224            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+224-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:171:13-80
+225            android:windowSoftInputMode="adjustPan" />
+225-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:173:13-52
+226        <activity
+226-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:174:9-178:55
+227            android:name="com.example.streamingapp.UpdateProfileActivity"
+227-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:175:13-74
+228            android:screenOrientation="portrait"
+228-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:176:13-49
+229            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+229-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:177:13-80
+230            android:windowSoftInputMode="adjustPan" />
+230-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:178:13-52
+231        <activity
+231-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:179:9-182:52
+232            android:name="com.example.streamingapp.PayPalPaymentActivity"
+232-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:180:13-74
+233            android:screenOrientation="portrait"
+233-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:182:13-49
+234            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+234-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:181:13-80
+235        <activity
+235-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:183:9-186:82
+236            android:name="com.example.streamingapp.RazorPayPaymentActivity"
+236-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:184:13-76
+237            android:screenOrientation="portrait"
+237-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:185:13-49
+238            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+238-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:186:13-80
+239        <activity
+239-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:187:9-191:59
+240            android:name="com.example.streamingapp.EmbeddedMoviePlayerActivity"
+240-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:188:13-80
+241            android:configChanges="orientation|screenSize"
+241-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:190:13-59
+242            android:screenOrientation="sensorLandscape"
+242-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:191:13-56
+243            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+243-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:189:13-80
+244        <activity
+244-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:192:9-196:52
+245            android:name="com.example.streamingapp.WatchScreenActivity"
+245-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:193:13-72
+246            android:configChanges="orientation|screenSize"
+246-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:194:13-59
+247            android:screenOrientation="portrait"
+247-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:196:13-49
+248            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+248-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:195:13-80
+249        <activity
+249-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:198:9-202:52
+250            android:name="com.example.streamingapp.ViewUserProfileActivity"
+250-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:199:13-76
+251            android:configChanges="orientation|screenSize"
+251-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:200:13-59
+252            android:screenOrientation="portrait"
+252-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:202:13-49
+253            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+253-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:201:13-80
+254        <activity
+254-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:204:9-208:52
+255            android:name="com.example.streamingapp.SettingActivity"
+255-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:205:13-68
+256            android:configChanges="orientation|screenSize"
+256-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:206:13-59
+257            android:screenOrientation="portrait"
+257-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:208:13-49
+258            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+258-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:207:13-80
+259        <activity
+259-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:209:9-213:52
+260            android:name="com.example.streamingapp.VerifyOTPActivity"
+260-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:210:13-70
+261            android:configChanges="orientation|screenSize"
+261-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:212:13-59
+262            android:screenOrientation="portrait"
+262-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:213:13-49
+263            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+263-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:211:13-80
+264        <activity
+264-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:214:9-216:66
+265            android:name="io.card.payment.CardIOActivity"
+265-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:215:13-58
+266            android:configChanges="keyboardHidden|orientation" />
+266-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:216:13-63
+267        <activity android:name="io.card.payment.DataEntryActivity" />
+267-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:217:9-70
+267-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:217:19-67
+268
+269        <meta-data
+269-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:219:9-221:69
+270            android:name="com.google.android.gms.version"
+270-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:220:13-58
+271            android:value="@integer/google_play_services_version" /> <!-- Activity required to show ad overlays. -->
+271-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:221:13-66
+272        <activity
+272-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:222:9-224:125
+273            android:name="com.google.android.gms.ads.AdActivity"
+273-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:223:13-65
+274            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+274-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:224:13-122
+275            android:exported="false"
+275-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:32:13-37
+276            android:theme="@android:style/Theme.Translucent" />
+276-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:33:13-61
+277
+278        <meta-data
+278-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:226:9-228:52
+279            android:name="com.google.android.gms.ads.APPLICATION_ID"
+279-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:227:13-69
+280            android:value="@string/admob_app_id" />
+280-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:228:13-49
+281        <meta-data
+281-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:229:9-231:39
+282            android:name="com.onesignal.NotificationOpened.DEFAULT"
+282-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:230:13-68
+283            android:value="DISABLE" />
+283-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:231:13-36
+284        <meta-data
+284-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:232:9-234:40
+285            android:name="com.onesignal.NotificationAccentColor.DEFAULT"
+285-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:233:13-73
+286            android:value="FFD81B60" />
+286-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:234:13-37
+287        <meta-data
+287-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:235:9-237:71
+288            android:name="com.google.firebase.messaging.default_notification_channel_id"
+288-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:236:13-89
+289            android:value="@string/default_notification_channel_id" />
+289-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:237:13-68
+290        <meta-data
+290-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:238:9-240:49
+291            android:name="com.google.firebase.messaging.default_notification_icon"
+291-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:239:13-83
+292            android:resource="@drawable/ic_v" />
+292-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:240:13-46
+293        <meta-data
+293-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:241:9-243:55
+294            android:name="com.facebook.sdk.ApplicationId"
+294-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:242:13-58
+295            android:value="@string/facebook_app_id" />
+295-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:243:13-52
+296        <meta-data
+296-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:244:9-246:68
+297            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+297-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:245:13-93
+298            android:value="com.example.util.CastOptionsProvider" />
+298-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:246:13-65
+299
+300        <activity
+300-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:249:9-252:48
+301            android:name="com.facebook.FacebookActivity"
+301-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:249:19-63
+302            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+302-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:250:13-114
+303            android:label="@string/app_name"
+303-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:252:13-45
+304            android:theme="@style/com_facebook_activity_theme" />
+304-->[com.facebook.android:facebook-common:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d0354d143f94c740cbc853391c0f9977\jetified-facebook-common-5.11.0\AndroidManifest.xml:32:13-63
+305        <activity
+305-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:253:9-262:20
+306            android:name="com.facebook.CustomTabActivity"
+306-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:254:13-58
+307            android:exported="true" >
+307-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:255:13-36
+308            <intent-filter>
+308-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:256:13-261:29
+309                <action android:name="android.intent.action.VIEW" />
+309-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:257:17-69
+309-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:257:25-66
+310
+311                <category android:name="android.intent.category.DEFAULT" />
+311-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:258:17-76
+311-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:258:27-73
+312                <category android:name="android.intent.category.BROWSABLE" />
+312-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:259:17-78
+312-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:259:27-75
+313
+314                <data android:scheme="@string/fb_login_protocol_scheme" />
+314-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:260:17-75
+314-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:260:23-72
+315            </intent-filter>
+316        </activity>
+317
+318        <service
+318-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:264:9-271:19
+319            android:name="com.example.util.DemoDownloadService"
+319-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:264:18-69
+320            android:exported="false" >
+320-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:265:13-37
+321
+322            <!-- This is needed for Scheduler -->
+323            <intent-filter>
+323-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:267:13-270:29
+324                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART" />
+324-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:268:17-101
+324-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:268:25-99
+325
+326                <category android:name="android.intent.category.DEFAULT" />
+326-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:258:17-76
+326-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:258:27-73
+327            </intent-filter>
+328        </service>
+329        <service
+329-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:272:9-278:19
+330            android:name="com.example.util.MessageService"
+330-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:272:18-64
+331            android:exported="false" >
+331-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:273:13-37
+332
+333            <!-- This is needed for Scheduler -->
+334            <intent-filter>
+334-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:275:13-277:29
+335                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+335-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:276:17-78
+335-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:276:25-75
+336            </intent-filter>
+337        </service>
+338        <service android:name="com.example.util.FcmTokenRegistrationService" >
+338-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:279:9-283:19
+338-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:279:18-77
+339            <intent-filter>
+339-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:280:13-282:29
+340                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+340-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:281:17-79
+340-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:281:25-77
+341            </intent-filter>
+342        </service>
+343
+344        <activity
+344-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:15:9-18:67
+345            android:name="com.nguyenhoanglam.imagepicker.ui.imagepicker.ImagePickerActivity"
+345-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:16:13-93
+346            android:configChanges="orientation|screenSize"
+346-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:17:13-59
+347            android:theme="@style/imagepicker_ImagePickerTheme" />
+347-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:18:13-64
+348        <activity
+348-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:19:9-22:62
+349            android:name="com.nguyenhoanglam.imagepicker.ui.camera.CameraActivty"
+349-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:20:13-82
+350            android:screenOrientation="portrait"
+350-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:21:13-49
+351            android:theme="@style/imagepicker_CameraTheme" />
+351-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:22:13-59
+352
+353        <provider
+353-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:24:9-32:20
+354            android:name="androidx.core.content.FileProvider"
+354-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:25:13-62
+355            android:authorities="appegic.pinkflix.fileprovider"
+355-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:26:13-64
+356            android:exported="false"
+356-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:27:13-37
+357            android:grantUriPermissions="true" >
+357-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:28:13-47
+358            <meta-data
+358-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:29:13-31:66
+359                android:name="android.support.FILE_PROVIDER_PATHS"
+359-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:30:17-67
+360                android:resource="@xml/imagepicker_file_paths" />
+360-->[com.github.nguyenhoanglam:ImagePicker:1.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5a8787d997bdb208e1fed1cef2ec0f9a\jetified-ImagePicker-1.2.0\AndroidManifest.xml:31:17-63
+361        </provider>
+362
+363        <receiver
+363-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:10:9-12:40
+364            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
+364-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:11:13-91
+365            android:exported="false" />
+365-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:12:13-37
+366
+367        <service
+367-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:14:9-16:40
+368            android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"
+368-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:15:13-96
+369            android:exported="false" />
+369-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:16:13-37
+370        <service
+370-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:17:9-19:40
+371            android:name="com.google.android.gms.cast.framework.ReconnectionService"
+371-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:18:13-85
+372            android:exported="false" />
+372-->[com.google.android.gms:play-services-cast-framework:17.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\f91b242640d7ab89c71dbfe70c8583d3\jetified-play-services-cast-framework-17.0.0\AndroidManifest.xml:19:13-37
+373
+374        <activity android:name="com.facebook.CustomTabMainActivity" />
+374-->[com.facebook.android:facebook-common:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d0354d143f94c740cbc853391c0f9977\jetified-facebook-common-5.11.0\AndroidManifest.xml:33:9-71
+374-->[com.facebook.android:facebook-common:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\d0354d143f94c740cbc853391c0f9977\jetified-facebook-common-5.11.0\AndroidManifest.xml:33:19-68
+375
+376        <meta-data
+376-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:49:9-51:51
+377            android:name="onesignal_app_id"
+377-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:50:13-44
+378            android:value="00e758f7-e45d-4725-b2cb-aa210d75eeb0" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+378-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:51:13-48
+379        <meta-data
+379-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:53:9-55:70
+380            android:name="onesignal_google_project_number"
+380-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:54:13-59
+381            android:value="str:REMOTE" />
+381-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:55:13-67
+382
+383        <receiver
+383-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:57:9-67:20
+384            android:name="com.onesignal.GcmBroadcastReceiver"
+384-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:58:13-62
+385            android:permission="com.google.android.c2dm.permission.SEND" >
+385-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:59:13-73
+386
+387            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+388            <intent-filter android:priority="999" >
+388-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:62:13-66:29
+388-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:62:28-50
+389                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+389-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:63:17-81
+389-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:63:25-78
+390
+391                <category android:name="appegic.pinkflix" />
+391-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:65:17-61
+391-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:65:27-58
+392            </intent-filter>
+393        </receiver>
+394        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+394-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:68:9-77
+394-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:68:19-74
+395
+396        <service
+396-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:70:9-76:19
+397            android:name="com.onesignal.HmsMessageServiceOneSignal"
+397-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:71:13-68
+398            android:exported="false" >
+398-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:72:13-37
+399            <intent-filter>
+399-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:73:13-75:29
+400                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+400-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:74:17-81
+400-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:74:25-78
+401            </intent-filter>
+402        </service>
+403
+404        <activity
+404-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:78:9-84:20
+405            android:name="com.onesignal.NotificationOpenedActivityHMS"
+405-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:79:13-71
+406            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+406-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:80:13-72
+407            <intent-filter>
+407-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:81:13-83:29
+408                <action android:name="android.intent.action.VIEW" />
+408-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:257:17-69
+408-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:257:25-66
+409            </intent-filter>
+410        </activity>
+411
+412        <service android:name="com.onesignal.GcmIntentService" />
+412-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:86:9-66
+412-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:86:18-63
+413        <service
+413-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:87:9-89:72
+414            android:name="com.onesignal.GcmIntentJobService"
+414-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:88:13-61
+415            android:permission="android.permission.BIND_JOB_SERVICE" />
+415-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:89:13-69
+416        <service
+416-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:90:9-92:72
+417            android:name="com.onesignal.RestoreJobService"
+417-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:91:13-59
+418            android:permission="android.permission.BIND_JOB_SERVICE" />
+418-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:92:13-69
+419        <service
+419-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:93:9-95:72
+420            android:name="com.onesignal.RestoreKickoffJobService"
+420-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:94:13-66
+421            android:permission="android.permission.BIND_JOB_SERVICE" />
+421-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:95:13-69
+422        <service
+422-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:96:9-98:43
+423            android:name="com.onesignal.SyncService"
+423-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:97:13-53
+424            android:stopWithTask="true" />
+424-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:98:13-40
+425        <service
+425-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:99:9-101:72
+426            android:name="com.onesignal.SyncJobService"
+426-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:100:13-56
+427            android:permission="android.permission.BIND_JOB_SERVICE" />
+427-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:101:13-69
+428
+429        <activity
+429-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:103:9-105:75
+430            android:name="com.onesignal.PermissionsActivity"
+430-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:104:13-61
+431            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+431-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:105:13-72
+432
+433        <service android:name="com.onesignal.NotificationRestoreService" />
+433-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:107:9-76
+433-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:107:18-73
+434
+435        <receiver android:name="com.onesignal.BootUpReceiver" >
+435-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:109:9-114:20
+435-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:109:19-62
+436            <intent-filter>
+436-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:110:13-113:29
+437                <action android:name="android.intent.action.BOOT_COMPLETED" />
+437-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:111:17-79
+437-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:111:25-76
+438                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+438-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:112:17-82
+438-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:112:25-79
+439            </intent-filter>
+440        </receiver>
+441        <receiver android:name="com.onesignal.UpgradeReceiver" >
+441-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:115:9-119:20
+441-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:115:19-63
+442            <intent-filter>
+442-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:116:13-118:29
+443                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+443-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:117:17-84
+443-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:117:25-81
+444            </intent-filter>
+445        </receiver>
+446
+447        <meta-data
+447-->[com.google.android.exoplayer:extension-ima:2.11.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\125285e148feb94fd6c78cb424055e01\jetified-extension-ima-2.11.1\AndroidManifest.xml:25:9-27:36
+448            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+448-->[com.google.android.exoplayer:extension-ima:2.11.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\125285e148feb94fd6c78cb424055e01\jetified-extension-ima-2.11.1\AndroidManifest.xml:26:13-69
+449            android:value="true" />
+449-->[com.google.android.exoplayer:extension-ima:2.11.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\125285e148feb94fd6c78cb424055e01\jetified-extension-ima-2.11.1\AndroidManifest.xml:27:13-33
+450        <!--
+451             FirebaseMessagingService performs security checks at runtime,
+452             but set to not exported to explicitly avoid allowing another app to call it.
+453        -->
+454        <service
+454-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:28:9-35:19
+455            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+455-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:29:13-82
+456            android:directBootAware="true"
+456-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:30:13-43
+457            android:exported="false" >
+457-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:31:13-37
+458            <intent-filter android:priority="-500" >
+458-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:275:13-277:29
+459                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+459-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:276:17-78
+459-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:276:25-75
+460            </intent-filter>
+461        </service>
+462        <service
+462-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:36:9-42:19
+463            android:name="com.google.firebase.components.ComponentDiscoveryService"
+463-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:37:13-84
+464            android:directBootAware="true"
+464-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\66c0a3cee32ac0c1fea0ae02c81158f4\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+465            android:exported="false" >
+465-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:38:13-37
+466            <meta-data
+466-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:39:13-41:85
+467                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+467-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:40:17-119
+468                android:value="com.google.firebase.components.ComponentRegistrar" />
+468-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\82d3a77e57542a97b64ace9ffa736894\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:41:17-82
+469            <meta-data
+469-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+470                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+470-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+471                android:value="com.google.firebase.components.ComponentRegistrar" />
+471-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+472            <meta-data
+472-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\3ca025bff3cac74fb3c46437fe01c737\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:11:13-13:85
+473                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+473-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\3ca025bff3cac74fb3c46437fe01c737\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:12:17-133
+474                android:value="com.google.firebase.components.ComponentRegistrar" />
+474-->[com.google.firebase:firebase-dynamic-links:19.1.1] C:\Users\win\.gradle\caches\transforms-2\files-2.1\3ca025bff3cac74fb3c46437fe01c737\jetified-firebase-dynamic-links-19.1.1\AndroidManifest.xml:13:17-82
+475            <meta-data
+475-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\acec2b32944b889deba6a31bafed0cab\jetified-firebase-iid-20.2.3\AndroidManifest.xml:32:13-34:85
+476                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+476-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\acec2b32944b889deba6a31bafed0cab\jetified-firebase-iid-20.2.3\AndroidManifest.xml:33:17-96
+477                android:value="com.google.firebase.components.ComponentRegistrar" />
+477-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\acec2b32944b889deba6a31bafed0cab\jetified-firebase-iid-20.2.3\AndroidManifest.xml:34:17-82
+478            <meta-data
+478-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2ccf010eca6e2d37726192e5491d7252\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:30:13-32:85
+479                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+479-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2ccf010eca6e2d37726192e5491d7252\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:31:17-139
+480                android:value="com.google.firebase.components.ComponentRegistrar" />
+480-->[com.google.android.gms:play-services-measurement-api:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\2ccf010eca6e2d37726192e5491d7252\jetified-play-services-measurement-api-17.4.4\AndroidManifest.xml:32:17-82
+481            <meta-data
+481-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c5b7e93768a3e916487a9ee4a5f88dda\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+482                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+482-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c5b7e93768a3e916487a9ee4a5f88dda\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+483                android:value="com.google.firebase.components.ComponentRegistrar" />
+483-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\c5b7e93768a3e916487a9ee4a5f88dda\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+484            <meta-data
+484-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\930b5dc77cc5ce0a212b4167f60413b8\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+485                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+485-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\930b5dc77cc5ce0a212b4167f60413b8\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+486                android:value="com.google.firebase.components.ComponentRegistrar" />
+486-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\930b5dc77cc5ce0a212b4167f60413b8\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+487        </service>
+488
+489        <activity
+489-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+490            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+490-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+491            android:excludeFromRecents="true"
+491-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+492            android:exported="false"
+492-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+493            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+493-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+494        <!--
+495            Service handling Google Sign-In user revocation. For apps that do not integrate with
+496            Google Sign-In, this service will never be started.
+497        -->
+498        <service
+498-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+499            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+499-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+500            android:exported="true"
+500-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+501            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+501-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+502            android:visibleToInstantApps="true" />
+502-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6b214c578860b4e44a52d85c9914c12d\jetified-play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+503
+504        <activity
+504-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+505            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+505-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+506            android:excludeFromRecents="true"
+506-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+507            android:exported="true"
+507-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+508            android:launchMode="singleTask"
+508-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+509            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+509-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+510            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+510-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\win\.gradle\caches\transforms-2\files-2.1\06d1c75dc1882bf143c20d0aff48a59f\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+511
+512        <receiver
+512-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\acec2b32944b889deba6a31bafed0cab\jetified-firebase-iid-20.2.3\AndroidManifest.xml:37:9-44:20
+513            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+513-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\acec2b32944b889deba6a31bafed0cab\jetified-firebase-iid-20.2.3\AndroidManifest.xml:38:13-78
+514            android:exported="true"
+514-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\acec2b32944b889deba6a31bafed0cab\jetified-firebase-iid-20.2.3\AndroidManifest.xml:39:13-36
+515            android:permission="com.google.android.c2dm.permission.SEND" >
+515-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\acec2b32944b889deba6a31bafed0cab\jetified-firebase-iid-20.2.3\AndroidManifest.xml:40:13-73
+516            <intent-filter>
+516-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\acec2b32944b889deba6a31bafed0cab\jetified-firebase-iid-20.2.3\AndroidManifest.xml:41:13-43:29
+517                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+517-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:63:17-81
+517-->[com.onesignal:OneSignal:3.16.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\5354552d7eb30b503829101bbc6768f6\jetified-OneSignal-3.16.0\AndroidManifest.xml:63:25-78
+518            </intent-filter>
+519        </receiver>
+520
+521        <activity
+521-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a89268eb6f47c0054e26903943278b27\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+522            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+522-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a89268eb6f47c0054e26903943278b27\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+523            android:exported="false"
+523-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a89268eb6f47c0054e26903943278b27\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+524            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+524-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\a89268eb6f47c0054e26903943278b27\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+525
+526        <receiver
+526-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:29:9-33:20
+527            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+527-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:30:13-85
+528            android:enabled="true"
+528-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:31:13-35
+529            android:exported="false" >
+529-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:32:13-37
+530        </receiver>
+531
+532        <service
+532-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:35:9-38:40
+533            android:name="com.google.android.gms.measurement.AppMeasurementService"
+533-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:36:13-84
+534            android:enabled="true"
+534-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:37:13-35
+535            android:exported="false" />
+535-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:38:13-37
+536        <service
+536-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:39:9-43:72
+537            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+537-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:40:13-87
+538            android:enabled="true"
+538-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:41:13-35
+539            android:exported="false"
+539-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:42:13-37
+540            android:permission="android.permission.BIND_JOB_SERVICE" />
+540-->[com.google.android.gms:play-services-measurement:17.4.4] C:\Users\win\.gradle\caches\transforms-2\files-2.1\39776ea98fae6c10e82ad84a9eb3865b\jetified-play-services-measurement-17.4.4\AndroidManifest.xml:43:13-69
+541
+542        <provider
+542-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:35:9-39:39
+543            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+543-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:36:13-76
+544            android:authorities="appegic.pinkflix.mobileadsinitprovider"
+544-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:37:13-73
+545            android:exported="false"
+545-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:38:13-37
+546            android:initOrder="100" />
+546-->[com.google.android.gms:play-services-ads-lite:19.0.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:39:13-36
+547        <provider
+547-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\66c0a3cee32ac0c1fea0ae02c81158f4\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+548            android:name="com.google.firebase.provider.FirebaseInitProvider"
+548-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\66c0a3cee32ac0c1fea0ae02c81158f4\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+549            android:authorities="appegic.pinkflix.firebaseinitprovider"
+549-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\66c0a3cee32ac0c1fea0ae02c81158f4\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+550            android:exported="false"
+550-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\66c0a3cee32ac0c1fea0ae02c81158f4\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+551            android:initOrder="100" />
+551-->[com.google.firebase:firebase-common:19.3.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\66c0a3cee32ac0c1fea0ae02c81158f4\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+552        <!--
+553         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+554         with the application context. This config is merged in with the host app's manifest,
+555         but there can only be one provider with the same authority activated at any given
+556         point; so if the end user has two or more different apps that use Facebook SDK, only the
+557         first one will be able to use the provider. To work around this problem, we use the
+558         following placeholder in the authority to identify each host application as if it was
+559         a completely different provider.
+560        -->
+561        <provider
+561-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:39:9-42:40
+562            android:name="com.facebook.internal.FacebookInitProvider"
+562-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:40:13-70
+563            android:authorities="appegic.pinkflix.FacebookInitProvider"
+563-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:41:13-72
+564            android:exported="false" />
+564-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:42:13-37
+565
+566        <receiver
+566-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:44:9-50:20
+567            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+567-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:45:13-86
+568            android:exported="false" >
+568-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:46:13-37
+569            <intent-filter>
+569-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:47:13-49:29
+570                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+570-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:48:17-95
+570-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:48:25-92
+571            </intent-filter>
+572        </receiver>
+573        <receiver
+573-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:51:9-58:20
+574            android:name="com.facebook.CampaignTrackingReceiver"
+574-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:52:13-65
+575            android:exported="true"
+575-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:53:13-36
+576            android:permission="android.permission.INSTALL_PACKAGES" >
+576-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:54:13-69
+577            <intent-filter>
+577-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:55:13-57:29
+578                <action android:name="com.android.vending.INSTALL_REFERRER" />
+578-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:56:17-79
+578-->[com.facebook.android:facebook-core:5.11.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\0825ee6ec76e39c104c288a1bb97dad6\jetified-facebook-core-5.11.0\AndroidManifest.xml:56:25-76
+579            </intent-filter>
+580        </receiver>
+581
+582        <service
+582-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+583            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+583-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+584            android:exported="false" >
+584-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+585            <meta-data
+585-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+586                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+586-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+587                android:value="cct" />
+587-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+588        </service>
+589        <service
+589-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+590            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+590-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+591            android:exported="false"
+591-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+592            android:permission="android.permission.BIND_JOB_SERVICE" >
+592-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+593        </service>
+594
+595        <receiver
+595-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+596            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+596-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+597            android:exported="false" />
+597-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\win\.gradle\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+598
+599        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+599-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:13:9-84
+599-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:13:19-81
+600        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+600-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:14:9-90
+600-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:14:19-87
+601        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+601-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:15:9-91
+601-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:15:19-88
+602        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+602-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:16:9-82
+602-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:16:19-79
+603        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+603-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:17:9-96
+603-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:17:19-93
+604        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+604-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:18:9-97
+604-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:18:19-94
+605        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+605-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:19:9-94
+605-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:19:19-91
+606        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+606-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:20:9-97
+606-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:20:19-94
+607        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+607-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:21:9-98
+607-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:21:19-95
+608
+609        <service
+609-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:23:9-25:40
+610            android:name="com.paypal.android.sdk.payments.PayPalService"
+610-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:24:13-73
+611            android:exported="false" />
+611-->[com.paypal.sdk:paypal-android-sdk:2.15.3] C:\Users\win\.gradle\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:25:13-37
+612
+613        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+613-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:12:9-16:20
+613-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:12:19-63
+614            <intent-filter>
+614-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:13:13-15:29
+615                <action android:name="rzp.device_token.share" />
+615-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:14:17-65
+615-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:14:25-62
+616            </intent-filter>
+617        </receiver>
+618
+619        <activity
+619-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:18:9-29:20
+620            android:name="com.razorpay.CheckoutActivity"
+620-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:19:13-57
+621            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+621-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:20:13-83
+622            android:theme="@style/CheckoutTheme" >
+622-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:21:13-49
+623            <intent-filter>
+623-->[com.razorpay:checkout:1.5.16] C:\Users\win\.gradle\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:22:13-28:29
+624                <action android:name="android.intent.action.MAIN" />
+624-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:29:17-69
+624-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:29:25-66
+625
+626                <data
+626-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:260:17-75
+627                    android:host="rzp.io"
+628                    android:scheme="io.rzp" />
+628-->F:\Android\Projects\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:260:23-72
+629            </intent-filter>
+630        </activity>
+631    </application>
+632
+633</manifest>
