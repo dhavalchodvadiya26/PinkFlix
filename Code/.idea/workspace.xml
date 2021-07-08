@@ -31,7 +31,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd6a0b9e-0ef1-40a7-a456-78a8fdeab805" name="Default Changelist" comment="Commit(08-07-2021)" />
+    <list default="true" id="cd6a0b9e-0ef1-40a7-a456-78a8fdeab805" name="Default Changelist" comment="Commit(08-07-2021)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +121,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -334,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625729955738</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Commit(08-07-2021)">
+      <created>1625730213176</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1625730213176</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,15 +442,15 @@
     </state>
     <state width="1323" height="386" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1625729767512" />
     <state width="1543" height="570" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1625125130001" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1625730203430">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1625730418643">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1625730203430" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1625730418643" />
     <state x="191" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1622522585594" />
-    <state x="249" y="82" key="Vcs.Push.Dialog.v2" timestamp="1625729959319">
+    <state x="249" y="82" key="Vcs.Push.Dialog.v2" timestamp="1625730216263">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="249" y="82" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1625729959319" />
+    <state x="249" y="82" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1625730216263" />
     <state x="292" y="97" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1625290048997" />
     <state x="581" y="192" key="chooseDestDirectoryDialog" timestamp="1623835155482">
       <screen x="0" y="0" width="1600" height="860" />
