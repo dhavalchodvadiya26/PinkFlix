@@ -255,7 +255,14 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                 .addOnCompleteListener(VerifyOTPActivity.this, task -> {
                     if (task.isSuccessful()) {
                         //verification successful we will start the profile activity
-                        callSignUpApi();
+                        if (isFromForgotPassword().equals("ForgotPassword")){
+                            Intent intent = new Intent(getApplicationContext(), UpdatePasswordActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(intent);
+                            finish();
+                        }else{
+                            callSignUpApi();
+                        }
                     }
                 });
     }
@@ -324,12 +331,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                 builder.setMessage(strMessage)
                         .setCancelable(false)
                         .setPositiveButton("OK", (dialog, id) -> {
-                            Intent intent;
-                            if (isFromForgotPassword.equals("false")){
-                                intent = new Intent(getApplicationContext(), SignInScreenActivity.class);
-                            }else{
-                                intent = new Intent(getApplicationContext(), UpdatePasswordActivity.class);
-                            }
+                            Intent intent = new Intent(getApplicationContext(), SignInScreenActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(intent);
                             finish();

@@ -161,10 +161,9 @@ com/example/itemmodels/ItemTransaction.java
  com.example.itemmodels.ItemTransaction
 com/example/util/multisnaprecyclerview/SnapHelperDelegator.java
  com.example.util.multisnaprecyclerview.SnapHelperDelegator
-com/example/streamingapp/ForgotPasswordActivity.java
- com.example.streamingapp.ForgotPasswordActivity
- com.example.streamingapp.ForgotPasswordActivity$1
- com.example.streamingapp.ForgotPasswordActivity$2
+com/example/streamingapp/TransactionListActivity.java
+ com.example.streamingapp.TransactionListActivity
+ com.example.streamingapp.TransactionListActivity$1
 com/example/itemmodels/ItemTVCategory.java
  com.example.itemmodels.ItemTVCategory
 com/example/itemmodels/ItemDashBoard.java
@@ -513,13 +512,13 @@ com/example/itemmodels/ItemSlider.java
  com.example.itemmodels.ItemSlider
 com/example/fragment/EmbeddedImageListFragment.java
  com.example.fragment.EmbeddedImageListFragment
-com/example/streamingapp/SignInScreenActivity.java
- com.example.streamingapp.SignInScreenActivity
- com.example.streamingapp.SignInScreenActivity$1
- com.example.streamingapp.SignInScreenActivity$2
- com.example.streamingapp.SignInScreenActivity$3
- com.example.streamingapp.SignInScreenActivity$4
- com.example.streamingapp.SignInScreenActivity$5
+com/example/fragment/DownloadedVideosFragment.java
+ com.example.fragment.DownloadedVideosFragment
+ com.example.fragment.DownloadedVideosFragment$1
+ com.example.fragment.DownloadedVideosFragment$2
+ com.example.fragment.DownloadedVideosFragment$3
+ com.example.fragment.DownloadedVideosFragment$4
+ com.example.fragment.DownloadedVideosFragment$5
 com/example/util/fullscreen/FullScreenDialogContent.java
  com.example.util.fullscreen.FullScreenDialogContent
 com/example/fragment/ExoTvVideoPlayerFragment.java
@@ -627,13 +626,15 @@ com/example/itemmodels/ItemSport.java
  com.example.itemmodels.ItemSport
 com/example/util/EndlessRecyclerViewScrollListener.java
  com.example.util.EndlessRecyclerViewScrollListener
-com/example/fragment/DownloadedVideosFragment.java
- com.example.fragment.DownloadedVideosFragment
- com.example.fragment.DownloadedVideosFragment$1
- com.example.fragment.DownloadedVideosFragment$2
- com.example.fragment.DownloadedVideosFragment$3
- com.example.fragment.DownloadedVideosFragment$4
- com.example.fragment.DownloadedVideosFragment$5
-com/example/streamingapp/TransactionListActivity.java
- com.example.streamingapp.TransactionListActivity
- com.example.streamingapp.TransactionListActivity$1
+com/example/streamingapp/ForgotPasswordActivity.java
+ com.example.streamingapp.ForgotPasswordActivity
+ com.example.streamingapp.ForgotPasswordActivity$1
+ com.example.streamingapp.ForgotPasswordActivity$2
+ com.example.streamingapp.ForgotPasswordActivity$3
+com/example/streamingapp/SignInScreenActivity.java
+ com.example.streamingapp.SignInScreenActivity
+ com.example.streamingapp.SignInScreenActivity$1
+ com.example.streamingapp.SignInScreenActivity$2
+ com.example.streamingapp.SignInScreenActivity$3
+ com.example.streamingapp.SignInScreenActivity$4
+ com.example.streamingapp.SignInScreenActivity$5

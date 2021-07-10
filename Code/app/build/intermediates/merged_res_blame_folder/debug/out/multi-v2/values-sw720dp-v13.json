@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+            "outputFile": "F:\\Android\\Projects\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\a23beb7dec128dec57731262b2b36d90\\mediarouter-1.0.0\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\a23beb7dec128dec57731262b2b36d90\\mediarouter-1.0.0\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\ffe6d20074e12607d89e246209247235\\jetified-bottomsheet-1.2.3\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\a1ad2eef11e4ead7cbf03749b13c998a\\jetified-bottomsheet-1.2.3\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

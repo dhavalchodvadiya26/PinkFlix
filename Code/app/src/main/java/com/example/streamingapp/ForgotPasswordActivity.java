@@ -104,51 +104,52 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     public void putForgotPassword() {
 
-        startActivity(new Intent(ForgotPasswordActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
-                .putExtra("code", edtCountry.getText().toString().trim()).putExtra("isFromForgotPassword", true));
-//        strEmail = edtEmail.getText().toString();
-//        AsyncHttpClient client = new AsyncHttpClient();
-//        RequestParams params = new RequestParams();
-//
-//        JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
-//        jsObj.addProperty("phone", strEmail);
-//        params.put("data", API.toBase64(jsObj.toString()));
-//        System.out.println("data ==> "+API.toBase64(jsObj.toString()));
-//
-//        client.post(Constant.FORGOT_PASSWORD_URL, params, new AsyncHttpResponseHandler() {
-//
-//            @Override
-//            public void onStart() {
-//                super.onStart();
-//                showProgressDialog();
-//            }
-//
-//            @Override
-//            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-//                dismissProgressDialog();
-//                String result = new String(responseBody);
-//                try {
-//                    JSONObject mainJson = new JSONObject(result);
-//                    JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
-//                    JSONObject objJson;
-//                    for (int i = 0; i < jsonArray.length(); i++) {
-//                        objJson = jsonArray.getJSONObject(i);
-//                        strMessage = objJson.getString(Constant.MSG);
-//                        Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
-//                    }
-//
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                }
-//                setResult();
-//            }
-//
-//            @Override
-//            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-//                dismissProgressDialog();
-//            }
-//
-//        });
+//        startActivity(new Intent(ForgotPasswordActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
+//                .putExtra("code", edtCountry.getText().toString().trim()).putExtra("isFromForgotPassword", "ForgotPassword"));
+        strEmail = edtEmail.getText().toString();
+        AsyncHttpClient client = new AsyncHttpClient();
+        RequestParams params = new RequestParams();
+
+        JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
+        jsObj.addProperty("phone", strEmail);
+        params.put("data", API.toBase64(jsObj.toString()));
+        System.out.println("data ==> "+API.toBase64(jsObj.toString()));
+
+        client.post(Constant.FORGOT_PASSWORD_URL, params, new AsyncHttpResponseHandler() {
+
+            @Override
+            public void onStart() {
+                super.onStart();
+                showProgressDialog();
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                dismissProgressDialog();
+                String result = new String(responseBody);
+                try {
+                    JSONObject mainJson = new JSONObject(result);
+                    JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+                    JSONObject objJson;
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        objJson = jsonArray.getJSONObject(i);
+                        strMessage = objJson.getString(Constant.MSG);
+                        System.out.println("ForgotPassword JSON ==> "+objJson);
+                        Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                setResult();
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                dismissProgressDialog();
+            }
+
+        });
     }
 
     public void setResult() {

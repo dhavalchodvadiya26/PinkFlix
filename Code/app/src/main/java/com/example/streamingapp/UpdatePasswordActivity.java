@@ -60,8 +60,8 @@ public class UpdatePasswordActivity extends AppCompatActivity {
                 System.out.println("Confirm Password = "+conf_pwd);
                 System.out.println("Current Password = "+cur_pwd);
 
-                if (!new_pwd.isEmpty() && !conf_pwd.isEmpty() && !cur_pwd.isEmpty()){
-                    if (new_pwd.equals(conf_pwd) && cur_pwd.equals(MyApplication.getInstance().getRememberPassword())){
+                if (!new_pwd.isEmpty() && !conf_pwd.isEmpty()){
+                    if (new_pwd.equals(conf_pwd)){
                         String strMobile = MyApplication.getInstance().getRememberEmail();
                         AsyncHttpClient client = new AsyncHttpClient();
                         RequestParams params = new RequestParams();
@@ -100,24 +100,14 @@ public class UpdatePasswordActivity extends AppCompatActivity {
                             }
 
                         });
-                    }else if(!new_pwd.equals(conf_pwd) && cur_pwd.equals(MyApplication.getInstance().getRememberPassword())){
+                    }else if(!new_pwd.equals(conf_pwd)){
                         Toast.makeText(getApplicationContext(),"Passwords doesn't match",Toast.LENGTH_LONG).show();
-                    }else if (new_pwd.equals(conf_pwd) && !cur_pwd.equals(MyApplication.getInstance().getRememberPassword())){
-                        Toast.makeText(getApplicationContext(),"Invalid Current Password",Toast.LENGTH_LONG).show();
                     }
-                }else if (!new_pwd.isEmpty() && conf_pwd.isEmpty() && cur_pwd.isEmpty()) {
-                    Toast.makeText(UpdatePasswordActivity.this, "Please Enter Current & Confirm Password", Toast.LENGTH_SHORT).show();
-                }else if (new_pwd.isEmpty() && !conf_pwd.isEmpty() && cur_pwd.isEmpty()){
-                    Toast.makeText(UpdatePasswordActivity.this, "Please Enter Current & New Password", Toast.LENGTH_SHORT).show();
-                }else if (new_pwd.isEmpty() && conf_pwd.isEmpty() && !cur_pwd.isEmpty()){
-                    Toast.makeText(UpdatePasswordActivity.this, "Please Enter New & Confirm Password", Toast.LENGTH_SHORT).show();
-                }else if (!new_pwd.isEmpty() && conf_pwd.isEmpty() && !cur_pwd.isEmpty()){
+                }else if (!new_pwd.isEmpty() && conf_pwd.isEmpty()) {
                     Toast.makeText(UpdatePasswordActivity.this, "Please Enter Confirm Password", Toast.LENGTH_SHORT).show();
-                }else if (new_pwd.isEmpty() && !conf_pwd.isEmpty() && !cur_pwd.isEmpty()){
+                }else if (new_pwd.isEmpty() && !conf_pwd.isEmpty()){
                     Toast.makeText(UpdatePasswordActivity.this, "Please Enter New Password", Toast.LENGTH_SHORT).show();
-                }else if (!new_pwd.isEmpty() && !conf_pwd.isEmpty() && cur_pwd.isEmpty()){
-                    Toast.makeText(UpdatePasswordActivity.this, "Please Enter Current Password", Toast.LENGTH_SHORT).show();
-                }else if (new_pwd.isEmpty() && conf_pwd.isEmpty() && cur_pwd.isEmpty()){
+                }else if (new_pwd.isEmpty() && conf_pwd.isEmpty()){
                     Toast.makeText(UpdatePasswordActivity.this, "Please Fill all Fields", Toast.LENGTH_SHORT).show();
                 }
             }

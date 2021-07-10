@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "F:\\Android\\Projects\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\ab0ffaa9cfa97b64f7806dee010b1e65\\appcompat-1.1.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\ab0ffaa9cfa97b64f7806dee010b1e65\\appcompat-1.1.0\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

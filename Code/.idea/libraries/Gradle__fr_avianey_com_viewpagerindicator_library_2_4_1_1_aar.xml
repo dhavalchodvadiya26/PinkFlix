@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/19cf134b8dee101e1ae00d757573957a/jetified-library-2.4.1.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/19cf134b8dee101e1ae00d757573957a/jetified-library-2.4.1.1/res" />
-      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/19cf134b8dee101e1ae00d757573957a/jetified-library-2.4.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b0f29463381704979a591cc5e0767ea/jetified-library-2.4.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b0f29463381704979a591cc5e0767ea/jetified-library-2.4.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b0f29463381704979a591cc5e0767ea/jetified-library-2.4.1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/fr.avianey.com.viewpagerindicator/library/2.4.1.1/f6d78a1af9e3a7c7a84bac64c6c549698730c30a/library-2.4.1.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/fr.avianey.com.viewpagerindicator/library/2.4.1.1/f6d78a1af9e3a7c7a84bac64c6c549698730c30a/library-2.4.1.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/fr.avianey.com.viewpagerindicator/library/2.4.1.1/7bad9a715d068b6768ce7ef8dadd8b72e9f345c9/library-2.4.1.1-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/fr.avianey.com.viewpagerindicator/library/2.4.1.1/7bad9a715d068b6768ce7ef8dadd8b72e9f345c9/library-2.4.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
