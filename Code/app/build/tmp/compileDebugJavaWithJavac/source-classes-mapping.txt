@@ -248,11 +248,6 @@ com/example/util/multisnaprecyclerview/EndSnapHelperDelegator.java
 com/example/streamingapp/EmbeddedMoviePlayerActivity.java
  com.example.streamingapp.EmbeddedMoviePlayerActivity
  com.example.streamingapp.EmbeddedMoviePlayerActivity$1
-com/example/streamingapp/PayPalPaymentActivity.java
- com.example.streamingapp.PayPalPaymentActivity
- com.example.streamingapp.PayPalPaymentActivity$1
- com.example.streamingapp.PayPalPaymentActivity$2
- com.example.streamingapp.PayPalPaymentActivity$3
 com/example/adapter/WatchMovieVideoListAdapter2.java
  com.example.adapter.WatchMovieVideoListAdapter2
  com.example.adapter.WatchMovieVideoListAdapter2$1

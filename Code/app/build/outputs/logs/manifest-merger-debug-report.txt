@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
-INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
-INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
-INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
+INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
+INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
+INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
 MERGED from [androidx.databinding:databinding-adapters:4.1.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7d8f9d616b913eca20aef6127f452378\databinding-adapters-4.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.1.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\8e17ecb0c3a6abbeb46f513db3a6e71d\databinding-runtime-4.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [fr.avianey.com.viewpagerindicator:library:2.4.1.1] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\19cf134b8dee101e1ae00d757573957a\jetified-library-2.4.1.1\AndroidManifest.xml:3:1-9:12
@@ -111,30 +111,28 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] D:\Dhaval\Celebia
 MERGED from [androidx.arch.core:core-runtime:2.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\d82cf0439b0bda759f23c0e376ce697e\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\aebfa1a4cfba29529d98eeba674523aa\jetified-android-shape-imageview-0.9.3\AndroidManifest.xml:2:1-12:12
 MERGED from [me.relex:circleindicator:1.2.2] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\f91421922fc9700c0f1f2a0dec053d65\jetified-circleindicator-1.2.2\AndroidManifest.xml:2:1-12:12
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:2:1-28:12
 MERGED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:2:1-32:12
 MERGED from [com.github.ixiDev:GDPRChecker:v0.2] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\aeec2fb3add0d90fec6c3573592f4fb5\jetified-GDPRChecker-v0.2\AndroidManifest.xml:2:1-13:12
 MERGED from [org.michaelbel:bottomsheet:1.2.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\ffe6d20074e12607d89e246209247235\jetified-bottomsheet-1.2.3\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\bd67dc419fb521c6feb73f0f11d17f73\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.gms:play-services-ads-base:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\deb09f3739de9beccb82f4657290b1f9\jetified-play-services-ads-base-19.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\fb0cba602ffc878ee4289ee6059264ab\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
-INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
-INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
-INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
+INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
+INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
+INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
 	package
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:4:5-39
 		INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
 		INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-288:12
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:1-286:12
 		INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:2:11-69
@@ -162,8 +160,6 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] D:\Dh
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:22:5-79
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:9:5-79
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.INTERNET
@@ -186,8 +182,6 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.4] D:
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.4] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\e7d9f1ca89679f548e9f9c1cf0448673\jetified-play-services-measurement-sdk-api-17.4.4\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\300593c87597b742c450e14253a59652\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:26:5-67
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:10:5-67
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:10:5-67
 MERGED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:9:5-67
 MERGED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:9:5-67
 MERGED from [com.github.ixiDev:GDPRChecker:v0.2] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\aeec2fb3add0d90fec6c3573592f4fb5\jetified-GDPRChecker-v0.2\AndroidManifest.xml:11:5-67
@@ -215,7 +209,7 @@ ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:11:
 	android:name
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:11:22-82
 application
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:14:5-284:19
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:14:5-282:19
 MERGED from [com.github.nguyenhoanglam:ImagePicker:1.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\629f9ed21ea4fc3667c504eadf99ddd4\jetified-ImagePicker-1.2.0\AndroidManifest.xml:14:5-33:19
 MERGED from [com.github.nguyenhoanglam:ImagePicker:1.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\629f9ed21ea4fc3667c504eadf99ddd4\jetified-ImagePicker-1.2.0\AndroidManifest.xml:14:5-33:19
 MERGED from [com.google.android.material:material:1.2.0-alpha04] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\d8a503c4478e99a21f414ea2d57f179c\material-1.2.0-alpha04\AndroidManifest.xml:22:5-20
@@ -308,12 +302,8 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] D:\Dhaval\Celebians\ca
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\5cb8223da5f9a2972a0df3953fbc18c1\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\9e7495e6434618f17cf21d444c4f3cc3\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\9e7495e6434618f17cf21d444c4f3cc3\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:12:5-26:19
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:12:5-26:19
 MERGED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:11:5-30:19
 MERGED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:11:5-30:19
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:19:5-24:19
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:19:5-24:19
 MERGED from [com.google.android.gms:play-services-ads-base:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\deb09f3739de9beccb82f4657290b1f9\jetified-play-services-ads-base-19.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-ads-base:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\deb09f3739de9beccb82f4657290b1f9\jetified-play-services-ads-base-19.0.0\AndroidManifest.xml:7:5-20
 	android:appComponentFactory
@@ -646,228 +636,216 @@ ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:174
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:177:13-80
 	android:name
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:175:13-74
-activity#com.example.streamingapp.PayPalPaymentActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:179:9-182:52
-	android:screenOrientation
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:182:13-49
-	android:theme
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:181:13-80
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:180:13-74
 activity#com.example.streamingapp.RazorPayPaymentActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:183:9-186:82
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:179:9-182:82
 	android:screenOrientation
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:185:13-49
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:181:13-49
 	android:theme
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:186:13-80
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:182:13-80
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:184:13-76
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:180:13-76
 activity#com.example.streamingapp.EmbeddedMoviePlayerActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:187:9-191:59
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:183:9-187:59
 	android:screenOrientation
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:191:13-56
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:187:13-56
+	android:configChanges
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:186:13-59
+	android:theme
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:185:13-80
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:184:13-80
+activity#com.example.streamingapp.WatchScreenActivity
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:188:9-192:52
+	android:screenOrientation
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:192:13-49
 	android:configChanges
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:190:13-59
 	android:theme
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:189:13-80
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:191:13-80
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:188:13-80
-activity#com.example.streamingapp.WatchScreenActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:192:9-196:52
-	android:screenOrientation
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:196:13-49
-	android:configChanges
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:194:13-59
-	android:theme
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:195:13-80
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:193:13-72
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:189:13-72
 activity#com.example.streamingapp.ViewUserProfileActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:198:9-202:52
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:194:9-198:52
 	android:screenOrientation
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:202:13-49
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:198:13-49
 	android:configChanges
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:200:13-59
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:196:13-59
 	android:theme
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:201:13-80
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:197:13-80
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:199:13-76
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:195:13-76
 activity#com.example.streamingapp.SettingActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:204:9-208:52
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:200:9-204:52
 	android:screenOrientation
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:208:13-49
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:204:13-49
 	android:configChanges
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:206:13-59
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:202:13-59
+	android:theme
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:203:13-80
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:201:13-68
+activity#com.example.streamingapp.VerifyOTPActivity
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:205:9-209:52
+	android:screenOrientation
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:209:13-49
+	android:configChanges
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:208:13-59
 	android:theme
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:207:13-80
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:205:13-68
-activity#com.example.streamingapp.VerifyOTPActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:209:9-213:52
-	android:screenOrientation
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:213:13-49
-	android:configChanges
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:212:13-59
-	android:theme
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:211:13-80
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:210:13-70
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:206:13-70
 activity#io.card.payment.CardIOActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:214:9-216:66
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:20:9-22:66
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:20:9-22:66
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:210:9-212:66
 	android:configChanges
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:216:13-63
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:212:13-63
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:215:13-58
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:211:13-58
 activity#io.card.payment.DataEntryActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:217:9-70
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:23:9-70
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:23:9-70
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:213:9-70
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:217:19-67
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:213:19-67
 meta-data#com.google.android.gms.version
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:219:9-221:69
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:215:9-217:69
 MERGED from [com.google.android.exoplayer:extension-ima:2.11.1] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\125285e148feb94fd6c78cb424055e01\jetified-extension-ima-2.11.1\AndroidManifest.xml:28:9-30:69
 MERGED from [com.google.android.exoplayer:extension-ima:2.11.1] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\125285e148feb94fd6c78cb424055e01\jetified-extension-ima-2.11.1\AndroidManifest.xml:28:9-30:69
 MERGED from [com.google.android.gms:play-services-basement:17.1.1] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\fa6d1cf97048edda097480a43e8d37c3\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.1.1] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\fa6d1cf97048edda097480a43e8d37c3\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:221:13-66
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:217:13-66
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:220:13-58
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:216:13-58
 activity#com.google.android.gms.ads.AdActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:222:9-224:125
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:218:9-220:125
 MERGED from [com.google.android.gms:play-services-ads-lite:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:29:9-33:64
 MERGED from [com.google.android.gms:play-services-ads-lite:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:29:9-33:64
 	android:exported
 		ADDED from [com.google.android.gms:play-services-ads-lite:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:32:13-37
 	android:configChanges
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:224:13-122
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:220:13-122
 	android:theme
 		ADDED from [com.google.android.gms:play-services-ads-lite:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7aa3c9edf5bbdd7f15325cc9b1576204\jetified-play-services-ads-lite-19.0.0\AndroidManifest.xml:33:13-61
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:223:13-65
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:219:13-65
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:226:9-228:52
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:222:9-224:52
 	android:value
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:228:13-49
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:224:13-49
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:227:13-69
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:223:13-69
 meta-data#com.onesignal.NotificationOpened.DEFAULT
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:229:9-231:39
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:225:9-227:39
 	android:value
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:231:13-36
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:227:13-36
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:230:13-68
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:226:13-68
 meta-data#com.onesignal.NotificationAccentColor.DEFAULT
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:232:9-234:40
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:228:9-230:40
 	android:value
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:234:13-37
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:230:13-37
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:233:13-73
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:229:13-73
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:235:9-237:71
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:231:9-233:71
 	android:value
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:237:13-68
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:233:13-68
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:236:13-89
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:232:13-89
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:238:9-240:49
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:234:9-236:49
 	android:resource
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:240:13-46
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:236:13-46
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:239:13-83
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:235:13-83
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:241:9-243:55
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:237:9-239:55
 	android:value
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:243:13-52
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:239:13-52
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:242:13-58
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:238:13-58
 meta-data#com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:244:9-246:68
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:240:9-242:68
 	android:value
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:246:13-65
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:242:13-65
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:245:13-93
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:241:13-93
+service#com.example.util.DemoDownloadService
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:244:9-251:19
+	android:exported
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:245:13-37
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:244:18-69
+intent-filter#action:name:com.google.android.exoplayer.downloadService.action.RESTART+category:name:android.intent.category.DEFAULT
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:247:13-250:29
+action#com.google.android.exoplayer.downloadService.action.RESTART
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:248:17-101
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:248:25-99
+category#android.intent.category.DEFAULT
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:249:17-75
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:249:27-73
+service#com.example.util.MessageService
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:252:9-258:19
+	android:exported
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:253:13-37
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:252:18-64
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:255:13-257:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:256:17-78
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:256:25-75
+service#com.example.util.FcmTokenRegistrationService
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:259:9-263:19
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:259:18-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:260:13-262:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:261:17-79
+	android:name
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:261:25-77
 activity#com.facebook.FacebookActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:249:9-252:48
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:268:9-271:48
 MERGED from [com.facebook.android:facebook-common:5.11.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7ab30cea4767e6ec6b6dd5ca88361033\jetified-facebook-common-5.11.0\AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-common:5.11.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7ab30cea4767e6ec6b6dd5ca88361033\jetified-facebook-common-5.11.0\AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:252:13-45
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:271:13-45
 	android:configChanges
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:250:13-114
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:269:13-114
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:5.11.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7ab30cea4767e6ec6b6dd5ca88361033\jetified-facebook-common-5.11.0\AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:249:19-63
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:268:19-63
 activity#com.facebook.CustomTabActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:253:9-262:20
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:272:9-281:20
 MERGED from [com.facebook.android:facebook-common:5.11.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7ab30cea4767e6ec6b6dd5ca88361033\jetified-facebook-common-5.11.0\AndroidManifest.xml:34:9-67
 MERGED from [com.facebook.android:facebook-common:5.11.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\7ab30cea4767e6ec6b6dd5ca88361033\jetified-facebook-common-5.11.0\AndroidManifest.xml:34:9-67
 	android:exported
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:255:13-36
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:274:13-36
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:254:13-58
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:273:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:256:13-261:29
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:275:13-280:29
 action#android.intent.action.VIEW
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:257:17-69
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:276:17-69
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:257:25-66
-category#android.intent.category.DEFAULT
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:258:17-76
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:258:27-73
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:276:25-66
 category#android.intent.category.BROWSABLE
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:259:17-78
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:278:17-78
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:259:27-75
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:278:27-75
 data
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:260:17-75
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:279:17-75
 	android:scheme
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:260:23-72
-service#com.example.util.DemoDownloadService
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:264:9-271:19
-	android:exported
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:265:13-37
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:264:18-69
-intent-filter#action:name:com.google.android.exoplayer.downloadService.action.RESTART+category:name:android.intent.category.DEFAULT
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:267:13-270:29
-action#com.google.android.exoplayer.downloadService.action.RESTART
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:268:17-101
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:268:25-99
-service#com.example.util.MessageService
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:272:9-278:19
-	android:exported
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:273:13-37
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:272:18-64
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:275:13-277:29
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:276:17-78
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:276:25-75
-service#com.example.util.FcmTokenRegistrationService
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:279:9-283:19
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:279:18-77
-intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:280:13-282:29
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:281:17-79
-	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:281:25-77
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:279:23-72
 queries
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:285:5-287:15
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:283:5-285:15
 package#com.facebook.katana
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:286:9-55
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:284:9-55
 	android:name
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:286:18-52
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:284:18-52
 uses-sdk
 INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
@@ -1086,8 +1064,6 @@ MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] D:\Dhaval\Celebia
 MERGED from [com.github.siyamed:android-shape-imageview:0.9.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\aebfa1a4cfba29529d98eeba674523aa\jetified-android-shape-imageview-0.9.3\AndroidManifest.xml:8:5-10:41
 MERGED from [me.relex:circleindicator:1.2.2] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\f91421922fc9700c0f1f2a0dec053d65\jetified-circleindicator-1.2.2\AndroidManifest.xml:8:5-10:41
 MERGED from [me.relex:circleindicator:1.2.2] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\f91421922fc9700c0f1f2a0dec053d65\jetified-circleindicator-1.2.2\AndroidManifest.xml:8:5-10:41
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:5:5-7:41
 MERGED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:5:5-7:41
 MERGED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.ixiDev:GDPRChecker:v0.2] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\aeec2fb3add0d90fec6c3573592f4fb5\jetified-GDPRChecker-v0.2\AndroidManifest.xml:7:5-9:41
@@ -1096,8 +1072,6 @@ MERGED from [org.michaelbel:bottomsheet:1.2.3] D:\Dhaval\Celebians\caches\transf
 MERGED from [org.michaelbel:bottomsheet:1.2.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\ffe6d20074e12607d89e246209247235\jetified-bottomsheet-1.2.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\bd67dc419fb521c6feb73f0f11d17f73\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\bd67dc419fb521c6feb73f0f11d17f73\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:5:5-7:41
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-ads-base:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\deb09f3739de9beccb82f4657290b1f9\jetified-play-services-ads-base-19.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-ads-base:19.0.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\deb09f3739de9beccb82f4657290b1f9\jetified-play-services-ads-base-19.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\fb0cba602ffc878ee4289ee6059264ab\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
@@ -1116,8 +1090,6 @@ INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
 ADDED from [com.github.nguyenhoanglam:ImagePicker:1.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\629f9ed21ea4fc3667c504eadf99ddd4\jetified-ImagePicker-1.2.0\AndroidManifest.xml:12:5-65
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:9:5-65
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:9:5-65
 	android:name
 		ADDED from [com.github.nguyenhoanglam:ImagePicker:1.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\629f9ed21ea4fc3667c504eadf99ddd4\jetified-ImagePicker-1.2.0\AndroidManifest.xml:12:22-62
 activity#com.nguyenhoanglam.imagepicker.ui.imagepicker.ImagePickerActivity
@@ -1216,8 +1188,6 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.4.4] D:
 		ADDED from [com.onesignal:OneSignal:3.16.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\d3127c357977d91c761872b5b5cca4a2\jetified-OneSignal-3.16.0\AndroidManifest.xml:18:22-65
 uses-permission#android.permission.VIBRATE
 ADDED from [com.onesignal:OneSignal:3.16.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\d3127c357977d91c761872b5b5cca4a2\jetified-OneSignal-3.16.0\AndroidManifest.xml:23:5-66
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:10:5-66
-MERGED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:10:5-66
 	android:name
 		ADDED from [com.onesignal:OneSignal:3.16.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\d3127c357977d91c761872b5b5cca4a2\jetified-OneSignal-3.16.0\AndroidManifest.xml:23:22-63
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
@@ -1666,48 +1636,6 @@ ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] D:\Dhaval\
 		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
 	android:name
 		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\24788b9872a086e59821bd28d12bc376\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
-activity#com.paypal.android.sdk.payments.PaymentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:13:9-84
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:13:19-81
-activity#com.paypal.android.sdk.payments.PaymentMethodActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:14:9-90
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:14:19-87
-activity#com.paypal.android.sdk.payments.PaymentConfirmActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:15:9-91
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:15:19-88
-activity#com.paypal.android.sdk.payments.LoginActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:16:9-82
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:16:19-79
-activity#com.paypal.android.sdk.payments.PayPalFuturePaymentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:17:9-96
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:17:19-93
-activity#com.paypal.android.sdk.payments.FuturePaymentConsentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:18:9-97
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:18:19-94
-activity#com.paypal.android.sdk.payments.FuturePaymentInfoActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:19:9-94
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:19:19-91
-activity#com.paypal.android.sdk.payments.PayPalProfileSharingActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:20:9-97
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:20:19-94
-activity#com.paypal.android.sdk.payments.ProfileSharingConsentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:21:9-98
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:21:19-95
-service#com.paypal.android.sdk.payments.PayPalService
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:23:9-25:40
-	android:exported
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:25:13-37
-	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.3] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\6c1e0436b6a4fcede29a1e477d7d9925\jetified-paypal-android-sdk-2.15.3\AndroidManifest.xml:24:13-73
 receiver#com.razorpay.RzpTokenReceiver
 ADDED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:12:9-16:20
 	android:name
@@ -1728,15 +1656,3 @@ ADDED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-
 		ADDED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:19:13-57
 intent-filter#action:name:android.intent.action.MAIN+data:host:rzp.io+data:scheme:io.rzp
 ADDED from [com.razorpay:checkout:1.5.16] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\4b19a7de07b3ad1674943614521bffc9\jetified-checkout-1.5.16\AndroidManifest.xml:22:13-28:29
-uses-feature#android.hardware.camera
-ADDED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:12:5-14:36
-	android:required
-		ADDED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:14:9-33
-	android:name
-		ADDED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:13:9-47
-uses-feature#android.hardware.camera.autofocus
-ADDED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:15:5-17:36
-	android:required
-		ADDED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:17:9-33
-	android:name
-		ADDED from [io.card:android-sdk:5.5.0] D:\Dhaval\Celebians\caches\transforms-2\files-2.1\31b355cbc3f2a03d8d7361362d880e6b\jetified-android-sdk-5.5.0\AndroidManifest.xml:16:9-57

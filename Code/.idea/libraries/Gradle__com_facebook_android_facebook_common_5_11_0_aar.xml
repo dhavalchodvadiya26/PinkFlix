@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-common:5.11.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/7ab30cea4767e6ec6b6dd5ca88361033/jetified-facebook-common-5.11.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/7ab30cea4767e6ec6b6dd5ca88361033/jetified-facebook-common-5.11.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/7ab30cea4767e6ec6b6dd5ca88361033/jetified-facebook-common-5.11.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/com.facebook.android/facebook-common/5.11.0/26c3151c7e39bff683cc6a937133f5cdc9a925c0/facebook-common-5.11.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/com.facebook.android/facebook-common/5.11.0/3a2e1e22637f2a8c11f8fe22c89e387416af7c21/facebook-common-5.11.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

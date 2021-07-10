@@ -64,8 +64,6 @@
     <orderEntry type="library" name="Gradle: org.greenrobot:eventbus:3.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:disklrucache:4.11.0" level="project" />
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:annotations:4.11.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.6.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.11.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.ads.interactivemedia.v3:interactivemedia:3.11.3" level="project" />
     <orderEntry type="library" name="Gradle: com.google.dagger:dagger:2.24" level="project" />
     <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
@@ -175,8 +173,6 @@
     <orderEntry type="library" name="Gradle: com.makeramen:roundedimageview:2.3.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.siyamed:android-shape-imageview:0.9.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: me.relex:circleindicator:1.2.2@aar" level="project" />
-    <orderEntry type="library" name="Gradle: com.paypal.sdk:paypal-android-sdk:2.15.3@aar" level="project" />
-    <orderEntry type="library" name="Gradle: io.card:android-sdk:5.5.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.razorpay:checkout:1.5.16@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-ads-base:19.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.github.ixiDev:GDPRChecker:v0.2@aar" level="project" />

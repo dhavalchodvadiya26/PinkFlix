@@ -195,7 +195,7 @@ public class SignInScreenActivity extends AppCompatActivity implements View.OnCl
 
     public void doFacebookLogin() {
         callbackManager = CallbackManager.Factory.create();
-        LoginManager.getInstance().logInWithReadPermissions(SignInScreenActivity.this, Arrays.asList("email", "public_profile"));
+        LoginManager.getInstance().logInWithReadPermissions(SignInScreenActivity.this, Arrays.asList("email"));
         LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {

@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "850893964304-err2tgosiku16vamj3mit0ipj2pqt9p7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "appegic.pinkflix",
+            "certificate_hash": "4fc5eb11a097ad2dc3b779ada950c8e019ee839e"
+          }
+        },
+        {
           "client_id": "850893964304-p0ccgjtbc56a2l681fjk1c1ol475s3qq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -1353,7 +1353,7 @@
     <string name="confirm_password">Enter Confirm Password</string>
     <string name="conne_msg1">No Network Connection!!!</string>
     <string name="current_plan">Current Plan : %s</string>
-    <string name="default_notification_channel_id">CinePrime</string>
+    <string name="default_notification_channel_id">PinkFlix</string>
     <string name="default_web_client_id" translatable="false">850893964304-ppe9lg2e62i9q33g7kmlcertbeodjqnh.apps.googleusercontent.com</string>
     <string name="define_roundedimageview"/>
     <string name="donate">Donate</string>
@@ -1422,8 +1422,8 @@
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
-    <string name="facebook_app_id">319846149708675</string>
-    <string name="fb_login_protocol_scheme">fb319846149708675</string>
+    <string name="facebook_app_id">1408202736215770</string>
+    <string name="fb_login_protocol_scheme">fb1408202736215770</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="filter">Filter</string>
     <string name="filter_alpha">A to Z</string>

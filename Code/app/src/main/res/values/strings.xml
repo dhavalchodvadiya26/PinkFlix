@@ -193,7 +193,7 @@
     facebook_app_id
     <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="privacy_url">http://apptific.com/PlayStore/Privacy-Policy.html</string>
-    <string name="default_notification_channel_id">CinePrime</string>
+    <string name="default_notification_channel_id">PinkFlix</string>
 
     <string name="logout_msg">Do you Really want to Logout ?</string>
     <string name="youtube_api_key">AIzaSyAYJwy6nzCFqgr5LtihRI3YuVBb_34aprw</string>
@@ -211,8 +211,8 @@
     <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
 
     <string name="error_generic">Playback failed</string>
-    <string name="facebook_app_id">319846149708675</string>
-    <string name="fb_login_protocol_scheme">fb319846149708675</string>
+    <string name="facebook_app_id">1408202736215770</string>
+    <string name="fb_login_protocol_scheme">fb1408202736215770</string>
     <string name="signup_with_fb">Register With Facebook</string>
     <string name="select_birthdate">Select Birthdate</string>
     <string name="login_with_facebook">Login with Facebook</string>

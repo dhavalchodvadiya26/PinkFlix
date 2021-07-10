@@ -47,6 +47,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
     private TextView txtOne, txtTwo, txtThree, txtFour, txtFive, txtSix;
     private Toolbar toolbar;
     private FirebaseAuth mAuth;
+    String isFromForgotPassword;
     private String mVerificationId;
     private String strMessage;
 
@@ -78,6 +79,9 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
             getSupportActionBar().setDisplayShowHomeEnabled(true);
             getSupportActionBar().setTitle("Verify OTP");
         }
+
+        setFromForgotPassword(getIntent().getStringExtra("isFromForgotPassword"));
+
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
                 getIntent().getStringExtra("code") + getIntent().getStringExtra("phone"),        // Phone number to verify
                 60,                 // Timeout duration
@@ -123,6 +127,13 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
         }
     }
 
+    public String isFromForgotPassword() {
+        return isFromForgotPassword;
+    }
+
+    public void setFromForgotPassword(String fromForgotPassword) {
+        isFromForgotPassword = fromForgotPassword;
+    }
 
     public void one(View v) {
         textDisplay("1");
@@ -313,7 +324,12 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                 builder.setMessage(strMessage)
                         .setCancelable(false)
                         .setPositiveButton("OK", (dialog, id) -> {
-                            Intent intent = new Intent(getApplicationContext(), SignInScreenActivity.class);
+                            Intent intent;
+                            if (isFromForgotPassword.equals("false")){
+                                intent = new Intent(getApplicationContext(), SignInScreenActivity.class);
+                            }else{
+                                intent = new Intent(getApplicationContext(), UpdatePasswordActivity.class);
+                            }
                             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(intent);
                             finish();

@@ -25,6 +25,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.mobsandgeeks.saripaar.annotation.Email;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
+import com.ybs.countrypicker.CountryPicker;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,6 +39,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     @NotEmpty
     @Email
     EditText edtEmail;
+    private EditText edtCountry;
+
 
     String strEmail, strMessage;
 
@@ -64,7 +67,22 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         pDialog = new ProgressDialog(this);
         edtEmail = findViewById(R.id.editText_fp);
         btnSubmit = findViewById(R.id.button_fp);
+        edtCountry = findViewById(R.id.edtCountry_fp);
+        edtCountry.setFocusable(false);
+        edtCountry.setClickable(true);
 
+        edtCountry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    CountryPicker picker = CountryPicker.newInstance("Select Country");
+                    picker.setListener((name, code, dialCode, i) -> {
+                        edtCountry.setText(dialCode);
+                        picker.dismiss();
+                    });
+
+                    picker.show(getSupportFragmentManager(), "COUNTRY_PICKER");
+            }
+        });
         btnSubmit.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -85,49 +103,52 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     }
 
     public void putForgotPassword() {
-        strEmail = edtEmail.getText().toString();
-        AsyncHttpClient client = new AsyncHttpClient();
-        RequestParams params = new RequestParams();
 
-        JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
-        jsObj.addProperty("phone", strEmail);
-        params.put("data", API.toBase64(jsObj.toString()));
-        System.out.println("data ==> "+API.toBase64(jsObj.toString()));
-
-        client.post(Constant.FORGOT_PASSWORD_URL, params, new AsyncHttpResponseHandler() {
-
-            @Override
-            public void onStart() {
-                super.onStart();
-                showProgressDialog();
-            }
-
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                dismissProgressDialog();
-                String result = new String(responseBody);
-                try {
-                    JSONObject mainJson = new JSONObject(result);
-                    JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
-                    JSONObject objJson;
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        objJson = jsonArray.getJSONObject(i);
-                        strMessage = objJson.getString(Constant.MSG);
-                        Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
-                    }
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                setResult();
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                dismissProgressDialog();
-            }
-
-        });
+        startActivity(new Intent(ForgotPasswordActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
+                .putExtra("code", edtCountry.getText().toString().trim()).putExtra("isFromForgotPassword", true));
+//        strEmail = edtEmail.getText().toString();
+//        AsyncHttpClient client = new AsyncHttpClient();
+//        RequestParams params = new RequestParams();
+//
+//        JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
+//        jsObj.addProperty("phone", strEmail);
+//        params.put("data", API.toBase64(jsObj.toString()));
+//        System.out.println("data ==> "+API.toBase64(jsObj.toString()));
+//
+//        client.post(Constant.FORGOT_PASSWORD_URL, params, new AsyncHttpResponseHandler() {
+//
+//            @Override
+//            public void onStart() {
+//                super.onStart();
+//                showProgressDialog();
+//            }
+//
+//            @Override
+//            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+//                dismissProgressDialog();
+//                String result = new String(responseBody);
+//                try {
+//                    JSONObject mainJson = new JSONObject(result);
+//                    JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+//                    JSONObject objJson;
+//                    for (int i = 0; i < jsonArray.length(); i++) {
+//                        objJson = jsonArray.getJSONObject(i);
+//                        strMessage = objJson.getString(Constant.MSG);
+//                        Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
+//                    }
+//
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//                setResult();
+//            }
+//
+//            @Override
+//            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+//                dismissProgressDialog();
+//            }
+//
+//        });
     }
 
     public void setResult() {

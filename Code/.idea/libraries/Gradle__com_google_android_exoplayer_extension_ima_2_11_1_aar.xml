@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.exoplayer:extension-ima:2.11.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/125285e148feb94fd6c78cb424055e01/jetified-extension-ima-2.11.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/125285e148feb94fd6c78cb424055e01/jetified-extension-ima-2.11.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/125285e148feb94fd6c78cb424055e01/jetified-extension-ima-2.11.1/res" />
+      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/125285e148feb94fd6c78cb424055e01/jetified-extension-ima-2.11.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-ima/2.11.1/1aa4a617938703e34f8cd74044b1dd4142b5fa7a/extension-ima-2.11.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-ima/2.11.1/8ea1e0629e133f765981f5abfe8702d13f66ae03/extension-ima-2.11.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
