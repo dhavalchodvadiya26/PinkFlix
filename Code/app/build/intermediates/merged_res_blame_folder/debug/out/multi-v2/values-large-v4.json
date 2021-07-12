@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Android\\Projects\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\ab0ffaa9cfa97b64f7806dee010b1e65\\appcompat-1.1.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\ab0ffaa9cfa97b64f7806dee010b1e65\\appcompat-1.1.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\d8a503c4478e99a21f414ea2d57f179c\\material-1.2.0-alpha04\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\d8a503c4478e99a21f414ea2d57f179c\\material-1.2.0-alpha04\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

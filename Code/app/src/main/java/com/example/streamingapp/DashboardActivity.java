@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -39,7 +40,7 @@ public class DashboardActivity extends AppCompatActivity {
     ProgressBar mProgressBar;
     LinearLayout lyt_not_found;
     NestedScrollView nestedScrollView;
-    CircularImageView imageAvatar;
+    ImageView imageAvatar;
     TextView textName, textEmail, textEdit;
     TextView textCurrentPlan, textExpiresOn, textChangePlan;
     TextView textLsDate, textLsPlan, textLsAmount;

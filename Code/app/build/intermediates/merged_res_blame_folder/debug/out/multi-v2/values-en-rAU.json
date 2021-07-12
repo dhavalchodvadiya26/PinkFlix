@@ -1,44 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Android\\Projects\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
+            "outputFile": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\a23beb7dec128dec57731262b2b36d90\\mediarouter-1.0.0\\res\\values-en-rAU\\values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,155,261,369,481,576,659,751,853,949,1045,1139,1231,1339,1447,1531,1613,1695,1793,1892,1978",
-                        "endColumns": "99,105,107,111,94,82,91,101,95,95,93,91,107,107,83,81,81,97,98,85,93",
-                        "endOffsets": "150,256,364,476,571,654,746,848,944,1040,1134,1226,1334,1442,1526,1608,1690,1788,1887,1973,2067"
-                    },
-                    "to": {
-                        "startLines": "69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5423,5523,5629,5737,5849,5944,6027,6119,6221,6317,6413,6507,6599,6707,6815,6899,6981,7063,7161,7260,7346",
-                        "endColumns": "99,105,107,111,94,82,91,101,95,95,93,91,107,107,83,81,81,97,98,85,93",
-                        "endOffsets": "5518,5624,5732,5844,5939,6022,6114,6216,6312,6408,6502,6594,6702,6810,6894,6976,7058,7156,7255,7341,7435"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\14a8f482db6e6569c77b2b8456a9edc1\\core-1.1.0\\res\\values-en-rAU\\values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "91",
-                        "startColumns": "4",
-                        "startOffsets": "7522",
-                        "endColumns": "100",
-                        "endOffsets": "7618"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\20aa25121b1ec76dc2d3cdc99b2224b4\\jetified-exoplayer-ui-2.11.1\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\20aa25121b1ec76dc2d3cdc99b2224b4\\jetified-exoplayer-ui-2.11.1\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +21,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\win\\.gradle\\caches\\transforms-2\\files-2.1\\ab0ffaa9cfa97b64f7806dee010b1e65\\appcompat-1.1.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\14a8f482db6e6569c77b2b8456a9edc1\\core-1.1.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "91",
+                        "startColumns": "4",
+                        "startOffsets": "7522",
+                        "endColumns": "100",
+                        "endOffsets": "7618"
+                    }
+                },
+                {
+                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\a23beb7dec128dec57731262b2b36d90\\mediarouter-1.0.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,155,261,369,481,576,659,751,853,949,1045,1139,1231,1339,1447,1531,1613,1695,1793,1892,1978",
+                        "endColumns": "99,105,107,111,94,82,91,101,95,95,93,91,107,107,83,81,81,97,98,85,93",
+                        "endOffsets": "150,256,364,476,571,654,746,848,944,1040,1134,1226,1334,1442,1526,1608,1690,1788,1887,1973,2067"
+                    },
+                    "to": {
+                        "startLines": "69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5423,5523,5629,5737,5849,5944,6027,6119,6221,6317,6413,6507,6599,6707,6815,6899,6981,7063,7161,7260,7346",
+                        "endColumns": "99,105,107,111,94,82,91,101,95,95,93,91,107,107,83,81,81,97,98,85,93",
+                        "endOffsets": "5518,5624,5732,5844,5939,6022,6114,6216,6312,6408,6502,6594,6702,6810,6894,6976,7058,7156,7255,7341,7435"
+                    }
+                },
+                {
+                    "source": "D:\\Dhaval\\Celebians\\caches\\transforms-2\\files-2.1\\ab0ffaa9cfa97b64f7806dee010b1e65\\appcompat-1.1.0\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

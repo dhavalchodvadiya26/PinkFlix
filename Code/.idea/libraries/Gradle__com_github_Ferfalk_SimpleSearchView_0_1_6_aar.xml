@@ -1,18 +1,18 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.Ferfalk:SimpleSearchView:0.1.6@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1927609c09571efaa0f2668e184914c8/jetified-SimpleSearchView-0.1.6/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/1927609c09571efaa0f2668e184914c8/jetified-SimpleSearchView-0.1.6/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1927609c09571efaa0f2668e184914c8/jetified-SimpleSearchView-0.1.6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1927609c09571efaa0f2668e184914c8/jetified-SimpleSearchView-0.1.6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1927609c09571efaa0f2668e184914c8/jetified-SimpleSearchView-0.1.6/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/1927609c09571efaa0f2668e184914c8/jetified-SimpleSearchView-0.1.6/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/1927609c09571efaa0f2668e184914c8/jetified-SimpleSearchView-0.1.6/res" />
+      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/1927609c09571efaa0f2668e184914c8/jetified-SimpleSearchView-0.1.6/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Ferfalk/SimpleSearchView/0.1.6/faef5c4bb82b1f84cc580b341ea530fc04a50d97/SimpleSearchView-0.1.6-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/com.github.Ferfalk/SimpleSearchView/0.1.6/faef5c4bb82b1f84cc580b341ea530fc04a50d97/SimpleSearchView-0.1.6-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Ferfalk/SimpleSearchView/0.1.6/5f46c46f307c5c947ead8ce1f37e984cb0b9e2cf/SimpleSearchView-0.1.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/com.github.Ferfalk/SimpleSearchView/0.1.6/5f46c46f307c5c947ead8ce1f37e984cb0b9e2cf/SimpleSearchView-0.1.6-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

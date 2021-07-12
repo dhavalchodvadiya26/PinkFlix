@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Android\\Projects\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+            "outputFile": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "F:\\Android\\Projects\\PinkFlix\\PinkFlix\\Code\\app\\src\\main\\res\\values-sw360dp\\dimens.xml",
+                    "source": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\src\\main\\res\\values-sw360dp\\dimens.xml",
                     "from": {
                         "startLines": "5,15,8,4,18,12,11",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "122,380,192,74,453,310,263",
+                        "startOffsets": "127,395,200,78,471,322,274",
                         "endColumns": "48,50,50,47,48,48,46",
-                        "endOffsets": "166,426,238,117,497,354,305"
+                        "endOffsets": "171,441,246,121,515,366,316"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8",

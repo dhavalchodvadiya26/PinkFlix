@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw400dp-v13\\values-sw400dp-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\src\\main\\res\\values-sw400dp\\dimens.xml",
+                    "from": {
+                        "startLines": "5,15,8,4,18,12,11",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "125,385,196,78,459,314,268",
+                        "endColumns": "46,48,48,45,46,46,44",
+                        "endOffsets": "167,429,240,119,501,356,308"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,102,151,200,246,293,340",
+                        "endColumns": "46,48,48,45,46,46,44",
+                        "endOffsets": "97,146,195,241,288,335,380"
+                    }
+                }
+            ]
+        }
+    ]
+}

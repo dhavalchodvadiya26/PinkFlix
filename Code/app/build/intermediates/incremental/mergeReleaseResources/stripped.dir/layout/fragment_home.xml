@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:ignore="MissingPrefix,RtlSymmetry">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lyt_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_no_item"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_item_found"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frame_layout_home"
+                android:paddingBottom="@dimen/space_20">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/lytSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:scrollIndicators="none" />
+
+                        <com.viewpagerindicator.LinePageIndicator
+                            android:id="@+id/indicator_unselected_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="-20dp"
+                            android:alpha="0.8"
+                            android:background="@drawable/image_gradient_bg"
+                            android:gravity="center"
+                            android:paddingTop="240dp"
+                            android:paddingBottom="230dp"
+                            app:gapWidth="7dp"
+                            app:lineWidth="15dp"
+                            app:selectedColor="@color/colorPrimary"
+                            app:strokeWidth="3dp"
+                            app:unselectedColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/ic_v3"-->
+<!--                        android:layout_margin="@dimen/space_15"/>-->
+
+                    <Button
+                        android:id="@+id/play_button_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_40"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="340dp"
+                        android:paddingHorizontal="@dimen/space_10"
+                        android:background="@drawable/btn_bg"
+                        android:drawableLeft="@drawable/play_now_bg"
+                        android:drawablePadding="@dimen/space_10"
+                        android:text="Play Now"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/space_20"
+                        android:orientation="horizontal">
+
+                        <SearchView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:id="@+id/search_home"
+                            android:gravity="center_horizontal"
+                            android:background="#00000000"
+                            android:padding="-20dp"
+                            android:queryBackground="@drawable/seatch_bg"
+                            android:goIcon="@drawable/search_icon"
+                            android:searchIcon="@drawable/search_icon"
+                            android:iconifiedByDefault="true"/>
+
+                        <View
+                            android:layout_width="@dimen/space_10"
+                            android:layout_height="@dimen/space_10"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/my_account"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_user"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/lytRecentlyWatched"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/textHomeRecentlyWatchedViewAll"
+                        android:gravity="start">
+
+                        <com.example.util.GradientTextView
+                            android:id="@+id/txtRecent"
+                            fontPath="fonts/custom_2.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_recently_watched"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            app:gt_color_list="@array/gradient"
+                            app:gt_gradient_direction="right" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textHomeRecentlyWatchedViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:text="See All" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_recently_watched"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:paddingStart="@dimen/space_5"
+                    android:paddingEnd="@dimen/space_5"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/lytLatestMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/textHomeLatestMovieViewAll"
+                        android:gravity="start">
+
+                        <com.example.util.GradientTextView
+                            android:id="@+id/txtTrending"
+                            fontPath="fonts/custom_2.otf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_latest_movie"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            app:gt_color_list="@array/gradient"
+                            app:gt_gradient_direction="right" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textHomeLatestMovieViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:text="See All"  />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_latest_movie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/item_space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytLatestShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.example.util.GradientTextView
+                        android:id="@+id/txtLatestMovie"
+                        fontPath="fonts/custom_2.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_latest_show"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:gt_color_list="@array/gradient"
+                        app:gt_gradient_direction="right" />
+
+
+                    <TextView
+                        android:id="@+id/textHomeLatestShowViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:text="See All" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_latest_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/item_space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytPopularShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.example.util.GradientTextView
+                        android:id="@+id/txtDrama"
+                        fontPath="fonts/custom_2.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_popular_movie"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:gt_color_list="@array/gradient"
+                        app:gt_gradient_direction="right" />
+
+                    <TextView
+                        android:id="@+id/textHomePopularShowViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:text="See All" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_popular_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/item_space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytPopularMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.example.util.GradientTextView
+                        android:id="@+id/txtWebSeries"
+                        fontPath="fonts/custom_2.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_popular_show"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:gt_color_list="@array/gradient"
+                        app:gt_gradient_direction="right" />
+
+                    <TextView
+                        android:id="@+id/textHomePopularMovieViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:text="See All" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_popular_movie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/item_space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytHome3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+
+                    <com.example.util.GradientTextView
+                        android:id="@+id/textHome3Name"
+                        fontPath="fonts/custom_2.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_popular_show"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:gt_color_list="@array/gradient"
+                        app:gt_gradient_direction="right" />
+
+                    <TextView
+                        android:id="@+id/textHome3ViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:text="See All" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_home3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/item_space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytHome4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+
+                    <com.example.util.GradientTextView
+                        android:id="@+id/textHome4Name"
+                        fontPath="fonts/custom_2.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_popular_show"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:gt_color_list="@array/gradient"
+                        app:gt_gradient_direction="right" />
+
+
+                    <TextView
+                        android:id="@+id/textHome4ViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:text="See All" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_home4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/item_space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytHome5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <com.example.util.GradientTextView
+                        android:id="@+id/textHome5Name"
+                        fontPath="fonts/custom_2.otf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_popular_show"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:gt_color_list="@array/gradient"
+                        app:gt_gradient_direction="right" />
+
+
+                    <TextView
+                        android:id="@+id/textHome5ViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/space_20"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:text="See All" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_home5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clipToPadding="false"
+                    android:paddingStart="@dimen/item_space" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

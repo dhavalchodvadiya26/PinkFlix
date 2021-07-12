@@ -1,18 +1,18 @@
 <component name="libraryTable">
   <library name="Gradle: org.michaelbel:bottomsheet:1.2.3@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1ad2eef11e4ead7cbf03749b13c998a/jetified-bottomsheet-1.2.3/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/ffe6d20074e12607d89e246209247235/jetified-bottomsheet-1.2.3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1ad2eef11e4ead7cbf03749b13c998a/jetified-bottomsheet-1.2.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1ad2eef11e4ead7cbf03749b13c998a/jetified-bottomsheet-1.2.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1ad2eef11e4ead7cbf03749b13c998a/jetified-bottomsheet-1.2.3/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/ffe6d20074e12607d89e246209247235/jetified-bottomsheet-1.2.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/ffe6d20074e12607d89e246209247235/jetified-bottomsheet-1.2.3/res" />
+      <root url="file://$PROJECT_DIR$/../../../Celebians/caches/transforms-2/files-2.1/ffe6d20074e12607d89e246209247235/jetified-bottomsheet-1.2.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.michaelbel/bottomsheet/1.2.3/1b7f0335fffc9e53f44962af14a44e343c56c6e2/bottomsheet-1.2.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/org.michaelbel/bottomsheet/1.2.3/1b7f0335fffc9e53f44962af14a44e343c56c6e2/bottomsheet-1.2.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.michaelbel/bottomsheet/1.2.3/d15a8cfd9e216aa291e6615117af049be759776b/bottomsheet-1.2.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Celebians/caches/modules-2/files-2.1/org.michaelbel/bottomsheet/1.2.3/d15a8cfd9e216aa291e6615117af049be759776b/bottomsheet-1.2.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

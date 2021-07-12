@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\partial_nav_menu.xml",
+        "source": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\src\\main\\res\\layout\\partial_nav_menu.xml"
+    },
+    {
+        "merged": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_menu_sub_category.xml",
+        "source": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\src\\main\\res\\layout\\item_menu_sub_category.xml"
+    },
+    {
+        "merged": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\left_nav_header.xml",
+        "source": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\src\\main\\res\\layout\\left_nav_header.xml"
+    },
+    {
+        "merged": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\item_menu_category.xml",
+        "source": "D:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\src\\main\\res\\layout\\item_menu_category.xml"
+    }
+]
