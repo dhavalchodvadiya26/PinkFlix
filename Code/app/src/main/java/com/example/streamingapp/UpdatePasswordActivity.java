@@ -1,5 +1,6 @@
 package com.example.streamingapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,8 +28,9 @@ import cz.msebera.android.httpclient.Header;
 public class UpdatePasswordActivity extends AppCompatActivity {
 
     EditText edt_new_password, confirm_new_pwd,current_pwd;
-    String strMessage;
+    String strMessage,user_id;
     String new_pwd,conf_pwd,cur_pwd;
+    String isFromForgotPassword;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,8 @@ public class UpdatePasswordActivity extends AppCompatActivity {
         edt_new_password = findViewById(R.id.edt_new_password);
         current_pwd = findViewById(R.id.edt_current_password);
 
-
+        isFromForgotPassword=getIntent().getStringExtra("isFromForgotPassword");
+        setFromForgotPassword(isFromForgotPassword);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -62,7 +65,7 @@ public class UpdatePasswordActivity extends AppCompatActivity {
 
                 if (!new_pwd.isEmpty() && !conf_pwd.isEmpty()){
                     if (new_pwd.equals(conf_pwd)){
-                        String strMobile = MyApplication.getInstance().getRememberEmail();
+                        String strMobile = MyApplication.getInstance().getMobile();
                         AsyncHttpClient client = new AsyncHttpClient();
                         RequestParams params = new RequestParams();
                         JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
@@ -89,7 +92,12 @@ public class UpdatePasswordActivity extends AppCompatActivity {
                                         Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
                                     }
                                     Toast.makeText(UpdatePasswordActivity.this, strMessage, Toast.LENGTH_SHORT).show();
-
+                                    if (isFromForgotPassword().equals("ForgotPassword")){
+                                        Intent intent = new Intent(getApplicationContext(), SignInScreenActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                        startActivity(intent);
+                                        finish();
+                                    }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
@@ -113,6 +121,15 @@ public class UpdatePasswordActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+
+    public String isFromForgotPassword() {
+        return isFromForgotPassword;
+    }
+
+    public void setFromForgotPassword(String fromForgotPassword) {
+        isFromForgotPassword = fromForgotPassword;
     }
 
     @Override

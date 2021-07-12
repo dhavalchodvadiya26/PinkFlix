@@ -42,7 +42,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     private EditText edtCountry;
 
 
-    String strEmail, strMessage;
+    String strEmail, strMessage,strUserId;
 
     Button btnSubmit;
     ProgressDialog pDialog;
@@ -104,9 +104,9 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     public void putForgotPassword() {
 
-//        startActivity(new Intent(ForgotPasswordActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
-//                .putExtra("code", edtCountry.getText().toString().trim()).putExtra("isFromForgotPassword", "ForgotPassword"));
+//
         strEmail = edtEmail.getText().toString();
+        MyApplication.getInstance().saveMobile(strEmail);
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
 
@@ -134,6 +134,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                     for (int i = 0; i < jsonArray.length(); i++) {
                         objJson = jsonArray.getJSONObject(i);
                         strMessage = objJson.getString(Constant.MSG);
+                        strUserId= objJson.getString(Constant.USER_ID);
                         System.out.println("ForgotPassword JSON ==> "+objJson);
                         Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
                     }
@@ -166,19 +167,21 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             edtEmail.setText("");
             edtEmail.requestFocus();
         } else {
-            AlertDialog.Builder builder = new AlertDialog.Builder(ForgotPasswordActivity.this);
-            builder.setMessage(strMessage)
-                    .setCancelable(false)
-                    .setPositiveButton("OK", (dialog, id) -> {
-                        dialog.dismiss();
-                        Intent intentco = new Intent(ForgotPasswordActivity.this, SignInScreenActivity.class);
-                        intentco.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intentco);
-                        finish();
-                        dialog.dismiss();
-                    });
-            AlertDialog alert = builder.create();
-            alert.show();
+//            AlertDialog.Builder builder = new AlertDialog.Builder(ForgotPasswordActivity.this);
+//            builder.setMessage(strMessage)
+//                    .setCancelable(false)
+//                    .setPositiveButton("OK", (dialog, id) -> {
+//                        dialog.dismiss();
+//                        Intent intentco = new Intent(ForgotPasswordActivity.this, SignInScreenActivity.class);
+//                        intentco.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                        startActivity(intentco);
+//                        finish();
+//                        dialog.dismiss();
+//                    });
+//            AlertDialog alert = builder.create();
+//            alert.show();
+            startActivity(new Intent(ForgotPasswordActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
+                .putExtra("code", edtCountry.getText().toString().trim()).putExtra("isFromForgotPassword", "ForgotPassword").putExtra("user_id",strUserId));
         }
     }
 

@@ -113,6 +113,7 @@ public class UpdateProfileActivity extends AppCompatActivity implements Validato
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), UpdatePasswordActivity.class);
+                intent.putExtra("isFromForgotPassword","Profile");
                 startActivity(intent);
             }
         });

@@ -426,6 +426,7 @@ public class SignInScreenActivity extends AppCompatActivity implements View.OnCl
         if (checkBox.isChecked()) {
             myApplication.saveIsRemember(true);
             myApplication.saveRemember(strEmail, strPassword);
+            myApplication.saveMobile(strEmail);
         } else {
             myApplication.saveIsRemember(false);
         }
