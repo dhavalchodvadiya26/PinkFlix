@@ -117,7 +117,7 @@ public class SignUpScreenActivity extends AppCompatActivity implements View.OnCl
             params.put("data", API.toBase64(jsObj.toString()));
             System.out.println("data ==> " + API.toBase64(jsObj.toString()));
             startActivity(new Intent(SignUpScreenActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
-                    .putExtra("code", edtCountry.getText().toString().trim()).putExtra("data", API.toBase64(jsObj.toString())).putExtra("isFromForgotPassword", false));
+                    .putExtra("code", edtCountry.getText().toString().trim()).putExtra("data", API.toBase64(jsObj.toString())).putExtra("isFromForgotPassword", "Registration"));
 
         } else {
             if (TextUtils.isEmpty(edtFullName.getText().toString().trim()))

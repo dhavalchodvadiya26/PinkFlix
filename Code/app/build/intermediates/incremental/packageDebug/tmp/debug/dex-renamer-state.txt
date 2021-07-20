@@ -1,16 +1,13 @@
-#Mon Jul 12 16:01:15 IST 2021
-path.3=classes3.dex
-path.2=classes2.dex
-path.1=classes.dex
-renamed.4=classes5.dex
+#Tue Jul 20 13:00:05 IST 2021
+path.3=classes4.dex
+path.2=classes3.dex
+path.1=classes2.dex
 path.0=classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
-base.4=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_0.dex
 renamed.0=classes.dex
-base.3=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-base.2=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.1=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
-base.0=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-path.4=classes_0.dex
+base.3=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes4.dex
+base.2=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
+base.1=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+base.0=D\:\\Dhaval\\PinkFlix\\PinkFlix\\Code\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex

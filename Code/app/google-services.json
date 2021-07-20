@@ -1,57 +1,71 @@
 {
   "project_info": {
-    "project_number": "850893964304",
-    "project_id": "pinkflix-d9e9b",
-    "storage_bucket": "pinkflix-d9e9b.appspot.com"
+    "project_number": "688973471275",
+    "project_id": "pinkflix-new",
+    "storage_bucket": "pinkflix-new.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:850893964304:android:a2492036c3b12bc0d0b695",
+        "mobilesdk_app_id": "1:688973471275:android:77049e7324a19c4088d46e",
         "android_client_info": {
           "package_name": "appegic.pinkflix"
         }
       },
       "oauth_client": [
         {
-          "client_id": "850893964304-err2tgosiku16vamj3mit0ipj2pqt9p7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "appegic.pinkflix",
-            "certificate_hash": "4fc5eb11a097ad2dc3b779ada950c8e019ee839e"
-          }
-        },
-        {
-          "client_id": "850893964304-p0ccgjtbc56a2l681fjk1c1ol475s3qq.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "appegic.pinkflix",
-            "certificate_hash": "93445149400d2edde244f38faaed64d7cee7bca2"
-          }
-        },
-        {
-          "client_id": "850893964304-ppe9lg2e62i9q33g7kmlcertbeodjqnh.apps.googleusercontent.com",
+          "client_id": "688973471275-ogomh3129fafot41lrar20kb4odgqb7m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCVAZhwjOzmYQW0Vs02jC91LV9T5hmJv1M"
+          "current_key": "AIzaSyC0jSR9qXEHTuR6YXpnIXzjytIgh6pnN0A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "850893964304-ppe9lg2e62i9q33g7kmlcertbeodjqnh.apps.googleusercontent.com",
+              "client_id": "688973471275-ogomh3129fafot41lrar20kb4odgqb7m.apps.googleusercontent.com",
               "client_type": 3
-            },
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688973471275:android:145a13d9548eac6088d46e",
+        "android_client_info": {
+          "package_name": "appegic.pinkflix1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688973471275-r5bubgu8hf7f1n1ass4so403grqmc7ji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "appegic.pinkflix1",
+            "certificate_hash": "4fc5eb11a097ad2dc3b779ada950c8e019ee839e"
+          }
+        },
+        {
+          "client_id": "688973471275-ogomh3129fafot41lrar20kb4odgqb7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0jSR9qXEHTuR6YXpnIXzjytIgh6pnN0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
             {
-              "client_id": "850893964304-pq706dambjkbmrdndk1oqpk01tahu5rg.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.pinkflixapp"
-              }
+              "client_id": "688973471275-ogomh3129fafot41lrar20kb4odgqb7m.apps.googleusercontent.com",
+              "client_type": 3
             }
           ]
         }

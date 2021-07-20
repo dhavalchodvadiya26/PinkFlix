@@ -355,8 +355,8 @@ public class MainActivity extends BaseActivity implements MenuCategoryVideoListA
     protected void onResume() {
         super.onResume();
         setHeader();
-//        Logg.d();
-//        sendFcmRegistrationToken();
+        Logg.d();
+        sendFcmRegistrationToken();
     }
 
     private void sendFcmRegistrationToken() {

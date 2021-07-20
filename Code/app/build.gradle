@@ -5,14 +5,14 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "appegic.pinkflix"
+        applicationId "appegic.pinkflix1"
         manifestPlaceholders = [manifestApplicationId          : "${applicationId}",
                                 onesignal_app_id               : "00e758f7-e45d-4725-b2cb-aa210d75eeb0",
                                 onesignal_google_project_number: "REMOTE"]
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 1
+        versionName "1.0.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

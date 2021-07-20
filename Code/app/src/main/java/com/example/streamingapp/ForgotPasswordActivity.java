@@ -181,7 +181,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 //            AlertDialog alert = builder.create();
 //            alert.show();
             startActivity(new Intent(ForgotPasswordActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
-                .putExtra("code", edtCountry.getText().toString().trim()).putExtra("isFromForgotPassword", "ForgotPassword").putExtra("user_id",strUserId));
+                .putExtra("code", edtCountry.getText().toString().trim()).putExtra("isFromForgotPassword", "ForgotPassword"));
         }
     }
 

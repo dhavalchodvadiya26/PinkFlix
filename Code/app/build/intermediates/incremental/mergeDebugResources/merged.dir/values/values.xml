@@ -1354,7 +1354,7 @@
     <string name="conne_msg1">No Network Connection!!!</string>
     <string name="current_plan">Current Plan : %s</string>
     <string name="default_notification_channel_id">PinkFlix</string>
-    <string name="default_web_client_id" translatable="false">850893964304-ppe9lg2e62i9q33g7kmlcertbeodjqnh.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">688973471275-ogomh3129fafot41lrar20kb4odgqb7m.apps.googleusercontent.com</string>
     <string name="define_roundedimageview"/>
     <string name="donate">Donate</string>
     <string name="download">Download</string>
@@ -1432,13 +1432,13 @@
     <string name="filter_random">RANDOM</string>
     <string name="forgot_description">Enter your Registered Mobile No below and  we\'ll send you password</string>
     <string name="forgot_password">Forgot Password ?</string>
-    <string name="gcm_defaultSenderId" translatable="false">850893964304</string>
+    <string name="gcm_defaultSenderId" translatable="false">688973471275</string>
     <string name="genre">Genre</string>
     <string name="genre_detail">Genre:</string>
-    <string name="google_api_key" translatable="false">AIzaSyCVAZhwjOzmYQW0Vs02jC91LV9T5hmJv1M</string>
-    <string name="google_app_id" translatable="false">1:850893964304:android:a2492036c3b12bc0d0b695</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCVAZhwjOzmYQW0Vs02jC91LV9T5hmJv1M</string>
-    <string name="google_storage_bucket" translatable="false">pinkflix-d9e9b.appspot.com</string>
+    <string name="google_api_key" translatable="false">AIzaSyC0jSR9qXEHTuR6YXpnIXzjytIgh6pnN0A</string>
+    <string name="google_app_id" translatable="false">1:688973471275:android:145a13d9548eac6088d46e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC0jSR9qXEHTuR6YXpnIXzjytIgh6pnN0A</string>
+    <string name="google_storage_bucket" translatable="false">pinkflix-new.appspot.com</string>
     <string name="help_msg">It looks like you are facing an issue with our application. we are here to help so please get in touch with us.</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="home_latest_movie">Trending Movies</string>
@@ -1613,7 +1613,7 @@
     <string name="profile_name_hint">Enter Name</string>
     <string name="profile_password_hint">Enter Password</string>
     <string name="profile_phone_hint">Enter Phone</string>
-    <string name="project_id" translatable="false">pinkflix-d9e9b</string>
+    <string name="project_id" translatable="false">pinkflix-new</string>
     <string name="promo_code">Promo Code</string>
     <string name="rate_app">Rate App</string>
     <string name="razor_pay">RazorPay</string>

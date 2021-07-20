@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">850893964304-ppe9lg2e62i9q33g7kmlcertbeodjqnh.apps.googleusercontent.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">850893964304</string>
-    <string name="google_api_key" translatable="false">AIzaSyCVAZhwjOzmYQW0Vs02jC91LV9T5hmJv1M</string>
-    <string name="google_app_id" translatable="false">1:850893964304:android:a2492036c3b12bc0d0b695</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCVAZhwjOzmYQW0Vs02jC91LV9T5hmJv1M</string>
-    <string name="google_storage_bucket" translatable="false">pinkflix-d9e9b.appspot.com</string>
-    <string name="project_id" translatable="false">pinkflix-d9e9b</string>
+    <string name="default_web_client_id" translatable="false">688973471275-ogomh3129fafot41lrar20kb4odgqb7m.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">688973471275</string>
+    <string name="google_api_key" translatable="false">AIzaSyC0jSR9qXEHTuR6YXpnIXzjytIgh6pnN0A</string>
+    <string name="google_app_id" translatable="false">1:688973471275:android:145a13d9548eac6088d46e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC0jSR9qXEHTuR6YXpnIXzjytIgh6pnN0A</string>
+    <string name="google_storage_bucket" translatable="false">pinkflix-new.appspot.com</string>
+    <string name="project_id" translatable="false">pinkflix-new</string>
 </resources>

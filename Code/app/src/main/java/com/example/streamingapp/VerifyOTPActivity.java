@@ -71,7 +71,6 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
         txtFive = findViewById(R.id.txtFive);
         txtSix = findViewById(R.id.txtSix);
         setTimer();
-        user_id=getIntent().getStringExtra("user_id");
         txtTimer.setVisibility(View.VISIBLE);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -259,7 +258,6 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                         if (isFromForgotPassword().equals("ForgotPassword")){
                             Intent intent = new Intent(getApplicationContext(), UpdatePasswordActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            intent.putExtra("user_id",user_id);
                             intent.putExtra("isFromForgotPassword",isFromForgotPassword);
                             startActivity(intent);
                             finish();

@@ -4,14 +4,14 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "appegic.pinkflix",
+  "applicationId": "appegic.pinkflix1",
   "variantName": "debug",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
-      "versionCode": 3,
-      "versionName": "1.0.2",
+      "versionCode": 1,
+      "versionName": "1.0.0",
       "outputFile": "AndroidManifest.xml"
     }
   ]
