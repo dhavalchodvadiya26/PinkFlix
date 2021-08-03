@@ -210,9 +210,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
     }
 
     public void verifyOTP(String code) {
-
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, code);
-
         signInWithPhoneAuthCredential(credential);
     }
 

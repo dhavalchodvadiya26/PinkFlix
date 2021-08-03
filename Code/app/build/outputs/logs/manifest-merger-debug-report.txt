@@ -695,9 +695,9 @@ ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:205
 	android:name
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:206:13-70
 activity#io.card.payment.CardIOActivity
-ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:210:9-212:66
+ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:210:9-212:70
 	android:configChanges
-		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:212:13-63
+		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:212:17-67
 	android:name
 		ADDED from D:\Dhaval\PinkFlix\PinkFlix\Code\app\src\main\AndroidManifest.xml:211:13-58
 activity#io.card.payment.DataEntryActivity

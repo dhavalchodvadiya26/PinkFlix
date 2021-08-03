@@ -209,7 +209,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="io.card.payment.CardIOActivity"
-            android:configChanges="keyboardHidden|orientation" />
+                android:configChanges="keyboardHidden|orientation" />
         <activity android:name="io.card.payment.DataEntryActivity" />
 
         <meta-data
