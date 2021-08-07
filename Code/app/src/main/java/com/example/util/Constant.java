@@ -23,6 +23,8 @@ public class Constant implements Serializable {
     public static final String CONTINUE_WATCHING_GET_URL = API_URL + "c_watchlist_get";
     public static final String LOGIN_WITH_FACEBOOK_URL = API_URL + "facebook";
     public static final String REGISTER_URL = API_URL + "signup";
+    public static final String VERIFY_OTP_URL = API_URL + "vetifyOTP";
+    public static final String FORGET_VERIFY_OTP_URL = API_URL + "ForgotVerifyOTP";
     public static final String LANGUAGE_URL = API_URL + "languages";
     public static final String GENRE_URL = API_URL + "genres";
     public static final String SHOW_BY_LANGUAGE_URL = API_URL + "shows_by_language";

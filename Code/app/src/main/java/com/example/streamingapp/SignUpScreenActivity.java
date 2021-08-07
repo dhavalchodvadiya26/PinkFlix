@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,16 +14,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dialog.DatePickerDialogFragment;
 import com.example.util.API;
+import com.example.util.Constant;
 import com.example.util.IsRTL;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.mobsandgeeks.saripaar.annotation.ConfirmPassword;
 import com.mobsandgeeks.saripaar.annotation.Email;
@@ -30,6 +35,11 @@ import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import com.mobsandgeeks.saripaar.annotation.Password;
 import com.ybs.countrypicker.CountryPicker;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import cz.msebera.android.httpclient.Header;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 
@@ -106,7 +116,7 @@ public class SignUpScreenActivity extends AppCompatActivity implements View.OnCl
             strEmail = edtEmail.getText().toString();
             strPassword = edtPassword.getText().toString();
 
-
+            AsyncHttpClient client = new AsyncHttpClient();
             RequestParams params = new RequestParams();
 
             JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
@@ -116,9 +126,56 @@ public class SignUpScreenActivity extends AppCompatActivity implements View.OnCl
             jsObj.addProperty("code", edtCountry.getText().toString().trim());
             params.put("data", API.toBase64(jsObj.toString()));
             System.out.println("data ==> " + API.toBase64(jsObj.toString()));
-            startActivity(new Intent(SignUpScreenActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
-                    .putExtra("code", edtCountry.getText().toString().trim()).putExtra("data", API.toBase64(jsObj.toString())).putExtra("isFromForgotPassword", "Registration"));
+//            startActivity(new Intent(SignUpScreenActivity.this, VerifyOTPActivity.class).putExtra("phone", edtEmail.getText().toString().trim())
+//                    .putExtra("code", edtCountry.getText().toString().trim()).putExtra("data", API.toBase64(jsObj.toString())).putExtra("isFromForgotPassword", "Registration"));
+            client.post(Constant.REGISTER_URL, params, new AsyncHttpResponseHandler() {
 
+                @Override
+                public void onStart() {
+                    super.onStart();
+                    showProgressDialog();
+                }
+
+                @Override
+                public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                    dismissProgressDialog();
+                    String result = new String(responseBody);
+                    Log.d("RESULT", result);
+                    try {
+                        JSONObject mainJson = new JSONObject(result);
+                        JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+                        JSONObject objJson;
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            objJson = jsonArray.getJSONObject(i);
+                            strMessage = objJson.getString(Constant.MSG);
+                            Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
+                            Constant.VERIFYOTP = objJson.optString(Constant.VERIFY);
+                        }
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SignUpScreenActivity.this);
+                    builder.setMessage(strMessage)
+                            .setCancelable(false)
+                            .setPositiveButton("OK", (dialog, id) -> {
+                                Intent intent = new Intent(getApplicationContext(), VerifyOTPActivity.class);
+                                intent.putExtra("phone", edtEmail.getText().toString().trim());
+                                intent.putExtra("code", edtCountry.getText().toString().trim());
+                                intent.putExtra("isFromForgotPassword", "Registration");
+                                startActivity(intent);
+                                finish();
+                            });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
+
+                @Override
+                public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                    error.printStackTrace();
+                    dismissProgressDialog();
+                }
+            });
         } else {
             if (TextUtils.isEmpty(edtFullName.getText().toString().trim()))
                 showToast("Enter name");

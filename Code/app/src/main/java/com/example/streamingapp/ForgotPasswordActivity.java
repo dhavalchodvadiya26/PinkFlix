@@ -127,9 +127,12 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 dismissProgressDialog();
                 String result = new String(responseBody);
+                System.out.println("RESULT ==> "+result);
+                System.out.println("RESPONSE BODY ==> "+responseBody);
                 try {
                     JSONObject mainJson = new JSONObject(result);
                     JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+                    System.out.println("jsonArray ==> "+jsonArray);
                     JSONObject objJson;
                     for (int i = 0; i < jsonArray.length(); i++) {
                         objJson = jsonArray.getJSONObject(i);
@@ -156,6 +159,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     public void setResult() {
 
         if (Constant.GET_SUCCESS_MSG == 0) {
+            System.out.println("Success ==> 0");
             AlertDialog.Builder builder = new AlertDialog.Builder(ForgotPasswordActivity.this);
             builder.setMessage(strMessage)
                     .setCancelable(false)
@@ -167,6 +171,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             edtEmail.setText("");
             edtEmail.requestFocus();
         } else {
+            System.out.println("Success ==> 1");
+
 //            AlertDialog.Builder builder = new AlertDialog.Builder(ForgotPasswordActivity.this);
 //            builder.setMessage(strMessage)
 //                    .setCancelable(false)

@@ -16,11 +16,14 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.util.API;
 import com.example.util.Constant;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -48,7 +51,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
     private Toolbar toolbar;
     private FirebaseAuth mAuth;
     String isFromForgotPassword;
-    private String mVerificationId,user_id;
+    private String mVerificationId, user_id;
     private String strMessage;
 
     @Override
@@ -82,12 +85,12 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
 
         setFromForgotPassword(getIntent().getStringExtra("isFromForgotPassword"));
 
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                getIntent().getStringExtra("code") + getIntent().getStringExtra("phone"),        // Phone number to verify
-                60,                 // Timeout duration
-                TimeUnit.SECONDS,   // Unit of timeout
-                this,               // Activity (for callback binding)
-                mCallbacks);        // OnVerificationStateChangedCallbacks
+//        PhoneAuthProvider.getInstance().verifyPhoneNumber(
+//                getIntent().getStringExtra("code") + getIntent().getStringExtra("phone"),        // Phone number to verify
+//                60,                 // Timeout duration
+//                TimeUnit.SECONDS,   // Unit of timeout
+//                this,               // Activity (for callback binding)
+//                mCallbacks);        // OnVerificationStateChangedCallbacks
     }
 
     private void setTimer() {
@@ -120,8 +123,14 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                     && !TextUtils.isEmpty(txtThree.getText().toString().trim()) && !TextUtils.isEmpty(txtFour.getText().toString().trim())
                     && !TextUtils.isEmpty(txtFive.getText().toString().trim()) && !TextUtils.isEmpty(txtSix.getText().toString().trim())
             ) {
-                verifyOTP(txtOne.getText().toString().trim() + txtTwo.getText().toString().trim() + txtThree.getText().toString().trim()
-                        + txtFour.getText().toString().trim() + txtFive.getText().toString().trim() + txtSix.getText().toString().trim());
+                if (isFromForgotPassword().equals("ForgotPassword")) {
+                    forgetVerifyOTP(txtOne.getText().toString().trim() + txtTwo.getText().toString().trim() + txtThree.getText().toString().trim()
+                            + txtFour.getText().toString().trim() + txtFive.getText().toString().trim() + txtSix.getText().toString().trim());
+                } else {
+                    verifyOTP(txtOne.getText().toString().trim() + txtTwo.getText().toString().trim() + txtThree.getText().toString().trim()
+                            + txtFour.getText().toString().trim() + txtFive.getText().toString().trim() + txtSix.getText().toString().trim());
+                }
+
             } else
                 Toast.makeText(this, "Please enter otp", Toast.LENGTH_SHORT).show();
         }
@@ -188,8 +197,13 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
             txtFive.setText(str);
         else if (TextUtils.isEmpty(txtSix.getText().toString().trim())) {
             txtSix.setText(str);
-            verifyOTP(txtOne.getText().toString().trim() + txtTwo.getText().toString().trim() + txtThree.getText().toString().trim()
-                    + txtFour.getText().toString().trim() + txtFive.getText().toString().trim() + txtSix.getText().toString().trim());
+            if (isFromForgotPassword().equals("ForgotPassword")) {
+                forgetVerifyOTP(txtOne.getText().toString().trim() + txtTwo.getText().toString().trim() + txtThree.getText().toString().trim()
+                        + txtFour.getText().toString().trim() + txtFive.getText().toString().trim() + txtSix.getText().toString().trim());
+            } else {
+                verifyOTP(txtOne.getText().toString().trim() + txtTwo.getText().toString().trim() + txtThree.getText().toString().trim()
+                        + txtFour.getText().toString().trim() + txtFive.getText().toString().trim() + txtSix.getText().toString().trim());
+            }
         }
 
     }
@@ -210,9 +224,119 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
     }
 
     public void verifyOTP(String code) {
-        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, code);
-        signInWithPhoneAuthCredential(credential);
+//        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, code);
+//        signInWithPhoneAuthCredential(credential);
+        AsyncHttpClient client = new AsyncHttpClient();
+        RequestParams params = new RequestParams();
+        JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
+        jsObj.addProperty("phone", getIntent().getStringExtra("phone"));
+        jsObj.addProperty("otp", code);
+        params.put("data", API.toBase64(jsObj.toString()));
+        client.post(Constant.VERIFY_OTP_URL, params, new AsyncHttpResponseHandler() {
+
+            @Override
+            public void onStart() {
+                super.onStart();
+                showProgressDialog();
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                dismissProgressDialog();
+                String result = new String(responseBody);
+                Log.d("RESULT", result);
+                try {
+                    JSONObject mainJson = new JSONObject(result);
+                    JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+                    JSONObject objJson;
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        objJson = jsonArray.getJSONObject(i);
+                        strMessage = objJson.getString(Constant.MSG);
+                        Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
+                        Constant.VERIFYOTP = objJson.optString(Constant.VERIFY);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                AlertDialog.Builder builder = new AlertDialog.Builder(VerifyOTPActivity.this);
+                builder.setMessage(strMessage)
+                        .setCancelable(false)
+                        .setPositiveButton("OK", (dialog, id) -> {
+                                Intent intent = new Intent(getApplicationContext(), SignInScreenActivity.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                startActivity(intent);
+                                finish();
+                        });
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                error.printStackTrace();
+                dismissProgressDialog();
+            }
+        });
     }
+
+    public void forgetVerifyOTP(String code) {
+//        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, code);
+//        signInWithPhoneAuthCredential(credential);
+        AsyncHttpClient client = new AsyncHttpClient();
+        RequestParams params = new RequestParams();
+        JsonObject jsObj = (JsonObject) new Gson().toJsonTree(new API());
+        jsObj.addProperty("phone", getIntent().getStringExtra("phone"));
+        jsObj.addProperty("otp", code);
+        params.put("data", API.toBase64(jsObj.toString()));
+        client.post(Constant.FORGET_VERIFY_OTP_URL, params, new AsyncHttpResponseHandler() {
+
+            @Override
+            public void onStart() {
+                super.onStart();
+                showProgressDialog();
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                dismissProgressDialog();
+                String result = new String(responseBody);
+                Log.d("RESULT", result);
+                try {
+                    JSONObject mainJson = new JSONObject(result);
+                    JSONArray jsonArray = mainJson.getJSONArray(Constant.ARRAY_NAME);
+                    JSONObject objJson;
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        objJson = jsonArray.getJSONObject(i);
+                        strMessage = objJson.getString(Constant.MSG);
+                        Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
+                        Constant.VERIFYOTP = objJson.optString(Constant.VERIFY);
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                AlertDialog.Builder builder = new AlertDialog.Builder(VerifyOTPActivity.this);
+                builder.setMessage(strMessage)
+                        .setCancelable(false)
+                        .setPositiveButton("OK", (dialog, id) -> {
+                                Intent intent = new Intent(getApplicationContext(), UpdatePasswordActivity.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                intent.putExtra("isFromForgotPassword", isFromForgotPassword);
+                                startActivity(intent);
+                                finish();
+                        });
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                error.printStackTrace();
+                dismissProgressDialog();
+            }
+        });
+    }
+
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -239,61 +363,62 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
     private void resendOTP(RequestParams params) {
         txtResend.setVisibility(View.GONE);
         txtTimer.setVisibility(View.VISIBLE);
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                getIntent().getStringExtra("code") + getIntent().getStringExtra("phone"),        // Phone number to verify
-                60,                 // Timeout duration
-                TimeUnit.SECONDS,   // Unit of timeout
-                this,               // Activity (for callback binding)
-                mCallbacks);        // OnVerificationStateChangedCallbacks
+        callSignUpApi();
+//        PhoneAuthProvider.getInstance().verifyPhoneNumber(
+//                getIntent().getStringExtra("code") + getIntent().getStringExtra("phone"),        // Phone number to verify
+//                60,                 // Timeout duration
+//                TimeUnit.SECONDS,   // Unit of timeout
+//                this,               // Activity (for callback binding)
+//                mCallbacks);        // OnVerificationStateChangedCallbacks
 
     }
 
-    private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(VerifyOTPActivity.this, task -> {
-                    if (task.isSuccessful()) {
-                        //verification successful we will start the profile activity
-                        if (isFromForgotPassword().equals("ForgotPassword")){
-                            Intent intent = new Intent(getApplicationContext(), UpdatePasswordActivity.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            intent.putExtra("isFromForgotPassword",isFromForgotPassword);
-                            startActivity(intent);
-                            finish();
-                        }else{
-                            callSignUpApi();
-                        }
-                    }
-                });
-    }
+//    private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
+//        mAuth.signInWithCredential(credential)
+//                .addOnCompleteListener(VerifyOTPActivity.this, task -> {
+//                    if (task.isSuccessful()) {
+//                        //verification successful we will start the profile activity
+//                        if (isFromForgotPassword().equals("ForgotPassword")){
+//                            Intent intent = new Intent(getApplicationContext(), UpdatePasswordActivity.class);
+//                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                            intent.putExtra("isFromForgotPassword",isFromForgotPassword);
+//                            startActivity(intent);
+//                            finish();
+//                        }else{
+//                            callSignUpApi();
+//                        }
+//                    }
+//                });
+//    }
 
-    private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-        @Override
-        public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
-
-            //Getting the code sent by SMS
-            String code = phoneAuthCredential.getSmsCode();
-
-            if (code != null) {
-                verifyOTP(code);
-            }
-        }
-
-
-        @Override
-        public void onVerificationFailed(FirebaseException e) {
-            Toast.makeText(VerifyOTPActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
-        }
-
-
-        @Override
-        public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
-            super.onCodeSent(s, forceResendingToken);
-
-            //storing the verification id that is sent to the user
-            mVerificationId = s;
-
-        }
-    };
+//    private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+//        @Override
+//        public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
+//
+//            //Getting the code sent by SMS
+//            String code = phoneAuthCredential.getSmsCode();
+//
+//            if (code != null) {
+//                verifyOTP(code);
+//            }
+//        }
+//
+//
+//        @Override
+//        public void onVerificationFailed(FirebaseException e) {
+//            Toast.makeText(VerifyOTPActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+//        }
+//
+//
+//        @Override
+//        public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
+//            super.onCodeSent(s, forceResendingToken);
+//
+//            //storing the verification id that is sent to the user
+//            mVerificationId = s;
+//
+//        }
+//    };
 
     private void callSignUpApi() {
         AsyncHttpClient client = new AsyncHttpClient();
@@ -320,7 +445,6 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                         objJson = jsonArray.getJSONObject(i);
                         strMessage = objJson.getString(Constant.MSG);
                         Constant.GET_SUCCESS_MSG = objJson.getInt(Constant.SUCCESS);
-                        Constant.VERIFYOTP = objJson.optString(Constant.VERIFY);
                     }
 
                 } catch (JSONException e) {
